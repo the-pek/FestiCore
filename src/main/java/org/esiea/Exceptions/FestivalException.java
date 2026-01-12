@@ -1,4 +1,4 @@
-package Exceptions;
+package org.esiea.Exceptions;
 
 public class FestivalException extends Exception {
     public FestivalException(String message) {

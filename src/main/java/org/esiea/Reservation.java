@@ -1,4 +1,7 @@
-import Exceptions.ReservationException;
+package org.esiea;
+
+import org.esiea.Exceptions.ReservationException;
+
 import java.time.LocalDate;
 
 public abstract class Reservation {

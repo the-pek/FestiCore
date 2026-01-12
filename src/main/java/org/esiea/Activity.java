@@ -1,6 +1,8 @@
+package org.esiea;
+import org.esiea.Enumeration.ActivityType;
 import java.time.Duration;
 import java.time.LocalDate;
-import Enumaration.ActivityType;
+
 
 public class Activity extends Reservation{
     private final ActivityType activityType;

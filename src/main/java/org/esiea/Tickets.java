@@ -1,4 +1,6 @@
-import Enumaration.TicketType;
+package org.esiea;
+
+import org.esiea.Enumeration.TicketType;
 import java.time.LocalDate;
 
 public class Tickets extends Reservation {

@@ -1,4 +1,5 @@
-import Enumaration.PassType;
+package org.esiea;
+import org.esiea.Enumeration.PassType;
 
 import java.time.LocalDate;
 

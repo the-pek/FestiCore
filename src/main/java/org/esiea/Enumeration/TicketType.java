@@ -1,4 +1,4 @@
-package Enumaration;
+package org.esiea.Enumeration;
 
 public enum TicketType {
     day,

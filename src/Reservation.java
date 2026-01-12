@@ -1,3 +1,4 @@
+import Exceptions.ReservationException;
 import java.time.LocalDate;
 
 public abstract class Reservation {
@@ -37,4 +38,17 @@ public abstract class Reservation {
     public void setQuota(int quota) {
         this.quota = quota;
     }
+
+    public boolean inSale() {
+        return quota > 0;
+    }
+
+    public void decrementerQuota() throws ReservationException {
+        if (quota <= 0) {
+            throw new ReservationException("Quota atteint : plus de places disponibles");
+        }
+        quota--;
+    }
+
+    public abstract double calculatePrice();
 }

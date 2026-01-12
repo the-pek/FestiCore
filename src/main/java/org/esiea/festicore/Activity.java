@@ -1,5 +1,5 @@
-package org.esiea;
-import org.esiea.Enumeration.ActivityType;
+package org.esiea.festicore;
+import org.esiea.festicore.Enumeration.ActivityType;
 import java.time.Duration;
 import java.time.LocalDate;
 

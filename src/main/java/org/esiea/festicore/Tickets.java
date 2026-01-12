@@ -1,6 +1,6 @@
-package org.esiea;
+package org.esiea.festicore;
 
-import org.esiea.Enumeration.TicketType;
+import org.esiea.festicore.Enumeration.TicketType;
 import java.time.LocalDate;
 
 public class Tickets extends Reservation {

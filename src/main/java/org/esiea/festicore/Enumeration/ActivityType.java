@@ -1,4 +1,4 @@
-package org.esiea.Enumeration;
+package org.esiea.festicore.Enumeration;
 
 public enum ActivityType {
     MEET_AND_GREET,

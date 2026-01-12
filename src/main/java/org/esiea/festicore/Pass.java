@@ -1,5 +1,5 @@
-package org.esiea;
-import org.esiea.Enumeration.PassType;
+package org.esiea.festicore;
+import org.esiea.festicore.Enumeration.PassType;
 
 import java.time.LocalDate;
 

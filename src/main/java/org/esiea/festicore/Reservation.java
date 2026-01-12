@@ -1,6 +1,6 @@
-package org.esiea;
+package org.esiea.festicore;
 
-import org.esiea.Exceptions.ReservationException;
+import org.esiea.festicore.Exceptions.ReservationException;
 
 import java.time.LocalDate;
 
@@ -48,7 +48,7 @@ public abstract class Reservation {
 
     public void decrementerQuota() throws ReservationException {
         if (quota <= 0) {
-            throw new ReservationException("Quota atteint : plus de places disponibles");
+            throw new ReservationException("Unable to complete reservation");
         }
         quota--;
     }

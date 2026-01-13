@@ -1,4 +1,7 @@
 package org.esiea.festicore;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -6,7 +9,15 @@ import java.util.Scanner;
 public class Main {
     static void main() {
         Scanner sc = new Scanner(System.in);
-        User user = new User();
+        JsonDataManager storageData = new JsonDataManager();
+        List<User> users;
+
+        try {
+            users = storageData.loadUsers();
+        } catch (IOException e) {
+            users = new ArrayList<>();
+        }
+
         int choix;
 
         do {
@@ -24,30 +35,45 @@ public class Main {
             System.out.println(" ");
 
             choix = sc.nextInt();
+            System.out.println("============================================================");
 
             switch (choix) {
                 case 1:
                     System.out.println("Please enter your mail :");
-                    String mail= sc.nextLine();
+                    String mail= sc.next();
                     System.out.println("Please enter your password :");
-                    String pass= sc.nextLine();
+                    String pass= sc.next();
+                    boolean loggedIn = false;
+                    for (User u : users) {
+                        if (u.login(mail, pass)) {
+                            System.out.println("Login successful. Welcome " + u.getName());
+                            loggedIn = true;
+                            break;
+                        }
+                    }
+                    if (!loggedIn) {
+                        System.err.println("Invalid credentials. Please try again.");
+                    }
 
-                    user.login(mail,pass);
                     break;
                 case  2:
                     try {
+                        System.out.println(" ");
                         System.out.println("Enter your name :");
-                        String name= sc.nextLine();
+                        String name= sc.next();
                         System.out.println("Enter your email :");
-                        String email= sc.nextLine();
+                        String email= sc.next();
                         System.out.println("Enter your phone number :");
-                        String phone= sc.nextLine();
+                        String phone= sc.next();
                         System.out.println("Enter a password : ");
-                        String password= sc.nextLine();
+                        String password= sc.next();
                         System.out.println(" ");
 
-                        User.register(name,email,phone,password);
-                    } catch (IllegalArgumentException e) {
+                        User newUser = User.register(name,email,phone,password);
+                        users.add(newUser);
+                        storageData.saveUsers(users);
+
+                    } catch (IllegalArgumentException | IOException e) {
                         System.err.println("Error : "+e.getMessage());
                     }
                     break;
@@ -60,6 +86,5 @@ public class Main {
                     System.out.println(" ");
             }
         } while (choix != 3 );
-
     }
 }

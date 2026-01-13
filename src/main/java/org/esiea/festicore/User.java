@@ -3,20 +3,20 @@ import java.util.List;
 import java.time.LocalDate;
 
 public class User {
-    private String Id;
-    private String Name;
-    private String Email;
-    private String Phone;
-    private String Password;
+    private String id;
+    private String name;
+    private String email;
+    private String phone;
+    private String password;
     private LocalDate registrationDate;
     private List<Reservation> history;
 
     public User(String id, String name, String email, String phone, String password, LocalDate registrationDate, List<Reservation> history) {
-        this.Id = id;
-        this.Name = name;
-        this.Email = email;
-        this.Phone = phone;
-        this.Password = password;
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+        this.password = password;
         this.registrationDate = registrationDate;
         this.history = history;
     }
@@ -27,27 +27,27 @@ public class User {
 
     // Getters and setters for each field
     public String getId() {
-        return Id;
+        return id;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public String getPhone() {
-        return Phone;
+        return phone;
     }
 
     public String getPassword() {
-        return Password;
+        return password;
     }
 
     public void setPassword(String password) {
-        this.Password = password;
+        this.password = password;
     }
 
     public LocalDate getRegistrationDate() {
@@ -64,31 +64,24 @@ public class User {
 
     //Create method to add a login
     public boolean login(String email, String password) {
-        return this.Email.equals(email) && this.Password.equals(password);
+        return this.email.equals(email) && this.password.equals(password);
     }
 
-
-    //Create all methods we need to register a new user
-    //Method to create a Id uniqaue for each user
     public static String generateUniqueId() {
         return "USER-" + java.util.UUID.randomUUID().toString();
     }
 
-    //Method to verify if email is valid
     public static boolean isValidEmail(String email) {
         String emailRegex = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
         return email.matches(emailRegex);
     }
 
-    //Method to verify if phone is valid for a french number
     public static boolean isValidPhone(String phone) {
         String phoneRegex = "^(\\+33|0)[1-9](\\d{2}){4}$";
         return phone.matches(phoneRegex);
     }
 
-    // Method to register a new user
     public static User register(String name, String email, String phone, String password) {
-        // Validate email and phone
         if (!isValidEmail(email)) {
             throw new IllegalArgumentException("Invalid Email.");
         }
@@ -97,7 +90,7 @@ public class User {
         }
 
         User newUser = new User(generateUniqueId(), name, email, phone, password, LocalDate.now(), null);
-        System.out.println(newUser.getName() + " create successfully");
+        System.out.println(newUser.getName() + " has been created successfully");
 
         return newUser;
     }

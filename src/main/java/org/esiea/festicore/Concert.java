@@ -64,12 +64,13 @@ public class Concert implements Comparable<Concert> {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
         Concert concert = (Concert) obj;
-        return artist.equals(concert.artist) && stage.equals(concert.stage) && StartDateTime.equals(concert.StartDateTime);
+        return name.equals(concert.name) && artist.equals(concert.artist) && stage.equals(concert.stage) && StartDateTime.equals(concert.StartDateTime);
     }
 
     @Override
     public int hashCode() {
-        int result = artist.hashCode();
+        int result = name.hashCode();
+        result = 31 * result + artist.hashCode();
         result = 31 * result + stage.hashCode();
         result = 31 * result + StartDateTime.hashCode();
         return result;
@@ -86,5 +87,4 @@ public class Concert implements Comparable<Concert> {
         }
         return this.artist.getName().compareTo(other.artist.getName());
     }
-
 }

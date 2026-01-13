@@ -116,6 +116,7 @@ public class User {
         return newUser;
     }
 
+    //Method to make all account operations a user needs 
     public void account(Scanner scanner, Festival festival) {
         boolean exit = false;
         String command;
@@ -124,6 +125,7 @@ public class User {
         while (!exit) {
             command = scanner.nextLine().trim();
             switch (command) {
+                //Command to see all reservation history
                 case "-a":
                     if (history == null || history.isEmpty()) {
                         System.out.println("No reservation history available.");
@@ -133,18 +135,36 @@ public class User {
                         }
                     }
                     break;
-
+                //Command to search a reservation by its id
                 case "-r":
                     System.out.println("Enter reservation ID to find:");
                     String reservationId = scanner.nextLine().trim();
-                    
-                case "-h":
+                    boolean found = false;
+                    break;
+                
+                //Command to buy a ticket, pass, activity
+                case "-b":
+                    System.out.println("Booking functionality is not implemented yet.");
+                    break;
+                
+                //Command to show program
+                // case "-p":
+                //     festival.displayProgram();
+                //     break;
+                
+                //Command to display help
+                // case "-h":
+                //     this.displayHelp();
+                //     break;
+            
+                //Command to logout
+                case "-q":
                     exit = true;
                     System.out.println("Logging out...");
                     break;
                 
                 default:
-                    System.out.println("Unknown command. Please try again.");
+                    System.out.println("Unknown command. For help, type -h.");
             }
         }
     } 

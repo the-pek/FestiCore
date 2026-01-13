@@ -19,6 +19,8 @@ public class Festival {
         this.users = users;
         this.reservations = reservations;
     }
+
+    //All getters and setters
     public String getName() {
         return name;
     }
@@ -67,5 +69,19 @@ public class Festival {
         this.reservations = reservations;
     }
 
-    
+    public Reservation findReservation(String Id) {
+        return reservations.get(Id);
+    }
+
+    public String showProgram() {
+        StringBuilder program = new StringBuilder("Festival " + name + " Program:\n");
+        for (Concert concert : concerts) {
+            program.append("Concert: ").append(concert.getName())
+                   .append(", Artist: ").append(concert.getArtist().getName())
+                   .append(", Stage: ").append(concert.getStage().getName())
+                   .append(", Start Time: ").append(concert.getStartDateTime())
+                   .append(", Duration: ").append(concert.getDuration().toMinutes()).append(" min\n");
+        }
+        return program.toString();
+    }
 }

@@ -114,4 +114,18 @@ public class User {
         User newUser = new User(generateUniqueId(), name, email, phone, password, LocalDate.now(), null);
         return newUser;
     }
+
+    //Redefine equals and hashCode for User management
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        User user = (User) obj;
+        return Id.equals(user.Id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Id.hashCode();
+    }
 }

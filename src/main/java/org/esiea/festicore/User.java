@@ -2,7 +2,7 @@ package org.esiea.festicore;
 import java.util.*;
 import java.time.LocalDate;
 
-public class User extends Main {
+public class User extends Main  {
     private String Id;
     private String Name;
     private String Email;
@@ -116,12 +116,39 @@ public class User extends Main {
         return newUser;
     }
 
+    
+    //Method to buy a reservation and add it to the history
+    public void buyReservation(Scanner scanner, Festival festival) {
+        System.out.println("Enter reservation Id to buy:");
+        String reservationId = scanner.nextLine().trim();
+
+        Reservation reservation = festival.findReservation(reservationId);
+        if (reservation == null) {
+            System.out.println("Reservation not found.");
+            return;
+        }
+
+        try {
+            reservation.decrementerQuota();
+            if (history == null) {
+                history = new ArrayList<>();
+            }
+            System.out.println("Reservation price: " + reservation.calculatePrice());
+            System.out.println("Enter your card number to proceed with payment:");
+            String cardNumber = scanner.nextLine().trim();
+            history.add(reservation);
+            System.out.println("Reservation purchased successfully!");
+        } catch (Exception e) {
+            System.out.println("Error purchasing reservation: " + e.getMessage());
+        }
+    }
+
     //Method to make all account operations a user needs 
     public void account(Scanner scanner, Festival festival) {
         boolean exit = false;
         String command;
 
-        System.out.println("---Welcome to your account " + Name + "---");
+        System.out.println("--- Welcome to your account " + Name + " ---");
         while (!exit) {
             command = scanner.nextLine().trim();
             switch (command) {
@@ -174,5 +201,5 @@ public class User extends Main {
                     System.out.println("Unknown command. For help, type -h.");
             }
         }
-    } 
+    }  
 }

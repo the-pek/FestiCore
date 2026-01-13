@@ -1,5 +1,5 @@
 package org.esiea.festicore;
-import java.util.List;
+import java.util.*;
 import java.time.LocalDate;
 
 public class User {
@@ -115,4 +115,37 @@ public class User {
         User newUser = new User(generateUniqueId(), name, email, phone, password, LocalDate.now(), history);
         return newUser;
     }
+
+    public void account(Scanner scanner, Festival festival) {
+        boolean exit = false;
+        String command;
+
+        System.out.println("---Welcome to your account " + Name + "---");
+        while (!exit) {
+            command = scanner.nextLine().trim();
+            switch (command) {
+                case "-a":
+                    if (history == null || history.isEmpty()) {
+                        System.out.println("No reservation history available.");
+                    } else {
+                        for (Reservation reservation : history) {
+                            System.out.println(reservation);
+                        }
+                    }
+                    break;
+
+                case "-r":
+                    System.out.println("Enter reservation ID to find:");
+                    String reservationId = scanner.nextLine().trim();
+                    
+                case "-h":
+                    exit = true;
+                    System.out.println("Logging out...");
+                    break;
+                
+                default:
+                    System.out.println("Unknown command. Please try again.");
+            }
+        }
+    } 
 }

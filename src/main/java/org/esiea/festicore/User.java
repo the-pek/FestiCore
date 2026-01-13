@@ -1,5 +1,5 @@
 package org.esiea.festicore;
-import java.util.List;
+import java.util.*;
 import java.time.LocalDate;
 
 public class User {
@@ -111,21 +111,61 @@ public class User {
         if (!isValidPhone(phone)) {
             throw new IllegalArgumentException("Numéro de téléphone invalide.");
         }
-        User newUser = new User(generateUniqueId(), name, email, phone, password, LocalDate.now(), null);
+        List<Reservation> history = null; // Initialize history as null
+        User newUser = new User(generateUniqueId(), name, email, phone, password, LocalDate.now(), history);
         return newUser;
     }
 
-    //Redefine equals and hashCode for User management
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
-        User user = (User) obj;
-        return Id.equals(user.Id);
-    }
+    //Method to make all account operations a user needs 
+    public void account(Scanner scanner, Festival festival) {
+        boolean exit = false;
+        String command;
 
-    @Override
-    public int hashCode() {
-        return Id.hashCode();
-    }
+        System.out.println("---Welcome to your account " + Name + "---");
+        while (!exit) {
+            command = scanner.nextLine().trim();
+            switch (command) {
+                //Command to see all reservation history
+                case "-a":
+                    if (history == null || history.isEmpty()) {
+                        System.out.println("No reservation history available.");
+                    } else {
+                        for (Reservation reservation : history) {
+                            System.out.println(reservation);
+                        }
+                    }
+                    break;
+                //Command to search a reservation by its id
+                case "-r":
+                    System.out.println("Enter reservation ID to find:");
+                    String reservationId = scanner.nextLine().trim();
+                    boolean found = false;
+                    break;
+                
+                //Command to buy a ticket, pass, activity
+                case "-b":
+                    System.out.println("Booking functionality is not implemented yet.");
+                    break;
+                
+                //Command to show program
+                // case "-p":
+                //     festival.displayProgram();
+                //     break;
+                
+                //Command to display help
+                // case "-h":
+                //     this.displayHelp();
+                //     break;
+            
+                //Command to logout
+                case "-q":
+                    exit = true;
+                    System.out.println("Logging out...");
+                    break;
+                
+                default:
+                    System.out.println("Unknown command. For help, type -h.");
+            }
+        }
+    } 
 }

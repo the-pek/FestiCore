@@ -111,7 +111,8 @@ public class User {
         if (!isValidPhone(phone)) {
             throw new IllegalArgumentException("Numéro de téléphone invalide.");
         }
-        User newUser = new User(generateUniqueId(), name, email, phone, password, LocalDate.now(), null);
+        List<Reservation> history = null; // Initialize history as null
+        User newUser = new User(generateUniqueId(), name, email, phone, password, LocalDate.now(), history);
         return newUser;
     }
 }

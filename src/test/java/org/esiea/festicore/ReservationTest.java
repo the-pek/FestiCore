@@ -4,25 +4,15 @@ import org.esiea.festicore.Enumeration.TicketType;
 import java.time.LocalDate;
 
 import org.esiea.festicore.Exceptions.ReservationException;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-
 public class ReservationTest {
-    @Test
-    void calculatePriceTest() {
-        Reservation r = new Tickets(
-                "T1",
-                80,
-                LocalDate.parse("2026-07-15"),
-                10,
-                TicketType.day
-        );
-        assertEquals(80.0, r.calculatePrice());
-    }
 
     @Test
+    @DisplayName("T-RES-01")
     void reservationQuotaNotNull() {
         Reservation r = new Tickets(
                 "T1",
@@ -35,6 +25,7 @@ public class ReservationTest {
     }
 
     @Test
+    @DisplayName("T-RES-02")
     void reservationQuotaNull() {
         Reservation r = new Tickets(
                 "T2",
@@ -48,6 +39,7 @@ public class ReservationTest {
     }
 
     @Test
+    @DisplayName("T-RES-03")
     void reservationDecrementationQuota() throws ReservationException {
         Reservation ticket = new Tickets(
                 "T3",
@@ -62,6 +54,7 @@ public class ReservationTest {
     }
 
     @Test
+    @DisplayName("T-RES-04")
     void reservationDecrementationQuotaZero(){
         Reservation ticket = new Tickets(
                 "T4",

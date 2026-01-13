@@ -2,7 +2,7 @@ package org.esiea.festicore;
 import java.util.*;
 import java.time.LocalDate;
 
-public class User {
+public class User extends Main {
     private String Id;
     private String Name;
     private String Email;
@@ -125,6 +125,7 @@ public class User {
         while (!exit) {
             command = scanner.nextLine().trim();
             switch (command) {
+
                 //Command to see all reservation history
                 case "-a":
                     if (history == null || history.isEmpty()) {
@@ -135,11 +136,17 @@ public class User {
                         }
                     }
                     break;
+
                 //Command to search a reservation by its id
                 case "-r":
                     System.out.println("Enter reservation ID to find:");
                     String reservationId = scanner.nextLine().trim();
-                    boolean found = false;
+                    Reservation foundReservation = festival.findReservation(reservationId);
+                    if(foundReservation == null) {
+                        System.out.println("Reservation not found.");
+                    } else {
+                        System.out.println(foundReservation);
+                    }
                     break;
                 
                 //Command to buy a ticket, pass, activity
@@ -148,14 +155,14 @@ public class User {
                     break;
                 
                 //Command to show program
-                // case "-p":
-                //     festival.displayProgram();
-                //     break;
+                case "-p":
+                    festival.showProgram();
+                    break;
                 
                 //Command to display help
-                // case "-h":
-                //     this.displayHelp();
-                //     break;
+                case "-h":
+                    this.displayHelp();
+                    break;
             
                 //Command to logout
                 case "-q":

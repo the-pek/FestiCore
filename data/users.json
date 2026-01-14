@@ -22,4 +22,12 @@
   "password" : "test",
   "registrationDate" : [ 2026, 1, 14 ],
   "history" : [ ]
+}, {
+  "id" : "USER-cdbaa163-b41c-420b-ad8e-3051f0d922f7",
+  "name" : "test",
+  "email" : "test@test.com",
+  "phone" : "0123456789",
+  "password" : "test",
+  "registrationDate" : [ 2026, 1, 14 ],
+  "history" : [ ]
 } ]

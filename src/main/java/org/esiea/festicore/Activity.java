@@ -1,20 +1,24 @@
 package org.esiea.festicore;
 import org.esiea.festicore.Enumeration.ActivityType;
+import org.esiea.festicore.Enumeration.ArtistName;
 
 import java.time.Duration;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 
 public class Activity extends Reservation{
     private ActivityType activityType;
-    private Artist artistName;
+    private ArtistName artistName;
     private Duration duration;
+    private LocalDateTime startTime;
 
-    public Activity(String id, float price, LocalDate validityDate, int quota, ActivityType activityType, Artist artist, Duration duration) {
+    public Activity(String id, float price, LocalDate validityDate, int quota, ActivityType activityType, ArtistName artistName, Duration duration, LocalDateTime startTime) {
         super(id, price, validityDate, quota);
         this.activityType = activityType;
-        this.artistName = artist;
+        this.artistName = artistName;
         this.duration = duration;
+        this.startTime = startTime;
     }
 
     public Activity() {
@@ -27,12 +31,16 @@ public class Activity extends Reservation{
     public void setActivityType(ActivityType activityType) {
         this.activityType = activityType;
     }
-    public Artist getArtist() {
-        return artistName;
-    }
+    public ArtistName getArtistName() { return artistName; }
+    public void setArtistName(ArtistName artistName) { this.artistName = artistName; }
     public Duration getDuration() {
         return duration;
     }
+    public void setDuration(Duration duration) {
+        this.duration = duration;
+    }
+    public LocalDateTime getStartTime() { return startTime; }
+    public void setStartTime(LocalDateTime startTime) { this.startTime = startTime; }
 
     @Override
     public double  calculatePrice() {

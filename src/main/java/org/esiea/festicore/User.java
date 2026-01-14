@@ -243,6 +243,7 @@ public class User {
         }
         history.add(reservation);
     }
+    
     public boolean hasReservation(String reservationId) {
         if (history == null) return false;
         return history.stream()

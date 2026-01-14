@@ -11,7 +11,7 @@ public abstract class Reservation {
     private int quota;
 
     public Reservation(String id, float price, LocalDate validityDate, int quota) {
-        this.id = id;
+        this.id = null;
         this.price = price;
         this.validityDate = validityDate;
         this.quota = quota;

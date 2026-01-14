@@ -3,10 +3,12 @@ package org.esiea.festicore;
 public class Stage implements Comparable<Stage> {
     private String name;
     private int capacity;
+    private static final java.util.logging.Logger logger = LogManager.getLogger();
 
     public Stage(String name, int capacity) {
         this.name = name;
         this.capacity = capacity;
+        logger.info("Stage created: " + name + " capacity=" + capacity);
     }
 
     //All getters and setters
@@ -16,6 +18,7 @@ public class Stage implements Comparable<Stage> {
     
     public void setName(String name) {
         this.name = name;
+        logger.fine("Stage renamed to: " + name);
     }
 
     public int getCapacity() {
@@ -24,6 +27,7 @@ public class Stage implements Comparable<Stage> {
 
     public void setCapacity(int capacity) {
         this.capacity = capacity;
+        logger.fine("Stage capacity changed: " + capacity + " for " + name);
     }
 
     //Redefine equals, hashCode, and compareTo for Festival management

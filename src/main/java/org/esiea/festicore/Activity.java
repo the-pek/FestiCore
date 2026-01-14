@@ -12,6 +12,7 @@ public class Activity extends Reservation{
     private ArtistName artistName;
     private Duration duration;
     private LocalDateTime startTime;
+    private static final java.util.logging.Logger logger = LogManager.getLogger();
 
     public Activity(String id, float price, LocalDate validityDate, int quota, ActivityType activityType, ArtistName artistName, Duration duration, LocalDateTime startTime) {
         super(id, price, validityDate, quota);
@@ -22,7 +23,7 @@ public class Activity extends Reservation{
     }
 
     public Activity() {
-
+        logger.info("Activity created: " + getId() + " type=" + activityType + " artist=" + getArtistName());
     }
 
     public ActivityType getActivityType() {
@@ -44,6 +45,7 @@ public class Activity extends Reservation{
 
     @Override
     public double  calculatePrice() {
+        logger.fine("Calculating price for activity: " + getId());
         return getPrice();
     }
 }

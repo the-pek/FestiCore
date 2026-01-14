@@ -3,6 +3,8 @@ package org.esiea.festicore;
 import org.esiea.festicore.Exceptions.ReservationException;
 
 import java.time.LocalDate;
+import java.util.logging.Logger;
+
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
@@ -18,6 +20,7 @@ public abstract class Reservation {
     private float price;
     private LocalDate validityDate;
     private int quota;
+    Logger logger = LogManager.getLogger();
 
     public Reservation(String id, float price, LocalDate validityDate, int quota) {
         this.id = id;
@@ -64,12 +67,12 @@ public abstract class Reservation {
 
     public void decrementerQuota() throws ReservationException {
         if (quota <= 0) {
+            logger.warning("Attempt to decrement quota but none available for reservation: " + id);
             throw new ReservationException("Unable to complete reservation");
         }
         quota--;
+        logger.fine("Quota decremented for reservation " + id + ". New quota: " + quota);
     }
 
     public abstract double calculatePrice();
-
-    //Redifine 
 }

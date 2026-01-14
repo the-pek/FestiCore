@@ -11,13 +11,15 @@ public class Concert implements Comparable<Concert> {
     private Stage stage;
     private LocalDate startDateTime;
     private Duration duration;
-    
+    private static final java.util.logging.Logger logger = LogManager.getLogger();
+
     public Concert(String name, ArtistName artistName, Stage stage, LocalDate startDateTime, Duration duration) {
         this.name = name;
         this.artistName = artistName;
         this.stage = stage;
         this.startDateTime = startDateTime;
         this.duration = duration;
+        logger.info("Concert created: " + name + " artist=" + getArtistName() + " stage=" + (stage==null?"null":stage.getName()));
     }
 
     public String getName() {
@@ -26,6 +28,7 @@ public class Concert implements Comparable<Concert> {
 
     public void setName(String name) {
         this.name = name;
+        logger.fine("Concert renamed to: " + name);
     }
 
     public ArtistName getArtistName() {
@@ -34,6 +37,7 @@ public class Concert implements Comparable<Concert> {
 
     public void setArtistName(ArtistName artistName) {
         this.artistName = artistName;
+        logger.fine("Concert artist set: " + getArtistName());
     }
 
     public Stage getStage() {
@@ -42,6 +46,7 @@ public class Concert implements Comparable<Concert> {
 
     public void setStage(Stage stage) {
         this.stage = stage;
+        logger.fine("Concert stage set: " + (stage==null?"null":stage.getName()));
     }
 
     public LocalDate getStartDateTime() {
@@ -50,6 +55,7 @@ public class Concert implements Comparable<Concert> {
 
     public void setStartDateTime(LocalDate startDateTime) {
         this.startDateTime = startDateTime;
+        logger.fine("Concert start time set: " + startDateTime);
     }
 
     public Duration getDuration() {
@@ -58,6 +64,7 @@ public class Concert implements Comparable<Concert> {
 
     public void setDuration(Duration duration) {
         this.duration = duration;
+        logger.fine("Concert duration set: " + duration);
     }
 
     //Redifine equals, hashCode, and compareTo for Festival management

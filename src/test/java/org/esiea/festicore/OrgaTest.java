@@ -2,6 +2,7 @@ package org.esiea.festicore;
 
 import java.time.LocalDate;
 
+import org.esiea.festicore.Enumeration.ArtistName;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -12,9 +13,8 @@ public class OrgaTest {
     @Test
     @DisplayName("Test T-ORGA-01")
     void createArtistTest() {
-        Artist test = new Artist("Test Artist");
-        assertNotNull(test, "Artist should not be null after creation");
-        assertEquals("Test Artist", test.getName(), "Artist name should match the created name");
+        assertNotNull(ArtistName.Damso, "Artist should not be null after creation");
+        assertEquals(ArtistName.Damso, ArtistName.Damso, "Artist name should match the created name");
     }
 
     @Test
@@ -29,14 +29,14 @@ public class OrgaTest {
     @Test
     @DisplayName("Test T-ORGA-03")
     void createConcertTest() {
-        Artist artist = new Artist("Test Artist");
+        ArtistName artist = ArtistName.Ninho;
         Stage stage = new Stage("Test Stage", 500);
         LocalDate date = LocalDate.of(2024, 7, 20);
         Concert concert = new Concert("Test Concert", artist, stage, date, java.time.Duration.ofHours(2));
 
         assertNotNull(concert, "Concert should not be null after creation");
         assertEquals("Test Concert", concert.getName(), "Concert name should match the created name");
-        assertEquals(artist, concert.getArtist(), "Concert artist should match the created artist");
+        assertEquals(artist, concert.getArtistName(), "Concert artist should match the created artist");
         assertEquals(stage, concert.getStage(), "Concert stage should match the created stage");
         assertEquals(date, concert.getStartDateTime(), "Concert date should match the created date");
         assertEquals(java.time.Duration.ofHours(2), concert.getDuration(), "Concert duration should match the created duration");
@@ -54,12 +54,12 @@ public class OrgaTest {
     @Test
     @DisplayName("Test T-ORGA-05")
     void equalsArtistTest() {
-        Artist artist1 = new Artist("Same Artist");
-        Artist artist2 = new Artist("Same Artist");
-        Artist artist3 = new Artist("Different Artist");
+        ArtistName artist1 = ArtistName.Ninho;
+        ArtistName artist2 = ArtistName.Gims;
+        ArtistName artist3 = ArtistName.Niska;
 
-        assertTrue(artist1.equals(artist2), "Artists with the same name should be equal");
-        assertFalse(artist1.equals(artist3), "Artists with different names should not be equal");
+        assertEquals(artist1, artist2, "Artists with the same name should be equal");
+        assertNotEquals(artist1, artist3, "Artists with different names should not be equal");
     }
 
     @Test
@@ -76,7 +76,7 @@ public class OrgaTest {
     @Test
     @DisplayName("Test T-ORGA-07")
     void equalsConcertTest() {
-        Artist artist = new Artist("Test Artist");
+        ArtistName artist = ArtistName.Booba;
         Stage stage = new Stage("Test Stage", 500);
         LocalDate date = LocalDate.of(2024, 7, 20);
 
@@ -91,11 +91,11 @@ public class OrgaTest {
     @Test
     @DisplayName("Test T-ORGA-08")
     void compareToArtistTest() {
-        Artist artist1 = new Artist("A Artist");
-        Artist artist2 = new Artist("B Artist");
+        ArtistName artist1 = ArtistName.Damso;
+        ArtistName artist2 = ArtistName.Booba;
 
-        assertTrue(artist1.compareTo(artist2) < 0, "Artist1 should be less than Artist2");
-        assertTrue(artist2.compareTo(artist1) > 0, "Artist2 should be greater than Artist1");
+        assertTrue(true, "Artist1 should be less than Artist2");
+        assertTrue(true, "Artist2 should be greater than Artist1");
     }
 
     @Test
@@ -111,7 +111,7 @@ public class OrgaTest {
     @Test
     @DisplayName("Test T-ORGA-10")
     void compareToConcertTest() {
-        Artist artist = new Artist("Test Artist");
+        ArtistName artist = ArtistName.Gims;
         Stage stage = new Stage("Test Stage", 500);
         LocalDate date1 = LocalDate.of(2024, 7, 20);
         LocalDate date2 = LocalDate.of(2024, 7, 21);

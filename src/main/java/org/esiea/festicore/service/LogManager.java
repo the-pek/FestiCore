@@ -1,4 +1,4 @@
-package org.esiea.festicore;
+package org.esiea.festicore.service;
 
 import java.util.logging.*;
 

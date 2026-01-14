@@ -29,17 +29,17 @@ public class BookingService {
         }
 
         reservation.decrementerQuota();
-        user.addReservation(reservation);
+        user.addReservation(reservation.copyForHistory());
         logger.info("Booking successful: user=" + user.getEmail() + ", reservation=" + reservation.getId());
 
         return reservation;
     }
 
-    public Reservation bookById(User user, Festival festival, String reservationId) throws ReservationException {
+    public Reservation bookById(User user, Festival festival, String code) throws ReservationException {
         if (festival == null) throw new ReservationException("Festival not initialized");
-        if (reservationId == null || reservationId.isBlank()) throw new ReservationException("Invalid reservation id");
+        if (code == null || code.isBlank()) throw new ReservationException("Invalid reservation id");
 
-        Reservation r = festival.findReservation(reservationId.trim());
+        Reservation r = festival.findReservation(code.trim());
         return book(user, r);
     }
 
@@ -49,8 +49,8 @@ public class BookingService {
         LocalDate d = LocalDate.parse("2026-07-15");
 
         // Tickets
-        catalog.put("Tickets_DAY", new Tickets("T_Day", 80f, d, 3, TicketType.day));
-        catalog.put("Tickets_3D",  new Tickets("T_3Day", 240f, d, 3, TicketType.Three_day));
+        catalog.put("Ticket_Day", new Tickets("T_Day", 80f, d, 3, TicketType.day));
+        catalog.put("Ticket_3Day",  new Tickets("T_3Day", 240f, d, 3, TicketType.Three_day));
 
         // Pass
         catalog.put("Pass_Classic", new Pass("P_Classic", 100f, d, 3, PassType.classic));
@@ -71,7 +71,7 @@ public class BookingService {
                 )
         );
 
-        catalog.put("Activity_MASTERCLASS_GAZO",
+        catalog.put("Activity_MasterC_BOOBA",
                 new Activity("A_MASTERCLASS_BOOBA", 180f, d, 3,
                         ActivityType.MASTERCLASS,
                         ArtistName.Booba,
@@ -105,9 +105,9 @@ public class BookingService {
             System.out.println("No catalog loaded.");
             return;
         }
-
-        for (Reservation r : festival.getReservations().values()) {
-            System.out.println(r.getId() + " | price=" + r.calculatePrice() + " | quota=" + r.getQuota());
+        for (Map.Entry<String, Reservation> e : festival.getReservations().entrySet()) {
+            Reservation r = e.getValue();
+            System.out.println(e.getKey() + " | id=" + r.getId() + " | price=" + r.calculatePrice() + " | quota=" + r.getQuota());
         }
     }
 }

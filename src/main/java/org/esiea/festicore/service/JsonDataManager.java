@@ -3,7 +3,6 @@ package org.esiea.festicore.service;
 import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.fasterxml.jackson.core.type.TypeReference;
-import org.esiea.festicore.LogManager;
 import org.esiea.festicore.Reservation;
 import org.esiea.festicore.User;
 

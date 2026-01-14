@@ -1,17 +1,20 @@
 package org.esiea.festicore;
 
+import org.esiea.festicore.Enumeration.ArtistName;
+
+import java.time.LocalDate;
 import java.util.Map;
 import java.util.TreeSet;
 
 public class Festival {
     private String name;
     private TreeSet<Stage> stages;
-    private TreeSet<Artist> artists;
+    private TreeSet<ArtistName> artists;
     private TreeSet<Concert> concerts;
     private Map<String, User> users;
     private Map<String, Reservation> reservations;
 
-    public Festival(String name, TreeSet<Stage> stages, TreeSet<Artist> artists, TreeSet<Concert> concerts, Map<String, User> users, Map<String, Reservation> reservations) {
+    public Festival(String name, TreeSet<Stage> stages, TreeSet<ArtistName> artists, TreeSet<Concert> concerts, Map<String, User> users, Map<String, Reservation> reservations) {
         this.name = name;
         this.stages = stages;
         this.artists = artists;
@@ -46,11 +49,11 @@ public class Festival {
         this.stages = stages;
     }
 
-    public TreeSet<Artist> getArtists() {
+    public TreeSet<ArtistName> getArtists() {
         return artists;
     }
 
-    public void setArtists(TreeSet<Artist> artists) {
+    public void setArtists(TreeSet<ArtistName> artists) {
         this.artists = artists;
     }
 
@@ -78,15 +81,16 @@ public class Festival {
         this.reservations = reservations;
     }
 
-    public Reservation findReservation(String Id) {
-        return reservations.get(Id);
+    public Reservation findReservation(String code) {
+        if (reservations == null) return null;
+        return reservations.get(code);
     }
 
     public String showProgram() {
         StringBuilder program = new StringBuilder("Festival " + name + " Program:\n");
         for (Concert concert : concerts) {
             program.append("Concert: ").append(concert.getName())
-                   .append(", Artist: ").append(concert.getArtist().getName())
+                   .append(", Artist: ").append(concert.getArtistName())
                    .append(", Stage: ").append(concert.getStage().getName())
                    .append(", Start Time: ").append(concert.getStartDateTime())
                    .append(", Duration: ").append(concert.getDuration().toMinutes()).append(" min\n");

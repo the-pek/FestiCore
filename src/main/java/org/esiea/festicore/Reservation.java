@@ -3,12 +3,26 @@ package org.esiea.festicore;
 import org.esiea.festicore.Exceptions.ReservationException;
 
 import java.time.LocalDate;
+import java.util.logging.Logger;
+
+import com.fasterxml.jackson.annotation.JsonSubTypes;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import org.esiea.festicore.service.LogManager;
+
+@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.PROPERTY, property = "kind")
+@JsonSubTypes({
+        @JsonSubTypes.Type(value = Tickets.class, name = "TICKET"),
+        @JsonSubTypes.Type(value = Pass.class, name = "PASS"),
+        @JsonSubTypes.Type(value = Activity.class, name = "ACTIVITY")
+})
 
 public abstract class Reservation {
-    private final String id;
+    private String id;
     private float price;
     private LocalDate validityDate;
     private int quota;
+    private static final Logger LOGGER = LogManager.getLogger();
+
 
     public Reservation(String id, float price, LocalDate validityDate, int quota) {
         this.id = id;
@@ -17,8 +31,15 @@ public abstract class Reservation {
         this.quota = quota;
     }
 
+    public Reservation() {
+
+    }
+
     public String getId() {
         return id;
+    }
+    public void setId(String id) {
+        this.id = id;
     }
 
     public float getPrice() {
@@ -48,12 +69,13 @@ public abstract class Reservation {
 
     public void decrementerQuota() throws ReservationException {
         if (quota <= 0) {
-            throw new ReservationException("Unable to complete reservation");
+            LOGGER.warning("Attempt to decrement quota but none available for reservation: " + id);
+            throw new ReservationException("No more availability for reservation: " + id);
         }
         quota--;
+        LOGGER.info("Quota decremented for reservation " + id + ". New quota: " + quota);
     }
 
     public abstract double calculatePrice();
-
-    //Redifine 
+    public abstract Reservation copyForHistory();
 }

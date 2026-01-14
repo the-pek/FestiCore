@@ -1,0 +1,28 @@
+[ {
+  "id" : "USER-544c2193-e71d-4482-a905-993f6650e9d1",
+  "name" : "alex",
+  "email" : "alex@alex.fr",
+  "phone" : "0771812590",
+  "card" : null,
+  "password" : "266712194",
+  "registrationDate" : [ 2026, 1, 14 ],
+  "history" : [ ]
+}, {
+  "id" : "USER-36bceddb-8703-41fd-aad6-a3455ebfee6c",
+  "name" : "blt",
+  "email" : "blt@blt.fr",
+  "phone" : "0771812590",
+  "card" : null,
+  "password" : "8690158",
+  "registrationDate" : [ 2026, 1, 14 ],
+  "history" : [ ]
+}, {
+  "id" : "USER-911829a9-38e7-4577-a8b5-f13d5b481300",
+  "name" : "h",
+  "email" : "h@h.fr",
+  "phone" : "0771812590",
+  "card" : null,
+  "password" : "9276",
+  "registrationDate" : [ 2026, 1, 14 ],
+  "history" : [ ]
+} ]

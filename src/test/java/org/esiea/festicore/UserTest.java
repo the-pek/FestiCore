@@ -1,9 +1,5 @@
 package org.esiea.festicore;
 
-import org.esiea.festicore.Enumeration.TicketType;
-import java.time.LocalDate;
-
-import org.esiea.festicore.Exceptions.ReservationException;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

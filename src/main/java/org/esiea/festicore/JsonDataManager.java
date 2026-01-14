@@ -11,7 +11,7 @@ import java.util.List;
 
 public class JsonDataManager {
 
-    private static final String DATA_FILE = "src/main/resources/data/users.json";
+    private static final String DATA_FILE = "data/users.json";
     private final ObjectMapper mapper;
 
     public JsonDataManager() {
@@ -21,9 +21,8 @@ public class JsonDataManager {
     }
 
     public void saveUsers(List<User> users) throws IOException {
-        File file = new File(DATA_FILE);
-        file.getParentFile().mkdirs();
-        mapper.writeValue(file, users);
+        mapper.writerWithDefaultPrettyPrinter()
+                .writeValue(new File(DATA_FILE), users);
     }
 
     public List<User> loadUsers() throws IOException {

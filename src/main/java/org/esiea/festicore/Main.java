@@ -1,4 +1,6 @@
 package org.esiea.festicore;
+import org.esiea.festicore.service.BookingService;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -10,15 +12,21 @@ public class Main {
     static void main() {
         Scanner sc = new Scanner(System.in);
         JsonDataManager storageData = new JsonDataManager();
-        List<User> users;
+        BookingService bookingService = new BookingService();
 
+        List<User> users;
         try {
             users = storageData.loadUsers();
         } catch (IOException e) {
             users = new ArrayList<>();
+            System.out.println("Users loaded: 0 (file not found or unreadable)");
         }
 
+
         int choix;
+        User currentUser = null;
+        Festival festival = new Festival(); // ou chargé ailleurs
+
 
         do {
             System.out.println(" ");
@@ -34,39 +42,45 @@ public class Main {
             System.out.println("============================================================");
             System.out.println(" ");
 
-            choix = sc.nextInt();
+            choix = Integer.parseInt(sc.nextLine());
             System.out.println("============================================================");
 
             switch (choix) {
                 case 1:
                     System.out.println("Please enter your mail :");
-                    String mail= sc.next();
+                    String mail = sc.nextLine();
                     System.out.println("Please enter your password :");
-                    String pass= sc.next();
-                    boolean loggedIn = false;
+                    String pass = sc.nextLine();
+
+                    currentUser = null;
+
                     for (User u : users) {
                         if (u.login(mail, pass)) {
-                            System.out.println("Login successful. Welcome " + u.getName());
-                            loggedIn = true;
+                            currentUser = u;
                             break;
                         }
                     }
-                    if (!loggedIn) {
+                    if (currentUser == null) {
                         System.err.println("Invalid credentials. Please try again.");
+                        System.out.println(" ");
+                    } else {
+                        System.out.println(" ");
+                        System.out.println("Login successful");
+                        System.out.println("============================================================");
+                        currentUser.account(sc, festival, bookingService);
                     }
-
                     break;
                 case  2:
                     try {
                         System.out.println(" ");
                         System.out.println("Enter your name :");
-                        String name= sc.next();
+                        String name= sc.nextLine();
                         System.out.println("Enter your email :");
-                        String email= sc.next();
+                        String email= sc.nextLine();
                         System.out.println("Enter your phone number :");
-                        String phone= sc.next();
+                        String phone= sc.nextLine();
                         System.out.println("Enter a password : ");
-                        String password= sc.next();
+                        String password= sc.nextLine();
                         System.out.println(" ");
 
                         User newUser = User.register(name,email,phone,password);

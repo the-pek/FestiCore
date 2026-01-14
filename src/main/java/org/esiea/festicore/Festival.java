@@ -10,7 +10,6 @@ public class Festival {
     private TreeSet<Concert> concerts;
     private Map<String, User> users;
     private Map<String, Reservation> reservations;
-    private static final java.util.logging.Logger logger = LogManager.getLogger();
 
     public Festival(String name, TreeSet<Stage> stages, TreeSet<Artist> artists, TreeSet<Concert> concerts, Map<String, User> users, Map<String, Reservation> reservations) {
         this.name = name;
@@ -21,9 +20,7 @@ public class Festival {
         this.reservations = reservations;
     }
 
-    public Festival() {
-
-    }
+    public Festival() {}
 
     //All getters and setters
     public String getName() {
@@ -75,13 +72,7 @@ public class Festival {
     }
 
     public Reservation findReservation(String Id) {
-        Reservation r = reservations.get(Id);
-        if (r == null) {
-            logger.fine("findReservation: reservation not found: " + Id);
-        } else {
-            logger.fine("findReservation: found reservation: " + Id);
-        }
-        return r;
+        return reservations.get(Id);
     }
 
     public String showProgram() {
@@ -93,8 +84,6 @@ public class Festival {
                    .append(", Start Time: ").append(concert.getStartDateTime())
                    .append(", Duration: ").append(concert.getDuration().toMinutes()).append(" min\n");
         }
-        String output = program.toString();
-        logger.info("Program displayed for festival: " + name);
-        return output;
+        return program.toString();
     }
 }

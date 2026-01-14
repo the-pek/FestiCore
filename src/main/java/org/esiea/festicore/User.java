@@ -204,6 +204,13 @@ public class User {
 
         System.out.println("---Welcome to your account " + name + "---");
         logger.info("User accessed account: " + name);
+        System.out.println("Select an action to perform :");
+            System.out.println("1.Show all hitory -a");
+            System.out.println("2.Search reservation -r");
+            System.out.println("3.Buy reservation -b");
+            System.out.println("4.Show program -p");
+            System.out.println("5.Quit -q");
+            System.out.println("6.Help -h");
         while (!exit) {
             command = scanner.nextLine().trim();
             switch (command) {
@@ -287,6 +294,7 @@ public class User {
     }
 
     public void displayHelp() {
+        System.out.println("Account Help Menu:");   
         System.out.println("-a : Show reservation history");
         System.out.println("-r : Find a reservation by ID");
         System.out.println("-b : Buy a reservation");

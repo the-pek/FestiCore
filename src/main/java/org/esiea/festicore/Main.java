@@ -6,8 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
     static void main() {
         Scanner sc = new Scanner(System.in);
@@ -16,13 +15,8 @@ public class Main {
 
         List<User> users;
 
-        // 1. Initialize the logger at the very beginning
         LogManager.setup();
-        
-        // 2. Get the logger instance
         java.util.logging.Logger logger = LogManager.getLogger();
-        
-        // 3. Log the application start
         logger.info("FestiCore application is starting...");
 
         try {
@@ -34,7 +28,7 @@ public class Main {
         }
 
 
-        int choix;
+        String choix;
         User currentUser = null;
         Festival festival = new Festival(); // ou chargé ailleurs
 
@@ -47,19 +41,20 @@ public class Main {
         do {
             
             System.out.println("Select an action to perform :");
-            System.out.println("1. Login");
-            System.out.println("2. Signup");
-            System.out.println("3. Quit");
+            System.out.println("1.Login -c");
+            System.out.println("2.Signup -i");
+            System.out.println("3.Quit -q");
+            System.out.println("4.Help -h");
             System.out.println(" ");
             System.out.println("============================================================");
             System.out.println(" ");
 
             logger.info("Waiting for user commands...");
-            choix = Integer.parseInt(sc.nextLine());
+            choix = sc.nextLine();
             System.out.println("============================================================");
 
             switch (choix) {
-                case 1:
+                case "-c":
                     System.out.println("Please enter your mail :");
                     String mail = sc.nextLine();
                     System.out.println("Please enter your password :");
@@ -85,7 +80,7 @@ public class Main {
                         currentUser.account(sc, festival, bookingService);
                     }
                     break;
-                case  2:
+                case  "-i":
                     try {
                         System.out.println(" ");
                         System.out.println("Enter your name :");
@@ -108,16 +103,23 @@ public class Main {
                         System.err.println("Error : "+e.getMessage());
                     }
                     break;
-                case  3:
+                case  "-q":
                     System.out.println("Bye!");
                     logger.info("Application exiting by user request.");
-                    break;
+                    return;
 
+                case "-h":
+                    System.out.println("Help Menu:");
+                    System.out.println("-c : Login to your account");
+                    System.out.println("-i : Create a new account");
+                    System.out.println("-q : Quit the application");
+                    System.out.println("-h : Display this help menu");
+                    break;
                 default:
-                    System.err.println("Wrong choice. Enter a valid choice.");
+                    System.err.println("Unknown command. For help, type -h.");
                     logger.warning("Wrong menu choice entered by user.");
                     System.out.println(" ");
             }
-        } while (choix != 3 );
+        } while (choix != "-q");
     }
 }

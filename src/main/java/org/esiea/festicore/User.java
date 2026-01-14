@@ -154,7 +154,6 @@ public class User extends Main  {
         }
 
         try {
-            reservation.decrementerQuota();
             if (history == null) {
                 history = new ArrayList<>();
             }
@@ -180,6 +179,7 @@ public class User extends Main  {
             
             System.out.println("Processing payment...");// Simulate payment processing
             history.add(reservation);
+            reservation.decrementerQuota();
             System.out.println("Reservation purchased successfully!");
         } catch (Exception e) {
             System.out.println("Error purchasing reservation: " + e.getMessage());

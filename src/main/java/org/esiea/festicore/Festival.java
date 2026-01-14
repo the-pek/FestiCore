@@ -20,6 +20,10 @@ public class Festival {
         this.reservations = reservations;
     }
 
+    public Festival() {
+
+    }
+
     //All getters and setters
     public String getName() {
         return name;

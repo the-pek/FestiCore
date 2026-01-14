@@ -1,65 +1,72 @@
 package org.esiea.festicore;
+import org.esiea.festicore.Exceptions.ReservationException;
+import org.esiea.festicore.service.BookingService;
+
 import java.util.*;
 import java.time.LocalDate;
 
-public class User extends Main {
-    private String Id;
-    private String Name;
-    private String Email;
-    private String Phone;
-    private String Password;
+public class User {
+    private String id;
+    private String name;
+    private String email;
+    private String phone;
+    private String password;
     private LocalDate registrationDate;
     private List<Reservation> history;
 
     public User(String id, String name, String email, String phone, String password, LocalDate registrationDate, List<Reservation> history) {
-        this.Id = id;
-        this.Name = name;
-        this.Email = email;
-        this.Phone = phone;
-        this.Password = password;
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+        this.password = password;
         this.registrationDate = registrationDate;
         this.history = history;
-    }   
+    }
+
+    public User() {
+    }
+
 
     // Getters and setters for each field
     public String getId() {
-        return Id;
+        return id;
     }
 
     public void setId(String id) {
-        this.Id = id;
+        this.id = id;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        this.Name = name;
+        this.name = name;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public void setEmail(String email) {
-        this.Email = email;
+        this.email = email;
     }
 
     public String getPhone() {
-        return Phone;
+        return phone;
     }
 
     public void setPhone(String phone) {
-        this.Phone = phone;
+        this.phone = phone;
     }
 
     public String getPassword() {
-        return Password;
+        return password;
     }
 
     public void setPassword(String password) {
-        this.Password = password;
+        this.password = password;
     }
 
     public LocalDate getRegistrationDate() {
@@ -80,7 +87,7 @@ public class User extends Main {
 
     //Create method to add a login 
     public boolean login(String email, String password) {
-        return this.Email.equals(email) && this.Password.equals(password);
+        return this.email.equals(email) && this.password.equals(password);
     }
 
 
@@ -111,17 +118,44 @@ public class User extends Main {
         if (!isValidPhone(phone)) {
             throw new IllegalArgumentException("Numéro de téléphone invalide.");
         }
-        List<Reservation> history = null; // Initialize history as null
+        List<Reservation> history = new ArrayList<>();
+        ; // Initialize history as null
         User newUser = new User(generateUniqueId(), name, email, phone, password, LocalDate.now(), history);
         return newUser;
     }
 
-    //Method to make all account operations a user needs 
-    public void account(Scanner scanner, Festival festival) {
+    public void buyReservation(Scanner scanner, Festival festival) {
+        System.out.println("Enter reservation Id to buy:");
+        String reservationId = scanner.nextLine().trim();
+
+        Reservation reservation = festival.findReservation(reservationId);
+        if (reservation == null) {
+            System.out.println("Reservation not found.");
+            return;
+        }
+
+        try {
+            reservation.decrementerQuota();
+            if (history == null) {
+                history = new ArrayList<>();
+            }
+            System.out.println("Reservation price: " + reservation.calculatePrice());
+            System.out.println("Enter your card number to proceed with payment:");
+            String cardNumber = scanner.nextLine().trim();
+            history.add(reservation);
+            System.out.println("Reservation purchased successfully!");
+        } catch (Exception e) {
+            System.out.println("Error purchasing reservation: " + e.getMessage());
+        }
+    }
+
+
+    //Method to make all account operations a user needs
+    public void account(Scanner scanner, Festival festival, BookingService bookingService) {
         boolean exit = false;
         String command;
 
-        System.out.println("---Welcome to your account " + Name + "---");
+        System.out.println("---Welcome to your account " + name + "---");
         while (!exit) {
             command = scanner.nextLine().trim();
             switch (command) {
@@ -148,31 +182,71 @@ public class User extends Main {
                         System.out.println(foundReservation);
                     }
                     break;
-                
+
                 //Command to buy a ticket, pass, activity
                 case "-b":
-                    System.out.println("Booking functionality is not implemented yet.");
+                    System.out.println("Enter reservation ID to book:");
+                    String resId = scanner.nextLine().trim();
+
+                    Reservation reservation = festival.findReservation(resId);
+
+                    if (reservation == null) {
+                        System.out.println("Reservation not found.");
+                        break;
+                    }
+
+                    if (this.hasReservation(resId)) {
+                        System.out.println("You already booked this reservation.");
+                        break;
+                    }
+
+                    try {
+                        bookingService.book(this, reservation);
+                        System.out.println(
+                                "Reservation successful. Price: "
+                                        + reservation.calculatePrice() + "€"
+                        );
+                    } catch (ReservationException e) {
+                        System.out.println("Booking failed: " + e.getMessage());
+                    }
                     break;
-                
                 //Command to show program
                 case "-p":
                     festival.showProgram();
                     break;
-                
                 //Command to display help
                 case "-h":
                     this.displayHelp();
                     break;
-            
                 //Command to logout
                 case "-q":
                     exit = true;
                     System.out.println("Logging out...");
                     break;
-                
                 default:
                     System.out.println("Unknown command. For help, type -h.");
             }
         }
-    } 
+    }
+
+    public void displayHelp() {
+        System.out.println("-a : Show reservation history");
+        System.out.println("-r : Find a reservation by ID");
+        System.out.println("-b : Buy a reservation");
+        System.out.println("-p : Show festival program");
+        System.out.println("-q : Logout");
+    }
+
+
+//    public void addReservation(Reservation reservation) {
+//        if (history == null) {
+//            history = new ArrayList<>();
+//        }
+//        history.add(reservation);
+//    }
+//    public boolean hasReservation(String reservationId) {
+//        if (history == null) return false;
+//        return history.stream()
+//                .anyMatch(r -> r.getId().equals(reservationId));
+//    }
 }

@@ -1,7 +1,5 @@
 package org.esiea.festicore;
 
-
-
 public class Stage implements Comparable<Stage> {
     private String name;
     private int capacity;

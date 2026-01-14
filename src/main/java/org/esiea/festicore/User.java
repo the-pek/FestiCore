@@ -124,6 +124,7 @@ public class User {
         return newUser;
     }
 
+    //Method to buy a reservation and add it to the history
     public void buyReservation(Scanner scanner, Festival festival) {
         System.out.println("Enter reservation Id to buy:");
         String reservationId = scanner.nextLine().trim();
@@ -149,7 +150,6 @@ public class User {
         }
     }
 
-
     //Method to make all account operations a user needs
     public void account(Scanner scanner, Festival festival, BookingService bookingService) {
         boolean exit = false;
@@ -170,7 +170,6 @@ public class User {
                         }
                     }
                     break;
-
                 //Command to search a reservation by its id
                 case "-r":
                     System.out.println("Enter reservation ID to find:");
@@ -238,15 +237,15 @@ public class User {
     }
 
 
-//    public void addReservation(Reservation reservation) {
-//        if (history == null) {
-//            history = new ArrayList<>();
-//        }
-//        history.add(reservation);
-//    }
-//    public boolean hasReservation(String reservationId) {
-//        if (history == null) return false;
-//        return history.stream()
-//                .anyMatch(r -> r.getId().equals(reservationId));
-//    }
+    public void addReservation(Reservation reservation) {
+        if (history == null) {
+            history = new ArrayList<>();
+        }
+        history.add(reservation);
+    }
+    public boolean hasReservation(String reservationId) {
+        if (history == null) return false;
+        return history.stream()
+                .anyMatch(r -> r.getId().equals(reservationId));
+    }
 }

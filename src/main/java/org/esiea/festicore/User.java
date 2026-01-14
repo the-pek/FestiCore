@@ -1,8 +1,8 @@
 package org.esiea.festicore;
-import java.util.List;
+import java.util.*;
 import java.time.LocalDate;
 
-public class User {
+public class User extends Main  {
     private String Id;
     private String Name;
     private String Email;
@@ -115,4 +115,91 @@ public class User {
         User newUser = new User(generateUniqueId(), name, email, phone, password, LocalDate.now(), history);
         return newUser;
     }
+
+    
+    //Method to buy a reservation and add it to the history
+    public void buyReservation(Scanner scanner, Festival festival) {
+        System.out.println("Enter reservation Id to buy:");
+        String reservationId = scanner.nextLine().trim();
+
+        Reservation reservation = festival.findReservation(reservationId);
+        if (reservation == null) {
+            System.out.println("Reservation not found.");
+            return;
+        }
+
+        try {
+            reservation.decrementerQuota();
+            if (history == null) {
+                history = new ArrayList<>();
+            }
+            System.out.println("Reservation price: " + reservation.calculatePrice());
+            System.out.println("Enter your card number to proceed with payment:");
+            String cardNumber = scanner.nextLine().trim();
+            history.add(reservation);
+            System.out.println("Reservation purchased successfully!");
+        } catch (Exception e) {
+            System.out.println("Error purchasing reservation: " + e.getMessage());
+        }
+    }
+
+    //Method to make all account operations a user needs 
+    public void account(Scanner scanner, Festival festival) {
+        boolean exit = false;
+        String command;
+
+        System.out.println("--- Welcome to your account " + Name + " ---");
+        while (!exit) {
+            command = scanner.nextLine().trim();
+            switch (command) {
+
+                //Command to see all reservation history
+                case "-a":
+                    if (history == null || history.isEmpty()) {
+                        System.out.println("No reservation history available.");
+                    } else {
+                        for (Reservation reservation : history) {
+                            System.out.println(reservation);
+                        }
+                    }
+                    break;
+
+                //Command to search a reservation by its id
+                case "-r":
+                    System.out.println("Enter reservation ID to find:");
+                    String reservationId = scanner.nextLine().trim();
+                    Reservation foundReservation = festival.findReservation(reservationId);
+                    if(foundReservation == null) {
+                        System.out.println("Reservation not found.");
+                    } else {
+                        System.out.println(foundReservation);
+                    }
+                    break;
+                
+                //Command to buy a ticket, pass, activity
+                case "-b":
+                    System.out.println("Booking functionality is not implemented yet.");
+                    break;
+                
+                //Command to show program
+                case "-p":
+                    festival.showProgram();
+                    break;
+                
+                //Command to display help
+                case "-h":
+                    this.displayHelp();
+                    break;
+            
+                //Command to logout
+                case "-q":
+                    exit = true;
+                    System.out.println("Logging out...");
+                    break;
+                
+                default:
+                    System.out.println("Unknown command. For help, type -h.");
+            }
+        }
+    }  
 }

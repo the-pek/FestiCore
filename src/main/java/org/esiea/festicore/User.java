@@ -14,6 +14,7 @@ public class User {
     private String password;
     private LocalDate registrationDate;
     private List<Reservation> history;
+    private static final java.util.logging.Logger logger = LogManager.getLogger();
 
     public User(String id, String name, String email, String phone, String password, LocalDate registrationDate, List<Reservation> history) {
         this.id = id;
@@ -145,11 +146,13 @@ public class User {
     //Method to buy a reservation and add it to the history
     public void buyReservation(Scanner scanner, Festival festival) {
         System.out.println("Enter reservation Id to buy:");
+        logger.info("Prompting user to enter reservation id to buy.");
         String reservationId = scanner.nextLine().trim();
 
         Reservation reservation = festival.findReservation(reservationId);
         if (reservation == null) {
             System.out.println("Reservation not found.");
+            logger.warning("Reservation not found: " + reservationId);
             return;
         }
 
@@ -159,30 +162,38 @@ public class User {
             }
 
             System.out.println("Reservation price: " + reservation.calculatePrice());
+            logger.info("Reservation price displayed: " + reservation.calculatePrice() + " for reservation " + reservationId);
             if(this.card == null) {
                 System.out.println("Enter your card number to proceed with payment:");
+                logger.info("Prompting for card number for reservation: " + reservationId);
                 String cardNumber = scanner.nextLine().trim();
                 System.out.println("Do you want to save this card for future purchases? (yes/no)");
                 String saveCardResponse = scanner.nextLine().trim().toLowerCase();
                 if (saveCardResponse.equals("yes")) {
                 this.setCard(cardNumber);
                 System.out.println("Card saved successfully.");
+                logger.info("Card saved for user: " + this.email);
                 }
             }
 
             System.out.println("Did you want to proceed with the payment? (yes/no)");
+            logger.info("Asking user to confirm payment for reservation: " + reservationId);
             String paymentResponse = scanner.nextLine().trim().toLowerCase();
             if (!paymentResponse.equals("yes")) {
                 System.out.println("Payment cancelled.");
+                logger.info("Payment cancelled by user for reservation: " + reservationId);
                 return;
             }
             
             System.out.println("Processing payment...");// Simulate payment processing
+            logger.info("Processing payment for reservation: " + reservationId);
             history.add(reservation);
             reservation.decrementerQuota();
             System.out.println("Reservation purchased successfully!");
+            logger.info("Reservation purchased: " + reservationId + " by user: " + this.email);
         } catch (Exception e) {
             System.out.println("Error purchasing reservation: " + e.getMessage());
+            logger.severe("Error purchasing reservation for user " + this.email + ": " + e.getMessage());
         }
     }
 
@@ -192,6 +203,7 @@ public class User {
         String command;
 
         System.out.println("---Welcome to your account " + name + "---");
+        logger.info("User accessed account: " + name);
         while (!exit) {
             command = scanner.nextLine().trim();
             switch (command) {
@@ -200,6 +212,7 @@ public class User {
                 case "-a":
                     if (history == null || history.isEmpty()) {
                         System.out.println("No reservation history available.");
+                        logger.info("No reservation history available for user: " + name);
                     } else {
                         for (Reservation reservation : history) {
                             System.out.println(reservation);
@@ -209,40 +222,48 @@ public class User {
                 //Command to search a reservation by its id
                 case "-r":
                     System.out.println("Enter reservation ID to find:");
+                    logger.info("Prompting user to enter reservation ID to find.");
                     String reservationId = scanner.nextLine().trim();
                     Reservation foundReservation = festival.findReservation(reservationId);
                     if(foundReservation == null) {
                         System.out.println("Reservation not found.");
+                        logger.warning("Reservation not found during search: " + reservationId);
                     } else {
                         System.out.println(foundReservation);
+                        logger.info("Found reservation: " + reservationId);
                     }
                     break;
 
                 //Command to buy a ticket, pass, activity
                 case "-b":
                     System.out.println("Enter reservation ID to book:");
+                    logger.info("Prompting user to enter reservation ID to book.");
                     String resId = scanner.nextLine().trim();
 
                     Reservation reservation = festival.findReservation(resId);
 
                     if (reservation == null) {
                         System.out.println("Reservation not found.");
+                        logger.warning("Attempted booking for non-existent reservation: " + resId);
                         break;
                     }
 
                     if (this.hasReservation(resId)) {
                         System.out.println("You already booked this reservation.");
+                        logger.info("User attempted to re-book reservation already owned: " + resId + " by user " + this.email);
                         break;
                     }
 
                     try {
                         bookingService.book(this, reservation);
                         System.out.println(
-                                "Reservation successful. Price: "
-                                        + reservation.calculatePrice() + "€"
+                            "Reservation successful. Price: "
+                                + reservation.calculatePrice() + "€"
                         );
+                        logger.info("Reservation booked: " + resId + " for user: " + this.email + ". Price: " + reservation.calculatePrice());
                     } catch (ReservationException e) {
                         System.out.println("Booking failed: " + e.getMessage());
+                        logger.severe("Booking failed for user " + this.email + ": " + e.getMessage());
                     }
                     break;
                 //Command to show program
@@ -257,6 +278,7 @@ public class User {
                 case "-q":
                     exit = true;
                     System.out.println("Logging out...");
+                    logger.info("User logging out: " + name);
                     break;
                 default:
                     System.out.println("Unknown command. For help, type -h.");

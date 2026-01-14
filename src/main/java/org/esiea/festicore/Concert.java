@@ -9,6 +9,7 @@ public class Concert implements Comparable<Concert> {
     private Stage stage;
     private LocalDate StartDateTime;
     private Duration duration;
+    private static final java.util.logging.Logger logger = LogManager.getLogger();
     
     public Concert(String name, Artist artist, Stage stage, LocalDate startDateTime, Duration duration) {
         this.name = name;
@@ -16,6 +17,7 @@ public class Concert implements Comparable<Concert> {
         this.stage = stage;
         this.StartDateTime = startDateTime;
         this.duration = duration;
+        logger.info("Concert created: " + name + " artist=" + (artist==null?"null":artist.getName()) + " stage=" + (stage==null?"null":stage.getName()));
     }
 
     public String getName() {
@@ -24,6 +26,7 @@ public class Concert implements Comparable<Concert> {
 
     public void setName(String name) {
         this.name = name;
+        logger.fine("Concert renamed to: " + name);
     }
 
     public Artist getArtist() {
@@ -32,6 +35,7 @@ public class Concert implements Comparable<Concert> {
 
     public void setArtist(Artist artist) {
         this.artist = artist;
+        logger.fine("Concert artist set: " + (artist==null?"null":artist.getName()));
     }
 
     public Stage getStage() {
@@ -40,6 +44,7 @@ public class Concert implements Comparable<Concert> {
 
     public void setStage(Stage stage) {
         this.stage = stage;
+        logger.fine("Concert stage set: " + (stage==null?"null":stage.getName()));
     }
 
     public LocalDate getStartDateTime() {
@@ -48,6 +53,7 @@ public class Concert implements Comparable<Concert> {
 
     public void setStartDateTime(LocalDate startDateTime) {
         this.StartDateTime = startDateTime;
+        logger.fine("Concert start time set: " + startDateTime);
     }
 
     public Duration getDuration() {
@@ -56,6 +62,7 @@ public class Concert implements Comparable<Concert> {
 
     public void setDuration(Duration duration) {
         this.duration = duration;
+        logger.fine("Concert duration set: " + duration);
     }
 
     //Redifine equals, hashCode, and compareTo for Festival management

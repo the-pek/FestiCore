@@ -2,9 +2,11 @@ package org.esiea.festicore;
 
 public class Artist implements Comparable<Artist> {
     private String name;
+    private static final java.util.logging.Logger logger = LogManager.getLogger();
 
     public Artist(String name) {
         this.name = name;
+        logger.info("Artist created: " + name);
     }
 
     //All getters and setters
@@ -14,6 +16,7 @@ public class Artist implements Comparable<Artist> {
 
     public void setName(String name) {
         this.name = name;
+        logger.fine("Artist renamed to: " + name);
     }
 
     //Redefine equals, hashCode, and compareTo for Festival management

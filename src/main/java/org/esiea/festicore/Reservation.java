@@ -9,6 +9,7 @@ public abstract class Reservation {
     private float price;
     private LocalDate validityDate;
     private int quota;
+    private static final java.util.logging.Logger logger = LogManager.getLogger();
 
     public Reservation(String id, float price, LocalDate validityDate, int quota) {
         this.id = id;
@@ -48,9 +49,11 @@ public abstract class Reservation {
 
     public void decrementerQuota() throws ReservationException {
         if (quota <= 0) {
+            logger.warning("Attempt to decrement quota but none available for reservation: " + id);
             throw new ReservationException("Unable to complete reservation");
         }
         quota--;
+        logger.fine("Quota decremented for reservation " + id + ". New quota: " + quota);
     }
 
     public abstract double calculatePrice();

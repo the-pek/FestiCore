@@ -1,6 +1,6 @@
 package org.esiea.festicore;
 import org.esiea.festicore.service.BookingService;
-import org.esiea.festicore.service.userDataService;
+import org.esiea.festicore.service.JsonDataManager;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Main {
     static void main() {
         Scanner sc = new Scanner(System.in);
-        userDataService storageData = new userDataService();
+        JsonDataManager storageData = new JsonDataManager();
         BookingService bookingService = new BookingService();
 
         List<User> users;

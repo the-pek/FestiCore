@@ -1,25 +1,28 @@
 [ {
-  "id" : "USER-771db971-c20f-4432-955f-808194bda316",
-  "name" : "Alex",
-  "email" : "alex@email.com",
-  "phone" : "0123456788",
-  "password" : "alex@email.com",
+  "id" : "USER-544c2193-e71d-4482-a905-993f6650e9d1",
+  "name" : "alex",
+  "email" : "alex@alex.fr",
+  "phone" : "0771812590",
+  "card" : null,
+  "password" : "266712194",
   "registrationDate" : [ 2026, 1, 14 ],
   "history" : [ ]
 }, {
-  "id" : "USER-e2e47f9d-594e-4eb9-9dc9-6f6937dac1ce",
-  "name" : "Pierre-Edwin",
-  "email" : "pek@email.com",
-  "phone" : "0123457689",
-  "password" : "test3",
+  "id" : "USER-36bceddb-8703-41fd-aad6-a3455ebfee6c",
+  "name" : "blt",
+  "email" : "blt@blt.fr",
+  "phone" : "0771812590",
+  "card" : null,
+  "password" : "8690158",
   "registrationDate" : [ 2026, 1, 14 ],
   "history" : [ ]
 }, {
-  "id" : "USER-328c8270-a687-4071-af8c-4e7905a08a1a",
-  "name" : "Edwin",
-  "email" : "edwin@email.com",
-  "phone" : "0125346789",
-  "password" : "test",
+  "id" : "USER-911829a9-38e7-4577-a8b5-f13d5b481300",
+  "name" : "h",
+  "email" : "h@h.fr",
+  "phone" : "0771812590",
+  "card" : null,
+  "password" : "9276",
   "registrationDate" : [ 2026, 1, 14 ],
   "history" : [ ]
 } ]

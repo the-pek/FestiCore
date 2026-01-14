@@ -10,6 +10,7 @@ public class User {
     private String name;
     private String email;
     private String phone;
+    private String card;
     private String password;
     private LocalDate registrationDate;
     private List<Reservation> history;
@@ -19,14 +20,15 @@ public class User {
         this.name = name;
         this.email = email;
         this.phone = phone;
+        this.card = null;
         this.password = password;
         this.registrationDate = registrationDate;
         this.history = history;
-    }
+    }   
 
+    // Default constructor required by Jackson for deserialization
     public User() {
     }
-
 
     // Getters and setters for each field
     public String getId() {
@@ -61,6 +63,14 @@ public class User {
         this.phone = phone;
     }
 
+    public String getCard() {
+        return card;
+    }
+
+    public void setCard(String card) {
+        this.card = card;
+    }
+
     public String getPassword() {
         return password;
     }
@@ -87,7 +97,10 @@ public class User {
 
     //Create method to add a login 
     public boolean login(String email, String password) {
-        return this.email.equals(email) && this.password.equals(password);
+        return this.email != null
+                && this.password != null
+                && this.email.equals(email)
+                && this.password.equals(User.hashPassword(password));
     }
 
 
@@ -109,6 +122,11 @@ public class User {
         return phone.matches(phoneRegex);
     }
 
+    //Method to crypt password 
+    public static String hashPassword(String password) {
+        return Integer.toString(89 * password.hashCode() + 20);
+    }
+
     // Method to register a new user
     public static User register(String name, String email, String phone, String password) {
         // Validate email and phone
@@ -120,7 +138,7 @@ public class User {
         }
         List<Reservation> history = new ArrayList<>();
         ; // Initialize history as null
-        User newUser = new User(generateUniqueId(), name, email, phone, password, LocalDate.now(), history);
+        User newUser = new User(generateUniqueId(), name, email, phone, hashPassword(password), LocalDate.now(), history);
         return newUser;
     }
 
@@ -136,14 +154,32 @@ public class User {
         }
 
         try {
-            reservation.decrementerQuota();
             if (history == null) {
                 history = new ArrayList<>();
             }
+
             System.out.println("Reservation price: " + reservation.calculatePrice());
-            System.out.println("Enter your card number to proceed with payment:");
-            String cardNumber = scanner.nextLine().trim();
+            if(this.card == null) {
+                System.out.println("Enter your card number to proceed with payment:");
+                String cardNumber = scanner.nextLine().trim();
+                System.out.println("Do you want to save this card for future purchases? (yes/no)");
+                String saveCardResponse = scanner.nextLine().trim().toLowerCase();
+                if (saveCardResponse.equals("yes")) {
+                this.setCard(cardNumber);
+                System.out.println("Card saved successfully.");
+                }
+            }
+
+            System.out.println("Did you want to proceed with the payment? (yes/no)");
+            String paymentResponse = scanner.nextLine().trim().toLowerCase();
+            if (!paymentResponse.equals("yes")) {
+                System.out.println("Payment cancelled.");
+                return;
+            }
+            
+            System.out.println("Processing payment...");// Simulate payment processing
             history.add(reservation);
+            reservation.decrementerQuota();
             System.out.println("Reservation purchased successfully!");
         } catch (Exception e) {
             System.out.println("Error purchasing reservation: " + e.getMessage());

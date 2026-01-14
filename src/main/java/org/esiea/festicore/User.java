@@ -7,6 +7,7 @@ public class User extends Main  {
     private String Name;
     private String Email;
     private String Phone;
+    private String card;
     private String Password;
     private LocalDate registrationDate;
     private List<Reservation> history;
@@ -16,10 +17,26 @@ public class User extends Main  {
         this.Name = name;
         this.Email = email;
         this.Phone = phone;
+        this.card = null;
         this.Password = password;
         this.registrationDate = registrationDate;
         this.history = history;
     }   
+
+    // Null constructor: initialize all fields to null
+    public User() {
+        this.Id = null;
+        this.Name = null;
+        this.Email = null;
+        this.Phone = null;
+        this.card = null;
+        this.Password = null;
+        this.registrationDate = null;
+        this.history = null;
+    
+    }
+
+    
 
     // Getters and setters for each field
     public String getId() {
@@ -52,6 +69,14 @@ public class User extends Main  {
 
     public void setPhone(String phone) {
         this.Phone = phone;
+    }
+
+    public String getCard() {
+        return card;
+    }
+
+    public void setCard(String card) {
+        this.card = card;
     }
 
     public String getPassword() {
@@ -133,9 +158,27 @@ public class User extends Main  {
             if (history == null) {
                 history = new ArrayList<>();
             }
+
             System.out.println("Reservation price: " + reservation.calculatePrice());
-            System.out.println("Enter your card number to proceed with payment:");
-            String cardNumber = scanner.nextLine().trim();
+            if(this.card == null) {
+                System.out.println("Enter your card number to proceed with payment:");
+                String cardNumber = scanner.nextLine().trim();
+                System.out.println("Do you want to save this card for future purchases? (yes/no)");
+                String saveCardResponse = scanner.nextLine().trim().toLowerCase();
+                if (saveCardResponse.equals("yes")) {
+                this.setCard(cardNumber);
+                System.out.println("Card saved successfully.");
+                }
+            }
+
+            System.out.println("Did you want to proceed with the payment? (yes/no)");
+            String paymentResponse = scanner.nextLine().trim().toLowerCase();
+            if (!paymentResponse.equals("yes")) {
+                System.out.println("Payment cancelled.");
+                return;
+            }
+            
+            System.out.println("Processing payment...");// Simulate payment processing
             history.add(reservation);
             System.out.println("Reservation purchased successfully!");
         } catch (Exception e) {

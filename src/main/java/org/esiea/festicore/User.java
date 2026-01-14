@@ -124,38 +124,14 @@ public class User {
         return newUser;
     }
 
-    //Method to buy a reservation and add it to the history
-    public void buyReservation(Scanner scanner, Festival festival) {
-        System.out.println("Enter reservation Id to buy:");
-        String reservationId = scanner.nextLine().trim();
-
-        Reservation reservation = festival.findReservation(reservationId);
-        if (reservation == null) {
-            System.out.println("Reservation not found.");
-            return;
-        }
-
-        try {
-            reservation.decrementerQuota();
-            if (history == null) {
-                history = new ArrayList<>();
-            }
-            System.out.println("Reservation price: " + reservation.calculatePrice());
-            System.out.println("Enter your card number to proceed with payment:");
-            String cardNumber = scanner.nextLine().trim();
-            history.add(reservation);
-            System.out.println("Reservation purchased successfully!");
-        } catch (Exception e) {
-            System.out.println("Error purchasing reservation: " + e.getMessage());
-        }
-    }
-
     //Method to make all account operations a user needs
     public void account(Scanner scanner, Festival festival, BookingService bookingService) {
         boolean exit = false;
         String command;
 
         System.out.println("---Welcome to your account " + name + "---");
+        System.out.println(" ");
+        System.out.println("Tap '-h' to show you the actions you can perform");
         while (!exit) {
             command = scanner.nextLine().trim();
             switch (command) {
@@ -188,18 +164,24 @@ public class User {
                     String resId = scanner.nextLine().trim();
 
                     Reservation reservation = festival.findReservation(resId);
-
                     if (reservation == null) {
                         System.out.println("Reservation not found.");
                         break;
                     }
-
                     if (this.hasReservation(resId)) {
                         System.out.println("You already booked this reservation.");
                         break;
                     }
 
                     try {
+                        System.out.println("Price: " + reservation.calculatePrice() + "€");
+                        System.out.print("Enter card number : ");
+                        String card = scanner.nextLine().trim();
+                        if (card.isEmpty()) {
+                            System.out.println("Payment cancelled.");
+                            break;
+                        }
+
                         bookingService.book(this, reservation);
                         System.out.println(
                                 "Reservation successful. Price: "
@@ -211,7 +193,7 @@ public class User {
                     break;
                 //Command to show program
                 case "-p":
-                    festival.showProgram();
+                    System.out.println(festival.showProgram());
                     break;
                 //Command to display help
                 case "-h":

@@ -1,20 +1,21 @@
-package org.esiea.festicore;
+package org.esiea.festicore.service;
 
 import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.fasterxml.jackson.core.type.TypeReference;
+import org.esiea.festicore.User;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class JsonDataManager {
+public class userDataService {
 
     private static final String DATA_FILE = "data/users.json";
     private final ObjectMapper mapper;
 
-    public JsonDataManager() {
+    public userDataService() {
         mapper = new ObjectMapper();
         mapper.registerModule(new JavaTimeModule());
         mapper.enable(SerializationFeature.INDENT_OUTPUT);

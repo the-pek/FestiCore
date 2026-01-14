@@ -21,7 +21,12 @@ public class Festival {
     }
 
     public Festival() {
-
+        this.name = "FestiCore";
+        this.stages = new TreeSet<>();
+        this.artists = new TreeSet<>();
+        this.concerts = new TreeSet<>();
+        this.users = new java.util.HashMap<>();
+        this.reservations = new java.util.HashMap<>();
     }
 
     //All getters and setters

@@ -1,5 +1,6 @@
 package org.esiea.festicore;
 import org.esiea.festicore.service.BookingService;
+import org.esiea.festicore.service.userDataService;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -11,7 +12,7 @@ import java.util.Scanner;
 public class Main {
     static void main() {
         Scanner sc = new Scanner(System.in);
-        JsonDataManager storageData = new JsonDataManager();
+        userDataService storageData = new userDataService();
         BookingService bookingService = new BookingService();
 
         List<User> users;
@@ -25,7 +26,12 @@ public class Main {
 
         int choix;
         User currentUser = null;
-        Festival festival = new Festival(); // ou chargé ailleurs
+        Festival festival = new Festival();
+        festival.getReservations().put(
+                "T1",
+                new Tickets("T1", 80f, java.time.LocalDate.parse("2026-07-15"), 10,
+                        org.esiea.festicore.Enumeration.TicketType.day)
+        );
 
 
         do {

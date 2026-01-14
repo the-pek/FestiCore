@@ -25,4 +25,22 @@
   "password" : "9276",
   "registrationDate" : [ 2026, 1, 14 ],
   "history" : [ ]
+}, {
+  "id" : "USER-fe02f671-543a-4f48-a7ed-335e76855866",
+  "name" : "g",
+  "email" : "g@g.fr",
+  "phone" : "0123456789",
+  "card" : null,
+  "password" : "9187",
+  "registrationDate" : [ 2026, 1, 14 ],
+  "history" : [ ]
+}, {
+  "id" : "USER-f14e4c76-68fa-4697-8696-ad84b6a418b3",
+  "name" : "r",
+  "email" : "r@r.fr",
+  "phone" : "0123456789",
+  "card" : null,
+  "password" : "10166",
+  "registrationDate" : [ 2026, 1, 14 ],
+  "history" : [ ]
 } ]

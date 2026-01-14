@@ -1,0 +1,122 @@
+janv. 14, 2026 1:40:56 PM org.esiea.festicore.LogManager setup
+INFO: Logging system initialized. Level: INFO
+janv. 14, 2026 1:40:56 PM org.esiea.festicore.Main main
+INFO: FestiCore application is starting...
+janv. 14, 2026 1:40:56 PM org.esiea.festicore.Main main
+INFO: Waiting for user commands...
+janv. 14, 2026 1:42:06 PM org.esiea.festicore.Main main
+INFO: User logged in: blt@blt.fr
+janv. 14, 2026 1:42:06 PM org.esiea.festicore.User account
+INFO: User accessed account: blt
+janv. 14, 2026 1:42:16 PM org.esiea.festicore.User account
+INFO: No reservation history available for user: blt
+janv. 14, 2026 1:42:26 PM org.esiea.festicore.LogManager setup
+INFO: Logging system initialized. Level: INFO
+janv. 14, 2026 1:42:26 PM org.esiea.festicore.Main main
+INFO: FestiCore application is starting...
+janv. 14, 2026 1:42:26 PM org.esiea.festicore.Main main
+INFO: Waiting for user commands...
+janv. 14, 2026 1:42:41 PM org.esiea.festicore.JsonDataManager saveUsers
+INFO: Saved users to data/users.json (count=5)
+janv. 14, 2026 1:42:41 PM org.esiea.festicore.Main main
+INFO: New user registered: r@r.fr
+janv. 14, 2026 1:42:41 PM org.esiea.festicore.Main main
+INFO: Waiting for user commands...
+janv. 14, 2026 1:42:56 PM org.esiea.festicore.Main main
+INFO: User logged in: r@r.fr
+janv. 14, 2026 1:42:56 PM org.esiea.festicore.User account
+INFO: User accessed account: r
+janv. 14, 2026 1:43:02 PM org.esiea.festicore.User account
+INFO: User logging out: r
+janv. 14, 2026 1:43:02 PM org.esiea.festicore.Main main
+INFO: Waiting for user commands...
+janv. 14, 2026 1:43:04 PM org.esiea.festicore.Main main
+INFO: Application exiting by user request.
+janv. 14, 2026 1:59:24 PM org.esiea.festicore.LogManager setup
+INFO: Logging system initialized. Level: INFO
+janv. 14, 2026 1:59:24 PM org.esiea.festicore.Main main
+INFO: FestiCore application is starting...
+janv. 14, 2026 1:59:24 PM org.esiea.festicore.Main main
+INFO: Waiting for user commands...
+janv. 14, 2026 1:59:42 PM org.esiea.festicore.Main main
+INFO: User logged in: blt@blt.fr
+janv. 14, 2026 1:59:42 PM org.esiea.festicore.User account
+INFO: User accessed account: blt
+janv. 14, 2026 2:02:35 PM org.esiea.festicore.LogManager setup
+INFO: Logging system initialized. Level: INFO
+janv. 14, 2026 2:02:35 PM org.esiea.festicore.Main main
+INFO: FestiCore application is starting...
+janv. 14, 2026 2:02:35 PM org.esiea.festicore.Main main
+INFO: Waiting for user commands...
+janv. 14, 2026 2:02:41 PM org.esiea.festicore.Main main
+INFO: Waiting for user commands...
+janv. 14, 2026 2:02:48 PM org.esiea.festicore.Main main
+INFO: Application exiting by user request.
+janv. 14, 2026 2:02:48 PM org.esiea.festicore.Main main
+INFO: Waiting for user commands...
+janv. 14, 2026 2:02:53 PM org.esiea.festicore.Main main
+INFO: Application exiting by user request.
+janv. 14, 2026 2:02:53 PM org.esiea.festicore.Main main
+INFO: Waiting for user commands...
+janv. 14, 2026 2:03:30 PM org.esiea.festicore.LogManager setup
+INFO: Logging system initialized. Level: INFO
+janv. 14, 2026 2:03:30 PM org.esiea.festicore.Main main
+INFO: FestiCore application is starting...
+janv. 14, 2026 2:03:30 PM org.esiea.festicore.Main main
+INFO: Waiting for user commands...
+janv. 14, 2026 2:03:32 PM org.esiea.festicore.Main main
+WARNING: Wrong menu choice entered by user.
+janv. 14, 2026 2:03:32 PM org.esiea.festicore.Main main
+INFO: Waiting for user commands...
+janv. 14, 2026 2:03:35 PM org.esiea.festicore.Main main
+INFO: Application exiting by user request.
+janv. 14, 2026 2:03:35 PM org.esiea.festicore.Main main
+INFO: Waiting for user commands...
+janv. 14, 2026 2:04:14 PM org.esiea.festicore.LogManager setup
+INFO: Logging system initialized. Level: INFO
+janv. 14, 2026 2:04:14 PM org.esiea.festicore.Main main
+INFO: FestiCore application is starting...
+janv. 14, 2026 2:04:15 PM org.esiea.festicore.Main main
+INFO: Waiting for user commands...
+janv. 14, 2026 2:04:17 PM org.esiea.festicore.Main main
+INFO: Application exiting by user request.
+janv. 14, 2026 2:05:02 PM org.esiea.festicore.LogManager setup
+INFO: Logging system initialized. Level: INFO
+janv. 14, 2026 2:05:02 PM org.esiea.festicore.Main main
+INFO: FestiCore application is starting...
+janv. 14, 2026 2:05:03 PM org.esiea.festicore.Main main
+INFO: Waiting for user commands...
+janv. 14, 2026 2:05:26 PM org.esiea.festicore.Main main
+INFO: User logged in: blt@blt.fr
+janv. 14, 2026 2:05:26 PM org.esiea.festicore.User account
+INFO: User accessed account: blt
+janv. 14, 2026 2:05:46 PM org.esiea.festicore.User account
+INFO: User logging out: blt
+janv. 14, 2026 2:05:46 PM org.esiea.festicore.Main main
+INFO: Waiting for user commands...
+janv. 14, 2026 2:05:47 PM org.esiea.festicore.Main main
+INFO: Application exiting by user request.
+janv. 14, 2026 2:08:07 PM org.esiea.festicore.LogManager setup
+INFO: Logging system initialized. Level: INFO
+janv. 14, 2026 2:08:07 PM org.esiea.festicore.Main main
+INFO: FestiCore application is starting...
+janv. 14, 2026 2:08:08 PM org.esiea.festicore.Main main
+INFO: Waiting for user commands...
+janv. 14, 2026 2:08:20 PM org.esiea.festicore.Main main
+WARNING: Invalid credentials attempt for email: bly@blt.fr
+janv. 14, 2026 2:08:20 PM org.esiea.festicore.Main main
+INFO: Waiting for user commands...
+janv. 14, 2026 2:08:31 PM org.esiea.festicore.Main main
+WARNING: Wrong menu choice entered by user.
+janv. 14, 2026 2:08:31 PM org.esiea.festicore.Main main
+INFO: Waiting for user commands...
+janv. 14, 2026 2:08:39 PM org.esiea.festicore.Main main
+INFO: User logged in: blt@blt.fr
+janv. 14, 2026 2:08:40 PM org.esiea.festicore.User account
+INFO: User accessed account: blt
+janv. 14, 2026 2:09:05 PM org.esiea.festicore.User account
+INFO: User logging out: blt
+janv. 14, 2026 2:09:05 PM org.esiea.festicore.Main main
+INFO: Waiting for user commands...
+janv. 14, 2026 2:09:06 PM org.esiea.festicore.Main main
+INFO: Application exiting by user request.

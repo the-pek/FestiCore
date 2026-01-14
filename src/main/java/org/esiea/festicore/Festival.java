@@ -1,17 +1,19 @@
 package org.esiea.festicore;
 
+import org.esiea.festicore.Enumeration.ArtistName;
+
 import java.util.Map;
 import java.util.TreeSet;
 
 public class Festival {
     private String name;
     private TreeSet<Stage> stages;
-    private TreeSet<Artist> artists;
+    private TreeSet<ArtistName> artists;
     private TreeSet<Concert> concerts;
     private Map<String, User> users;
     private Map<String, Reservation> reservations;
 
-    public Festival(String name, TreeSet<Stage> stages, TreeSet<Artist> artists, TreeSet<Concert> concerts, Map<String, User> users, Map<String, Reservation> reservations) {
+    public Festival(String name, TreeSet<Stage> stages, TreeSet<ArtistName> artists, TreeSet<Concert> concerts, Map<String, User> users, Map<String, Reservation> reservations) {
         this.name = name;
         this.stages = stages;
         this.artists = artists;
@@ -20,7 +22,14 @@ public class Festival {
         this.reservations = reservations;
     }
 
-    public Festival() {}
+    public Festival() {
+        this.name = "FestiCore";
+        this.stages = new TreeSet<>();
+        this.artists = new TreeSet<>();
+        this.concerts = new TreeSet<>();
+        this.users = new java.util.HashMap<>();
+        this.reservations = new java.util.HashMap<>();
+    }
 
     //All getters and setters
     public String getName() {
@@ -39,11 +48,11 @@ public class Festival {
         this.stages = stages;
     }
 
-    public TreeSet<Artist> getArtists() {
+    public TreeSet<ArtistName> getArtists() {
         return artists;
     }
 
-    public void setArtists(TreeSet<Artist> artists) {
+    public void setArtists(TreeSet<ArtistName> artists) {
         this.artists = artists;
     }
 
@@ -79,7 +88,7 @@ public class Festival {
         StringBuilder program = new StringBuilder("Festival " + name + " Program:\n");
         for (Concert concert : concerts) {
             program.append("Concert: ").append(concert.getName())
-                   .append(", Artist: ").append(concert.getArtist().getName())
+                   .append(", Artist: ").append(concert.getArtistName())
                    .append(", Stage: ").append(concert.getStage().getName())
                    .append(", Start Time: ").append(concert.getStartDateTime())
                    .append(", Duration: ").append(concert.getDuration().toMinutes()).append(" min\n");

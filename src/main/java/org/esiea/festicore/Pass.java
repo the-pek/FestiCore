@@ -12,8 +12,15 @@ public class Pass extends Reservation{
         logger.info("Pass created: " + id + " type=" + passType);
     }
 
+    public Pass() {
+
+    }
+
     public PassType getPassType() {
         return passType;
+    }
+    public void setPassType(PassType passType) {
+        this.passType = passType;
     }
 
     @Override

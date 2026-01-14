@@ -4,7 +4,7 @@ import org.esiea.festicore.Enumeration.TicketType;
 import java.time.LocalDate;
 
 public class Tickets extends Reservation {
-    private final TicketType ticketType;
+    private TicketType ticketType;
     private static final java.util.logging.Logger logger = LogManager.getLogger();
 
     public Tickets(String id, float price, LocalDate validityDate, int quota, TicketType ticketType) {
@@ -13,8 +13,15 @@ public class Tickets extends Reservation {
         logger.info("Ticket created: " + id + " type=" + ticketType);
     }
 
+    public Tickets() {
+
+    }
+
     public TicketType getTicketType() {
         return ticketType;
+    }
+    public void setTicketType(TicketType ticketType) {
+        this.ticketType = ticketType;
     }
 
     @Override

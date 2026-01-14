@@ -1,46 +1,10 @@
 [ {
-  "id" : "USER-544c2193-e71d-4482-a905-993f6650e9d1",
-  "name" : "alex",
-  "email" : "alex@alex.fr",
-  "phone" : "0771812590",
+  "id" : "USER-862c7a8d-ceab-49d5-819a-c8ffdd37b72f",
+  "name" : "Pierre",
+  "email" : "pierre@email.com",
+  "phone" : "0768107148",
   "card" : null,
-  "password" : "266712194",
-  "registrationDate" : [ 2026, 1, 14 ],
-  "history" : [ ]
-}, {
-  "id" : "USER-36bceddb-8703-41fd-aad6-a3455ebfee6c",
-  "name" : "blt",
-  "email" : "blt@blt.fr",
-  "phone" : "0771812590",
-  "card" : null,
-  "password" : "8690158",
-  "registrationDate" : [ 2026, 1, 14 ],
-  "history" : [ ]
-}, {
-  "id" : "USER-911829a9-38e7-4577-a8b5-f13d5b481300",
-  "name" : "h",
-  "email" : "h@h.fr",
-  "phone" : "0771812590",
-  "card" : null,
-  "password" : "9276",
-  "registrationDate" : [ 2026, 1, 14 ],
-  "history" : [ ]
-}, {
-  "id" : "USER-fe02f671-543a-4f48-a7ed-335e76855866",
-  "name" : "g",
-  "email" : "g@g.fr",
-  "phone" : "0123456789",
-  "card" : null,
-  "password" : "9187",
-  "registrationDate" : [ 2026, 1, 14 ],
-  "history" : [ ]
-}, {
-  "id" : "USER-f14e4c76-68fa-4697-8696-ad84b6a418b3",
-  "name" : "r",
-  "email" : "r@r.fr",
-  "phone" : "0123456789",
-  "card" : null,
-  "password" : "10166",
+  "password" : "316528342",
   "registrationDate" : [ 2026, 1, 14 ],
   "history" : [ ]
 } ]

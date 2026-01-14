@@ -12,7 +12,7 @@ public class LogManager {
     public static void setup() {
         Properties props = new Properties();
 
-        try (FileInputStream fis = new FileInputStream("application.properties")) {
+        try (FileInputStream fis = new FileInputStream("src/main/resources/application.properties")) {
             props.load(fis);
             props.load(fis);
             

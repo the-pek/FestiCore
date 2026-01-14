@@ -1,23 +1,25 @@
 package org.esiea.festicore;
 
+import org.esiea.festicore.Enumeration.ArtistName;
+
 import java.time.Duration;
 import java.time.LocalDate;
 
 public class Concert implements Comparable<Concert> {
     private String name;
-    private Artist artist;
+    private ArtistName artistName;
     private Stage stage;
-    private LocalDate StartDateTime;
+    private LocalDate startDateTime;
     private Duration duration;
     private static final java.util.logging.Logger logger = LogManager.getLogger();
-    
-    public Concert(String name, Artist artist, Stage stage, LocalDate startDateTime, Duration duration) {
+
+    public Concert(String name, ArtistName artistName, Stage stage, LocalDate startDateTime, Duration duration) {
         this.name = name;
-        this.artist = artist;
+        this.artistName = artistName;
         this.stage = stage;
-        this.StartDateTime = startDateTime;
+        this.startDateTime = startDateTime;
         this.duration = duration;
-        logger.info("Concert created: " + name + " artist=" + (artist==null?"null":artist.getName()) + " stage=" + (stage==null?"null":stage.getName()));
+        logger.info("Concert created: " + name + " artist=" + getArtistName() + " stage=" + (stage==null?"null":stage.getName()));
     }
 
     public String getName() {
@@ -29,13 +31,13 @@ public class Concert implements Comparable<Concert> {
         logger.fine("Concert renamed to: " + name);
     }
 
-    public Artist getArtist() {
-        return artist;
+    public ArtistName getArtistName() {
+        return artistName;
     }
 
-    public void setArtist(Artist artist) {
-        this.artist = artist;
-        logger.fine("Concert artist set: " + (artist==null?"null":artist.getName()));
+    public void setArtistName(ArtistName artistName) {
+        this.artistName = artistName;
+        logger.fine("Concert artist set: " + getArtistName());
     }
 
     public Stage getStage() {
@@ -48,11 +50,11 @@ public class Concert implements Comparable<Concert> {
     }
 
     public LocalDate getStartDateTime() {
-        return StartDateTime;
+        return startDateTime;
     }
 
     public void setStartDateTime(LocalDate startDateTime) {
-        this.StartDateTime = startDateTime;
+        this.startDateTime = startDateTime;
         logger.fine("Concert start time set: " + startDateTime);
     }
 
@@ -71,20 +73,20 @@ public class Concert implements Comparable<Concert> {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
         Concert concert = (Concert) obj;
-        return name.equals(concert.name) && artist.equals(concert.artist) && stage.equals(concert.stage) && StartDateTime.equals(concert.StartDateTime);
+        return name.equals(concert.name) && artistName.equals(concert.artistName) && stage.equals(concert.stage) && startDateTime.equals(concert.startDateTime);
     }
 
     @Override
     public int hashCode() {
         int result = name.hashCode();
-        result = 31 * result + artist.hashCode();
+        result = 31 * result + artistName.hashCode();
         result = 31 * result + stage.hashCode();
-        result = 31 * result + StartDateTime.hashCode();
+        result = 31 * result + startDateTime.hashCode();
         return result;
     }
 
     public int compareTo(Concert other) {
-        int dateComparison = this.StartDateTime.compareTo(other.StartDateTime);
+        int dateComparison = this.startDateTime.compareTo(other.startDateTime);
         if (dateComparison != 0) {
             return dateComparison;
         }
@@ -92,6 +94,6 @@ public class Concert implements Comparable<Concert> {
         if (stageComparison != 0) {
             return stageComparison;
         }
-        return this.artist.getName().compareTo(other.artist.getName());
+        return this.getArtistName().compareTo(other.getArtistName());
     }
 }

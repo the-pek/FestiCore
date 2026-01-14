@@ -3,13 +3,24 @@ package org.esiea.festicore;
 import org.esiea.festicore.Exceptions.ReservationException;
 
 import java.time.LocalDate;
+import java.util.logging.Logger;
+
+import com.fasterxml.jackson.annotation.JsonSubTypes;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+
+@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.PROPERTY, property = "kind")
+@JsonSubTypes({
+        @JsonSubTypes.Type(value = Tickets.class, name = "TICKET"),
+        @JsonSubTypes.Type(value = Pass.class, name = "PASS"),
+        @JsonSubTypes.Type(value = Activity.class, name = "ACTIVITY")
+})
 
 public abstract class Reservation {
-    private final String id;
+    private String id;
     private float price;
     private LocalDate validityDate;
     private int quota;
-    private static final java.util.logging.Logger logger = LogManager.getLogger();
+    Logger logger = LogManager.getLogger();
 
     public Reservation(String id, float price, LocalDate validityDate, int quota) {
         this.id = id;
@@ -18,8 +29,15 @@ public abstract class Reservation {
         this.quota = quota;
     }
 
+    public Reservation() {
+
+    }
+
     public String getId() {
         return id;
+    }
+    public void setId(String id) {
+        this.id = id;
     }
 
     public float getPrice() {
@@ -57,6 +75,4 @@ public abstract class Reservation {
     }
 
     public abstract double calculatePrice();
-
-    //Redifine 
 }

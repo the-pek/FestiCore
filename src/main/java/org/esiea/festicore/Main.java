@@ -1,17 +1,20 @@
 package org.esiea.festicore;
 import org.esiea.festicore.service.BookingService;
+import org.esiea.festicore.service.JsonDataManager;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 
 public class Main {
-    static void main() {
+    static void main() throws IOException {
         Scanner sc = new Scanner(System.in);
         JsonDataManager storageData = new JsonDataManager();
         BookingService bookingService = new BookingService();
+        Festival festival = new Festival();
 
         List<User> users;
 
@@ -27,10 +30,17 @@ public class Main {
             logger.warning("Users loaded: 0 (file not found or unreadable)");
         }
 
+        Map<String, Reservation> stock = storageData.loadReservations();
+        if (stock.isEmpty()) {
+            stock = bookingService.createDefaultReservations();
+            storageData.saveReservations(stock);
+            IO.println("Storage was not load");
+        }
+        festival.setReservations(stock);
+
 
         String choix;
-        User currentUser = null;
-        Festival festival = new Festival(); // ou chargé ailleurs
+        User currentUser;
 
 
             System.out.println(" ");
@@ -38,8 +48,8 @@ public class Main {
             System.out.println("                     WELCOME TO FESTICORE                   ");
             System.out.println("============================================================");
             System.out.println(" ");
+
         do {
-            
             System.out.println("Select an action to perform :");
             System.out.println("1.Login -c");
             System.out.println("2.Signup -i");

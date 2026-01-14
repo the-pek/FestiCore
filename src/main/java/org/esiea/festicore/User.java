@@ -36,8 +36,6 @@ public class User extends Main  {
     
     }
 
-    
-
     // Getters and setters for each field
     public String getId() {
         return Id;

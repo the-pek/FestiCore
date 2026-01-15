@@ -3,6 +3,7 @@ import org.esiea.festicore.Exceptions.ReservationException;
 import org.esiea.festicore.service.BookingService;
 import org.esiea.festicore.service.JsonDataManager;
 import org.esiea.festicore.service.LogManager;
+import org.esiea.festicore.service.PDFGenerator;
 
 import java.io.IOException;
 import java.util.*;

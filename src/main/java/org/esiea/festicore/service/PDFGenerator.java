@@ -1,9 +1,11 @@
-package org.esiea.festicore;
+package org.esiea.festicore.service;
 import com.lowagie.text.Document;
 import com.lowagie.text.DocumentException;
 import com.lowagie.text.Paragraph;
 import com.lowagie.text.pdf.PdfWriter;
-import org.esiea.festicore.service.LogManager;
+import org.esiea.festicore.*;
+
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.logging.Level;
@@ -16,7 +18,13 @@ public class PDFGenerator {
 
     public void generateTicket(User user, Reservation reservation) {
         Document document = new Document();
-        String fileName = "Ticket_" + reservation.getId() + ".pdf";
+        String directoryPath = "data/reservations";
+        File directory = new File(directoryPath);
+        if (!directory.exists()) {
+            directory.mkdirs();
+        }
+
+        String fileName = directoryPath + "/Ticket_" + reservation.getId() + ".pdf";
         
         try {
             LogManager.log(Level.INFO, "Starting PDF generation for user: " + user.getName() + ", reservation ID: " + reservation.getId());

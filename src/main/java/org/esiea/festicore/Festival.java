@@ -2,7 +2,7 @@ package org.esiea.festicore;
 
 import org.esiea.festicore.Enumeration.ArtistName;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Map;
 import java.util.TreeSet;
 
@@ -97,7 +97,7 @@ public class Festival {
                 "Concert_Damso",
                 ArtistName.Damso,
                 mainStage,
-                java.time.LocalDate.parse("2026-07-15T18:00:00"),
+                java.time.LocalDateTime.parse("2026-07-15T18:00:00"),
                 java.time.Duration.ofMinutes(90)
         ));
 
@@ -105,7 +105,7 @@ public class Festival {
                 "Concert_Booba",
                 ArtistName.Booba,
                 secondStage,
-                java.time.LocalDate.parse("2026-07-15T20:00:00"),
+                java.time.LocalDateTime.parse("2026-07-15T20:00:00"),
                 java.time.Duration.ofMinutes(75)
         ));
     }

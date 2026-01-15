@@ -41,7 +41,7 @@
     "id" : "A_MASTERCLASS_BOOBA",
     "price" : 180.0,
     "validityDate" : [ 2026, 7, 15 ],
-    "quota" : 2,
+    "quota" : 3,
     "activityType" : "MASTERCLASS",
     "artistName" : "Booba",
     "duration" : 5400.000000000,

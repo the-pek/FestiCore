@@ -32,7 +32,7 @@ public class OrgaTest {
     void createConcertTest() {
         ArtistName artist = ArtistName.Ninho;
         Stage stage = new Stage("Test Stage", 500);
-        LocalDate date = LocalDate.of(2024, 7, 20);
+        LocalDateTime date = LocalDateTime.of(2024, 7, 20, 10, 12);
         Concert concert = new Concert("Test Concert", artist, stage, date, java.time.Duration.ofHours(2));
 
         assertNotNull(concert, "Concert should not be null after creation");
@@ -79,7 +79,7 @@ public class OrgaTest {
     void equalsConcertTest() {
         ArtistName artist = ArtistName.Booba;
         Stage stage = new Stage("Test Stage", 500);
-        LocalDate date = LocalDate.of(2024, 7, 20);
+        LocalDateTime date = LocalDateTime.of(2024, 7, 20, 10, 12);
 
         Concert concert1 = new Concert("Same Concert", artist, stage, date, java.time.Duration.ofHours(2));
         Concert concert2 = new Concert("Same Concert", artist, stage, date, java.time.Duration.ofHours(3));

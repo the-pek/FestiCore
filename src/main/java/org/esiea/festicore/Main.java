@@ -16,7 +16,7 @@ public class Main {
         JsonDataManager storageData = new JsonDataManager();
         BookingService bookingService = new BookingService();
         Festival festival = new Festival();
-        //festival.initDefaultProgram();
+        festival.initDefaultProgram();
 
         List<User> users;
 

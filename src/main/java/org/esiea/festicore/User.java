@@ -153,13 +153,14 @@ public class User {
 
         System.out.println("---Welcome to your account " + name + "---");
         logger.info("User accessed account: " + name);
+        System.out.println(" ");
         System.out.println("Select an action to perform :");
-            System.out.println("1.Show all hitory -a");
-            System.out.println("2.Search reservation -r");
-            System.out.println("3.Buy reservation -b");
-            System.out.println("4.Show program -p");
-            System.out.println("5.Quit -q");
-            System.out.println("6.Help -h");
+        System.out.println("1.Show all hitory -a");
+        System.out.println("2.Search reservation -r");
+        System.out.println("3.Buy reservation -b");
+        System.out.println("4.Show program -p");
+        System.out.println("5.Quit -q");
+        System.out.println("6.Help -h");
         while (!exit) {
             command = scanner.nextLine().trim();
             switch (command) {
@@ -239,6 +240,7 @@ public class User {
                             if (save.equals("yes")) {
                                 this.setCard(cardToUse);
                                 System.out.println("Card saved.");
+                                logger.info(name + " saved a card.");
                             }
                         }
 
@@ -247,6 +249,7 @@ public class User {
                         String confirm = scanner.nextLine().trim().toLowerCase();
                         if (!confirm.equals("yes")) {
                             System.out.println("Payment cancelled.");
+                            logger.info(name + " cancelled the payment.");
                             break;
                         }
 
@@ -256,11 +259,11 @@ public class User {
                         storageData.saveReservations(festival.getReservations());
 
                         System.out.println("Reservation successful. Price: " + reservationToBook.calculatePrice() + "€");
-                        logger.info("Reservation booked: " + code + " for user: " + this.name);
+                        logger.info("Reservation booked: " + code + " for : " + this.name);
 
                     } catch (ReservationException e) {
                         System.out.println("Booking failed: " + e.getMessage());
-                        logger.severe("Booking failed for user " + this.email + ": " + e.getMessage());
+                        logger.severe("Booking failed for " + this.name + ": " + e.getMessage());
                     } catch (IOException e) {
                         System.out.println("Booking ok, but failed to save stock: " + e.getMessage());
                         logger.severe("Stock save failed after booking. code=" + code + " user=" + this.email + " err=" + e.getMessage());
@@ -271,32 +274,30 @@ public class User {
                 //Command to show program
                 case "-p":
                     System.out.println(festival.showProgram());
+                    logger.info(name + " looked for the festival's program.");
                     break;
                 //Command to display help
                 case "-h":
-                    this.displayHelp();
+                    System.out.println(" ");
+                    System.out.println("Account Help Menu:");
+                    System.out.println("-a : Show reservation history");
+                    System.out.println("-r : Find a reservation");
+                    System.out.println("-b : Buy a reservation");
+                    System.out.println("-p : Show festival program");
+                    System.out.println("-q : Logout");
+                    System.out.println(" ");
                     break;
                 //Command to logout
                 case "-q":
                     exit = true;
                     System.out.println("Logging out...");
-                    logger.info("User logging out: " + name);
+                    logger.info(name + "logged out");
                     break;
                 default:
                     System.out.println("Unknown command. For help, type -h.");
             }
         }
     }
-
-    public void displayHelp() {
-        System.out.println("Account Help Menu:");
-        System.out.println("-a : Show reservation history");
-        System.out.println("-r : Find a reservation");
-        System.out.println("-b : Buy a reservation");
-        System.out.println("-p : Show festival program");
-        System.out.println("-q : Logout");
-    }
-
 
     public void addReservation(Reservation reservation) {
         if (history == null) {

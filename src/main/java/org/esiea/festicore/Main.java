@@ -16,6 +16,7 @@ public class Main {
         JsonDataManager storageData = new JsonDataManager();
         BookingService bookingService = new BookingService();
         Festival festival = new Festival();
+        //festival.initDefaultProgram();
 
         List<User> users;
 
@@ -53,9 +54,9 @@ public class Main {
             System.out.println("============================================================");
             System.out.println("                     WELCOME TO FESTICORE                   ");
             System.out.println("============================================================");
-            System.out.println(" ");
 
         do {
+            System.out.println(" ");
             System.out.println("Select an action to perform :");
             System.out.println("1.Login -c");
             System.out.println("2.Signup -i");
@@ -65,7 +66,6 @@ public class Main {
             System.out.println("============================================================");
             System.out.println(" ");
 
-            logger.info("Waiting for user commands...");
             choix = sc.nextLine();
             System.out.println("============================================================");
 
@@ -86,14 +86,20 @@ public class Main {
                     }
                     if (currentUser == null) {
                         System.err.println("Invalid credentials. Please try again.");
-                        logger.warning("Invalid credentials attempt for email: " + mail);
+                        logger.warning("Invalid credentials attempt for : " + mail);
                         System.out.println(" ");
                     } else {
                         System.out.println(" ");
                         System.out.println("Login successful");
-                        logger.info("User logged in: " + currentUser.getEmail());
+                        logger.info(currentUser.getName() + " just logged in");
                         System.out.println("============================================================");
                         currentUser.account(sc, festival, bookingService, storageData);
+                        try {
+                            storageData.saveUsers(users);
+                        } catch (IOException e) {
+                            System.err.println("Warning: Failed to save user data: " + e.getMessage());
+                            logger.warning("Failed to save users after account operations: " + e.getMessage());
+                        }
                     }
                     break;
                 case  "-i":
@@ -121,7 +127,7 @@ public class Main {
                     break;
                 case  "-q":
                     System.out.println("Bye!");
-                    logger.info("Application exiting by user request.");
+                    logger.info("Exiting application.");
                     return;
 
                 case "-h":
@@ -130,6 +136,7 @@ public class Main {
                     System.out.println("-i : Create a new account");
                     System.out.println("-q : Quit the application");
                     System.out.println("-h : Display this help menu");
+                    System.out.println("============================================================");
                     break;
                 default:
                     System.err.println("Unknown command. For help, type -h.");

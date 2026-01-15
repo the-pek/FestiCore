@@ -30,7 +30,7 @@ public class BookingService {
 
         reservation.decrementerQuota();
         user.addReservation(reservation.copyForHistory());
-        logger.info("Booking successful: user=" + user.getEmail() + ", reservation=" + reservation.getId());
+        logger.info("Booking successful: user=" + user.getName() + ", reservation=" + reservation.getId());
 
         return reservation;
     }
@@ -107,7 +107,7 @@ public class BookingService {
         }
         for (Map.Entry<String, Reservation> e : festival.getReservations().entrySet()) {
             Reservation r = e.getValue();
-            System.out.println(e.getKey() + " | id=" + r.getId() + " | price=" + r.calculatePrice() + " | quota=" + r.getQuota());
+            System.out.println("- Code: " + e.getKey() + " | price=" + r.calculatePrice() );
         }
     }
 }

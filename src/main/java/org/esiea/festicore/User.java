@@ -1,8 +1,10 @@
 package org.esiea.festicore;
 import org.esiea.festicore.Exceptions.ReservationException;
 import org.esiea.festicore.service.BookingService;
+import org.esiea.festicore.service.JsonDataManager;
 import org.esiea.festicore.service.LogManager;
 
+import java.io.IOException;
 import java.util.*;
 import java.time.LocalDate;
 
@@ -145,7 +147,7 @@ public class User {
     }
 
     //Method to make all account operations a user needs
-    public void account(Scanner scanner, Festival festival, BookingService bookingService) {
+    public void account(Scanner scanner, Festival festival, BookingService bookingService, JsonDataManager storageData) {
         boolean exit = false;
         String command;
 
@@ -185,8 +187,7 @@ public class User {
                     } else {
                         System.out.println("Found: code=" + codeToFind
                                 + " | id=" + found.getId()
-                                + " | price=" + found.calculatePrice()
-                                + " | quota=" + found.getQuota());
+                                + " | price=" + found.calculatePrice());
                     }
                     break;
 
@@ -236,7 +237,7 @@ public class User {
                             System.out.print("Save this card for future purchases? (yes/no): ");
                             String save = scanner.nextLine().trim().toLowerCase();
                             if (save.equals("yes")) {
-                                this.card = enteredCard; // or setCard(enteredCard)
+                                setCard(enteredCard);
                                 System.out.println("Card saved.");
                             }
                         }
@@ -252,13 +253,17 @@ public class User {
                         System.out.println("Processing payment with card: " + cardToUse + " ...");
 
                         bookingService.book(this, reservationToBook);
+                        storageData.saveReservations(festival.getReservations());
 
                         System.out.println("Reservation successful. Price: " + reservationToBook.calculatePrice() + "€");
-                        logger.info("Reservation booked: " + code + " for user: " + this.email);
+                        logger.info("Reservation booked: " + code + " for user: " + this.name);
 
                     } catch (ReservationException e) {
                         System.out.println("Booking failed: " + e.getMessage());
                         logger.severe("Booking failed for user " + this.email + ": " + e.getMessage());
+                    } catch (IOException e) {
+                        System.out.println("Booking ok, but failed to save stock: " + e.getMessage());
+                        logger.severe("Stock save failed after booking. code=" + code + " user=" + this.email + " err=" + e.getMessage());
                     }
                     break;
 
@@ -286,7 +291,7 @@ public class User {
     public void displayHelp() {
         System.out.println("Account Help Menu:");
         System.out.println("-a : Show reservation history");
-        System.out.println("-r : Find a reservation by ID");
+        System.out.println("-r : Find a reservation");
         System.out.println("-b : Buy a reservation");
         System.out.println("-p : Show festival program");
         System.out.println("-q : Logout");

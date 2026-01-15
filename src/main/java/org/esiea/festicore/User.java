@@ -260,6 +260,11 @@ public class User {
 
                         System.out.println("Reservation successful. Price: " + reservationToBook.calculatePrice() + "€");
                         logger.info("Reservation booked: " + code + " for : " + this.name);
+                        
+                        // Generate PDF ticket
+                        PDFGenerator pdfGenerator = new PDFGenerator();
+                        pdfGenerator.generateTicket(this, reservationToBook);
+                        System.out.println("PDF Ticket generated and saved.");
 
                     } catch (ReservationException e) {
                         System.out.println("Booking failed: " + e.getMessage());

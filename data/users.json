@@ -33,4 +33,27 @@
     "quota" : 1,
     "ticketType" : "day"
   } ]
+}, {
+  "id" : "USER-2f21ca6f-fa1e-4a9b-be12-816144526eb4",
+  "name" : "test",
+  "email" : "test@test.fr",
+  "phone" : "0771812590",
+  "card" : "1111 1111 1111 1111",
+  "password" : "316528342",
+  "registrationDate" : [ 2026, 1, 15 ],
+  "history" : [ {
+    "kind" : "TICKET",
+    "id" : "T_3Day",
+    "price" : 240.0,
+    "validityDate" : [ 2026, 7, 15 ],
+    "quota" : 1,
+    "ticketType" : "Three_day"
+  }, {
+    "kind" : "PASS",
+    "id" : "P_VIP",
+    "price" : 250.0,
+    "validityDate" : [ 2026, 7, 15 ],
+    "quota" : 1,
+    "passType" : "VIP"
+  } ]
 } ]

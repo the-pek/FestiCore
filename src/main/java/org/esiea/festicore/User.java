@@ -3,6 +3,7 @@ import org.esiea.festicore.Exceptions.ReservationException;
 import org.esiea.festicore.service.BookingService;
 import org.esiea.festicore.service.JsonDataManager;
 import org.esiea.festicore.service.LogManager;
+import org.esiea.festicore.service.PDFGenerator;
 
 import java.io.IOException;
 import java.util.*;
@@ -260,6 +261,11 @@ public class User {
 
                         System.out.println("Reservation successful. Price: " + reservationToBook.calculatePrice() + "€");
                         logger.info("Reservation booked: " + code + " for : " + this.name);
+                        
+                        // Generate PDF ticket
+                        PDFGenerator pdfGenerator = new PDFGenerator();
+                        pdfGenerator.generateTicket(this, reservationToBook);
+                        System.out.println("PDF Ticket generated and saved.");
 
                     } catch (ReservationException e) {
                         System.out.println("Booking failed: " + e.getMessage());

@@ -2,7 +2,6 @@ package org.esiea.festicore;
 
 import org.esiea.festicore.Enumeration.ArtistName;
 
-import java.time.LocalDateTime;
 import java.util.Map;
 import java.util.TreeSet;
 

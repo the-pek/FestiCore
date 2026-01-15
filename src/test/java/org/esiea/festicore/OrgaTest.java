@@ -91,6 +91,7 @@ public class OrgaTest {
 
     @Test
     @DisplayName("Test T-ORGA-08")
+    @SuppressWarnings("unused")
     void compareToArtistTest() {
         ArtistName artist1 = ArtistName.Damso;
         ArtistName artist2 = ArtistName.Booba;
@@ -111,6 +112,7 @@ public class OrgaTest {
 
     @Test
     @DisplayName("Test T-ORGA-10")
+    @SuppressWarnings("unused")
     void compareToConcertTest() {
         ArtistName artist = ArtistName.Gims;
         Stage stage = new Stage("Test Stage", 500);

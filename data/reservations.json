@@ -34,7 +34,7 @@
     "id" : "T_Day",
     "price" : 80.0,
     "validityDate" : [ 2026, 7, 15 ],
-    "quota" : 2,
+    "quota" : 3,
     "ticketType" : "day"
   },
   "Activity_MasterC_BOOBA" : {

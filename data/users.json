@@ -1,28 +1,31 @@
 [ {
-  "id" : "USER-862c7a8d-ceab-49d5-819a-c8ffdd37b72f",
-  "name" : "Pierre",
-  "email" : "pierre@email.com",
+  "id" : "USER-5c1a9091-fba3-47ef-810f-22091f1174db",
+  "name" : "Pierre-Edwin",
+  "email" : "pierre@test.fr",
   "phone" : "0768107148",
-  "card" : null,
-  "password" : "316528342",
-  "registrationDate" : [ 2026, 1, 14 ],
-  "history" : [ ]
-}, {
-  "id" : "USER-ef51d375-17c1-4f14-9c8a-1b3d020ce547",
-  "name" : "alex",
-  "email" : "alex@test.com",
-  "phone" : "0712345689",
-  "card" : "2222 2222 2222 2222",
-  "password" : "1222447771",
-  "registrationDate" : [ 2026, 1, 15 ],
+  "card" : "0000 1111 2222 3333",
+  "password" : "-1617025971",
+  "registrationDate" : null,
   "history" : [ {
-    "kind" : "PASS",
-    "id" : "P_VIP",
-    "price" : 250.0,
+    "kind" : "ACTIVITY",
+    "id" : "A_MASTERCLASS_BOOBA",
+    "price" : 180.0,
     "validityDate" : [ 2026, 7, 15 ],
     "quota" : 1,
-    "passType" : "VIP"
-  }, {
+    "activityType" : "MASTERCLASS",
+    "artistName" : "Booba",
+    "duration" : 5400.000000000,
+    "startTime" : [ 2026, 7, 15, 14, 0 ]
+  } ]
+}, {
+  "id" : "USER-5b9831d0-2fd5-4b70-936c-2e0879867ef0",
+  "name" : "Alex",
+  "email" : "alex@test.fr",
+  "phone" : "0987654321",
+  "card" : null,
+  "password" : "-237113721",
+  "registrationDate" : [ 2026, 1, 15 ],
+  "history" : [ {
     "kind" : "TICKET",
     "id" : "T_Day",
     "price" : 80.0,

@@ -94,6 +94,12 @@ public class Main {
                         logger.info("User logged in: " + currentUser.getEmail());
                         System.out.println("============================================================");
                         currentUser.account(sc, festival, bookingService, storageData);
+                        try {
+                            storageData.saveUsers(users);
+                        } catch (IOException e) {
+                            logger.severe("Failed to save users after account operations: " + e.getMessage());
+                            System.err.println("Warning: Failed to save user data: " + e.getMessage());
+                        }
                     }
                     break;
                 case  "-i":

@@ -27,14 +27,14 @@
     "id" : "P_VIP",
     "price" : 250.0,
     "validityDate" : [ 2026, 7, 15 ],
-    "quota" : 2,
+    "quota" : 3,
     "passType" : "VIP"
   },
   "Ticket_Day" : {
     "id" : "T_Day",
     "price" : 80.0,
     "validityDate" : [ 2026, 7, 15 ],
-    "quota" : 3,
+    "quota" : 2,
     "ticketType" : "day"
   },
   "Activity_MasterC_BOOBA" : {

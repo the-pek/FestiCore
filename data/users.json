@@ -3,17 +3,26 @@
   "name" : "Pierre",
   "email" : "pierre@email.com",
   "phone" : "0768107148",
-  "card" : null,
   "password" : "316528342",
   "registrationDate" : [ 2026, 1, 14 ],
-  "history" : [ ]
+  "history" : [ ],
+  "card" : null
 }, {
   "id" : "USER-ef51d375-17c1-4f14-9c8a-1b3d020ce547",
   "name" : "alex",
   "email" : "alex@test.com",
   "phone" : "0712345689",
-  "card" : null,
   "password" : "1222447771",
   "registrationDate" : [ 2026, 1, 15 ],
-  "history" : [ ]
+  "history" : [ ],
+  "card" : null
+}, {
+  "id" : "USER-46bd74df-8cf8-45a7-8920-eb3c1dc511a5",
+  "name" : "test",
+  "email" : "test@test.com",
+  "phone" : "0123456789",
+  "password" : "-758809521",
+  "registrationDate" : [ 2026, 1, 15 ],
+  "history" : [ ],
+  "card" : null
 } ]

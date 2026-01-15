@@ -220,7 +220,7 @@ public class User {
                             String useSaved = scanner.nextLine().trim().toLowerCase();
 
                             if (useSaved.equals("yes")) {
-                                cardToUse = this.card;
+                                cardToUse = getCard();
                             }
                         }
 
@@ -237,7 +237,7 @@ public class User {
                             System.out.print("Save this card for future purchases? (yes/no): ");
                             String save = scanner.nextLine().trim().toLowerCase();
                             if (save.equals("yes")) {
-                                setCard(enteredCard);
+                                this.setCard(cardToUse);
                                 System.out.println("Card saved.");
                             }
                         }

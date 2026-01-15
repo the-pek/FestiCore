@@ -12,8 +12,22 @@
   "name" : "alex",
   "email" : "alex@test.com",
   "phone" : "0712345689",
-  "card" : null,
+  "card" : "2222 2222 2222 2222",
   "password" : "1222447771",
   "registrationDate" : [ 2026, 1, 15 ],
-  "history" : [ ]
+  "history" : [ {
+    "kind" : "PASS",
+    "id" : "P_VIP",
+    "price" : 250.0,
+    "validityDate" : [ 2026, 7, 15 ],
+    "quota" : 1,
+    "passType" : "VIP"
+  }, {
+    "kind" : "TICKET",
+    "id" : "T_Day",
+    "price" : 80.0,
+    "validityDate" : [ 2026, 7, 15 ],
+    "quota" : 1,
+    "ticketType" : "day"
+  } ]
 } ]

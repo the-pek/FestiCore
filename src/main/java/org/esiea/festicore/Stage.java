@@ -1,5 +1,7 @@
 package org.esiea.festicore;
 
+import org.esiea.festicore.service.LogManager;
+
 public class Stage implements Comparable<Stage> {
     private String name;
     private int capacity;

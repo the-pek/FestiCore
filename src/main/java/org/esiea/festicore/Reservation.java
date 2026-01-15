@@ -7,6 +7,7 @@ import java.util.logging.Logger;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import org.esiea.festicore.service.LogManager;
 
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.PROPERTY, property = "kind")
 @JsonSubTypes({
@@ -20,7 +21,8 @@ public abstract class Reservation {
     private float price;
     private LocalDate validityDate;
     private int quota;
-    Logger logger = LogManager.getLogger();
+    private static final Logger LOGGER = LogManager.getLogger();
+
 
     public Reservation(String id, float price, LocalDate validityDate, int quota) {
         this.id = id;
@@ -67,12 +69,13 @@ public abstract class Reservation {
 
     public void decrementerQuota() throws ReservationException {
         if (quota <= 0) {
-            logger.warning("Attempt to decrement quota but none available for reservation: " + id);
-            throw new ReservationException("Unable to complete reservation");
+            LOGGER.warning("Attempt to decrement quota but none available for reservation: " + id);
+            throw new ReservationException("No more availability for reservation: " + id);
         }
         quota--;
-        logger.fine("Quota decremented for reservation " + id + ". New quota: " + quota);
+        LOGGER.info("Quota decremented for reservation " + id + ". New quota: " + quota);
     }
 
     public abstract double calculatePrice();
+    public abstract Reservation copyForHistory();
 }

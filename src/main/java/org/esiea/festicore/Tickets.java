@@ -1,6 +1,8 @@
 package org.esiea.festicore;
 
 import org.esiea.festicore.Enumeration.TicketType;
+import org.esiea.festicore.service.LogManager;
+
 import java.time.LocalDate;
 
 public class Tickets extends Reservation {
@@ -28,5 +30,9 @@ public class Tickets extends Reservation {
     public double  calculatePrice() {
         logger.fine("Calculating ticket price for: " + getId());
         return getPrice();
+    }
+    @Override
+    public Reservation copyForHistory() {
+        return new Tickets(getId(), getPrice(), getValidityDate(), 1, getTicketType());
     }
 }

@@ -1,6 +1,7 @@
 package org.esiea.festicore;
 import org.esiea.festicore.Enumeration.ActivityType;
 import org.esiea.festicore.Enumeration.ArtistName;
+import org.esiea.festicore.service.LogManager;
 
 import java.time.Duration;
 import java.time.LocalDate;
@@ -23,7 +24,7 @@ public class Activity extends Reservation{
     }
 
     public Activity() {
-        logger.info("Activity created: " + getId() + " type=" + activityType + " artist=" + getArtistName());
+
     }
 
     public ActivityType getActivityType() {
@@ -48,4 +49,10 @@ public class Activity extends Reservation{
         logger.fine("Calculating price for activity: " + getId());
         return getPrice();
     }
+    @Override
+    public Reservation copyForHistory() {
+        return new Activity( getId(), getPrice(), getValidityDate(), 1, getActivityType(), getArtistName(), getDuration(), getStartTime());
+    }
+
+
 }

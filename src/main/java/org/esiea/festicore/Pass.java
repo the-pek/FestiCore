@@ -1,5 +1,6 @@
 package org.esiea.festicore;
 import org.esiea.festicore.Enumeration.PassType;
+import org.esiea.festicore.service.LogManager;
 
 import java.time.LocalDate;
 
@@ -28,4 +29,10 @@ public class Pass extends Reservation{
         logger.fine("Calculating pass price for: " + getId());
         return getPrice();
     }
+    @Override
+    public Reservation copyForHistory() {
+        return new Pass(getId(), getPrice(), getValidityDate(), 1, getPassType());
+    }
+
+
 }

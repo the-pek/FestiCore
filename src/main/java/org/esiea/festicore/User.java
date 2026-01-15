@@ -1,7 +1,10 @@
 package org.esiea.festicore;
 import org.esiea.festicore.Exceptions.ReservationException;
 import org.esiea.festicore.service.BookingService;
+import org.esiea.festicore.service.JsonDataManager;
+import org.esiea.festicore.service.LogManager;
 
+import java.io.IOException;
 import java.util.*;
 import java.time.LocalDate;
 
@@ -25,7 +28,7 @@ public class User {
         this.password = password;
         this.registrationDate = registrationDate;
         this.history = history;
-    }   
+    }
 
     // Default constructor required by Jackson for deserialization
     public User() {
@@ -123,7 +126,7 @@ public class User {
         return phone.matches(phoneRegex);
     }
 
-    //Method to crypt password 
+    //Method to crypt password
     public static String hashPassword(String password) {
         return Integer.toString(89 * password.hashCode() + 20);
     }
@@ -143,62 +146,8 @@ public class User {
         return newUser;
     }
 
-    //Method to buy a reservation and add it to the history
-    public void buyReservation(Scanner scanner, Festival festival) {
-        System.out.println("Enter reservation Id to buy:");
-        logger.info("Prompting user to enter reservation id to buy.");
-        String reservationId = scanner.nextLine().trim();
-
-        Reservation reservation = festival.findReservation(reservationId);
-        if (reservation == null) {
-            System.out.println("Reservation not found.");
-            logger.warning("Reservation not found: " + reservationId);
-            return;
-        }
-
-        try {
-            if (history == null) {
-                history = new ArrayList<>();
-            }
-
-            System.out.println("Reservation price: " + reservation.calculatePrice());
-            logger.info("Reservation price displayed: " + reservation.calculatePrice() + " for reservation " + reservationId);
-            if(this.card == null) {
-                System.out.println("Enter your card number to proceed with payment:");
-                logger.info("Prompting for card number for reservation: " + reservationId);
-                String cardNumber = scanner.nextLine().trim();
-                System.out.println("Do you want to save this card for future purchases? (yes/no)");
-                String saveCardResponse = scanner.nextLine().trim().toLowerCase();
-                if (saveCardResponse.equals("yes")) {
-                this.setCard(cardNumber);
-                System.out.println("Card saved successfully.");
-                logger.info("Card saved for user: " + this.email);
-                }
-            }
-
-            System.out.println("Did you want to proceed with the payment? (yes/no)");
-            logger.info("Asking user to confirm payment for reservation: " + reservationId);
-            String paymentResponse = scanner.nextLine().trim().toLowerCase();
-            if (!paymentResponse.equals("yes")) {
-                System.out.println("Payment cancelled.");
-                logger.info("Payment cancelled by user for reservation: " + reservationId);
-                return;
-            }
-            
-            System.out.println("Processing payment...");// Simulate payment processing
-            logger.info("Processing payment for reservation: " + reservationId);
-            history.add(reservation);
-            reservation.decrementerQuota();
-            System.out.println("Reservation purchased successfully!");
-            logger.info("Reservation purchased: " + reservationId + " by user: " + this.email);
-        } catch (Exception e) {
-            System.out.println("Error purchasing reservation: " + e.getMessage());
-            logger.severe("Error purchasing reservation for user " + this.email + ": " + e.getMessage());
-        }
-    }
-
     //Method to make all account operations a user needs
-    public void account(Scanner scanner, Festival festival, BookingService bookingService) {
+    public void account(Scanner scanner, Festival festival, BookingService bookingService, JsonDataManager storageData) {
         boolean exit = false;
         String command;
 
@@ -226,56 +175,102 @@ public class User {
                         }
                     }
                     break;
+
                 //Command to search a reservation by its id
                 case "-r":
-                    System.out.println("Enter reservation ID to find:");
-                    logger.info("Prompting user to enter reservation ID to find.");
-                    String reservationId = scanner.nextLine().trim();
-                    Reservation foundReservation = festival.findReservation(reservationId);
-                    if(foundReservation == null) {
+                    System.out.println("Enter reservation code to find (example: Ticket_Day):");
+                    String codeToFind = scanner.nextLine().trim();
+
+                    Reservation found = festival.findReservation(codeToFind);
+                    if (found == null) {
                         System.out.println("Reservation not found.");
-                        logger.warning("Reservation not found during search: " + reservationId);
                     } else {
-                        System.out.println(foundReservation);
-                        logger.info("Found reservation: " + reservationId);
+                        System.out.println("Found: code=" + codeToFind
+                                + " | id=" + found.getId()
+                                + " | price=" + found.calculatePrice());
                     }
                     break;
 
                 //Command to buy a ticket, pass, activity
                 case "-b":
-                    System.out.println("Enter reservation ID to book:");
-                    logger.info("Prompting user to enter reservation ID to book.");
-                    String resId = scanner.nextLine().trim();
+                    bookingService.printCatalog(festival);
+                    System.out.println("Enter the reservation code to book:");
+                    String code = scanner.nextLine().trim();
 
-                    Reservation reservation = festival.findReservation(resId);
-
-                    if (reservation == null) {
+                    Reservation reservationToBook = festival.findReservation(code);
+                    if (reservationToBook == null) {
                         System.out.println("Reservation not found.");
-                        logger.warning("Attempted booking for non-existent reservation: " + resId);
                         break;
                     }
 
-                    if (this.hasReservation(resId)) {
+                    if (this.hasReservation(reservationToBook.getId())) {
                         System.out.println("You already booked this reservation.");
-                        logger.info("User attempted to re-book reservation already owned: " + resId + " by user " + this.email);
                         break;
                     }
 
                     try {
-                        bookingService.book(this, reservation);
-                        System.out.println(
-                            "Reservation successful. Price: "
-                                + reservation.calculatePrice() + "€"
-                        );
-                        logger.info("Reservation booked: " + resId + " for user: " + this.email + ". Price: " + reservation.calculatePrice());
+                        System.out.println("Price: " + reservationToBook.calculatePrice() + "€");
+
+                        String cardToUse = null;
+
+                        // If a card is already saved, let user choose
+                        if (this.card != null && !this.card.isBlank()) {
+                            System.out.println("A card is already saved.");
+                            System.out.print("Use saved card? (yes/no): ");
+                            String useSaved = scanner.nextLine().trim().toLowerCase();
+
+                            if (useSaved.equals("yes")) {
+                                cardToUse = this.card;
+                            }
+                        }
+
+                        // If no card chosen yet, ask for a new one
+                        if (cardToUse == null) {
+                            System.out.print("Enter card number: ");
+                            String enteredCard = scanner.nextLine().trim();
+                            if (enteredCard.isEmpty()) {
+                                System.out.println("Payment cancelled.");
+                                break;
+                            }
+                            cardToUse = enteredCard;
+
+                            System.out.print("Save this card for future purchases? (yes/no): ");
+                            String save = scanner.nextLine().trim().toLowerCase();
+                            if (save.equals("yes")) {
+                                setCard(enteredCard);
+                                System.out.println("Card saved.");
+                            }
+                        }
+
+                        // Optional: confirm payment
+                        System.out.print("Proceed with payment? (yes/no): ");
+                        String confirm = scanner.nextLine().trim().toLowerCase();
+                        if (!confirm.equals("yes")) {
+                            System.out.println("Payment cancelled.");
+                            break;
+                        }
+
+                        System.out.println("Processing payment with card: " + cardToUse + " ...");
+
+                        bookingService.book(this, reservationToBook);
+                        storageData.saveReservations(festival.getReservations());
+
+                        System.out.println("Reservation successful. Price: " + reservationToBook.calculatePrice() + "€");
+                        logger.info("Reservation booked: " + code + " for user: " + this.name);
+
                     } catch (ReservationException e) {
                         System.out.println("Booking failed: " + e.getMessage());
                         logger.severe("Booking failed for user " + this.email + ": " + e.getMessage());
+                    } catch (IOException e) {
+                        System.out.println("Booking ok, but failed to save stock: " + e.getMessage());
+                        logger.severe("Stock save failed after booking. code=" + code + " user=" + this.email + " err=" + e.getMessage());
                     }
                     break;
+
+
                 //Command to show program
                 case "-p":
-                    festival.showProgram();
+                    System.out.println(festival.showProgram());
                     break;
                 //Command to display help
                 case "-h":
@@ -294,9 +289,9 @@ public class User {
     }
 
     public void displayHelp() {
-        System.out.println("Account Help Menu:");   
+        System.out.println("Account Help Menu:");
         System.out.println("-a : Show reservation history");
-        System.out.println("-r : Find a reservation by ID");
+        System.out.println("-r : Find a reservation");
         System.out.println("-b : Buy a reservation");
         System.out.println("-p : Show festival program");
         System.out.println("-q : Logout");
@@ -309,7 +304,6 @@ public class User {
         }
         history.add(reservation);
     }
-    
     public boolean hasReservation(String reservationId) {
         if (history == null) return false;
         return history.stream()

@@ -2,6 +2,7 @@ package org.esiea.festicore;
 
 import org.esiea.festicore.Enumeration.ArtistName;
 
+import java.time.LocalDate;
 import java.util.Map;
 import java.util.TreeSet;
 
@@ -80,8 +81,9 @@ public class Festival {
         this.reservations = reservations;
     }
 
-    public Reservation findReservation(String Id) {
-        return reservations.get(Id);
+    public Reservation findReservation(String code) {
+        if (reservations == null) return null;
+        return reservations.get(code);
     }
 
     public String showProgram() {

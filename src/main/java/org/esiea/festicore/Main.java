@@ -1,6 +1,7 @@
 package org.esiea.festicore;
 import org.esiea.festicore.service.BookingService;
 import org.esiea.festicore.service.JsonDataManager;
+import org.esiea.festicore.service.LogManager;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,7 +11,7 @@ import java.util.Scanner;
 
 
 public class Main {
-    static void main() throws IOException {
+    static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         JsonDataManager storageData = new JsonDataManager();
         BookingService bookingService = new BookingService();
@@ -30,7 +31,12 @@ public class Main {
             logger.warning("Users loaded: 0 (file not found or unreadable)");
         }
 
-        Map<String, Reservation> stock = storageData.loadReservations();
+        Map<String, Reservation> stock;
+        try {
+            stock = storageData.loadReservations();
+        } catch (IOException e) {
+            stock = new java.util.HashMap<>();
+        }
         if (stock.isEmpty()) {
             stock = bookingService.createDefaultReservations();
             storageData.saveReservations(stock);
@@ -87,7 +93,7 @@ public class Main {
                         System.out.println("Login successful");
                         logger.info("User logged in: " + currentUser.getEmail());
                         System.out.println("============================================================");
-                        currentUser.account(sc, festival, bookingService);
+                        currentUser.account(sc, festival, bookingService, storageData);
                     }
                     break;
                 case  "-i":
@@ -130,6 +136,6 @@ public class Main {
                     logger.warning("Wrong menu choice entered by user.");
                     System.out.println(" ");
             }
-        } while (choix != "-q");
+        } while (!choix.equals("-q"));
     }
 }

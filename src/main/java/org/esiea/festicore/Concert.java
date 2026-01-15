@@ -1,6 +1,7 @@
 package org.esiea.festicore;
 
 import org.esiea.festicore.Enumeration.ArtistName;
+import org.esiea.festicore.service.LogManager;
 
 import java.time.Duration;
 import java.time.LocalDate;

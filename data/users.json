@@ -7,4 +7,13 @@
   "password" : "316528342",
   "registrationDate" : [ 2026, 1, 14 ],
   "history" : [ ]
+}, {
+  "id" : "USER-ef51d375-17c1-4f14-9c8a-1b3d020ce547",
+  "name" : "alex",
+  "email" : "alex@test.com",
+  "phone" : "0712345689",
+  "card" : null,
+  "password" : "1222447771",
+  "registrationDate" : [ 2026, 1, 15 ],
+  "history" : [ ]
 } ]

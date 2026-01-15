@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @DisplayName("Test User Class --- CODE T-USER-XX")
 public class UserTest {
+
     @Test
     @DisplayName("Test T-USER-01")
     void createUserTest() {
@@ -53,7 +54,7 @@ public class UserTest {
         String password = "test";
 
         User user = User.register("Bob", email, "0634567890", password);
-        Boolean loginResult = user.login(email, password);
+        boolean loginResult = user.login(email, password);
         assertTrue(loginResult, "User should be able to login with correct credentials");
     }
 
@@ -65,7 +66,7 @@ public class UserTest {
         String wrongPassword = "wrong";
 
         User user = User.register("Bob", email, "0634567890", password);
-        Boolean loginResult = user.login(email, wrongPassword);
+        boolean loginResult = user.login(email, wrongPassword);
         assertFalse(loginResult, "User should not be able to login with incorrect credentials");
     }
 
@@ -77,7 +78,7 @@ public class UserTest {
         String password = "test"; 
         
         User user = User.register("Bob", email, "0634567890", password);
-        Boolean loginResult = user.login(wrongEmail, password); 
+        boolean loginResult = user.login(wrongEmail, password);
         assertFalse(loginResult, "User should not be able to login with incorrect email");
     }
 }

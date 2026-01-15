@@ -1,0 +1,50 @@
+{
+  "Activity_MEET_DAMSO" : {
+    "id" : "A_MEET_DAMSO",
+    "price" : 250.0,
+    "validityDate" : [ 2026, 7, 15 ],
+    "quota" : 3,
+    "activityType" : "MEET_AND_GREET",
+    "artistName" : "Damso",
+    "duration" : 3600.000000000,
+    "startTime" : [ 2026, 7, 15, 10, 0 ]
+  },
+  "Pass_Classic" : {
+    "id" : "P_Classic",
+    "price" : 100.0,
+    "validityDate" : [ 2026, 7, 15 ],
+    "quota" : 3,
+    "passType" : "classic"
+  },
+  "Ticket_3Day" : {
+    "id" : "T_3Day",
+    "price" : 240.0,
+    "validityDate" : [ 2026, 7, 15 ],
+    "quota" : 3,
+    "ticketType" : "Three_day"
+  },
+  "Pass_VIP" : {
+    "id" : "P_VIP",
+    "price" : 250.0,
+    "validityDate" : [ 2026, 7, 15 ],
+    "quota" : 3,
+    "passType" : "VIP"
+  },
+  "Ticket_Day" : {
+    "id" : "T_Day",
+    "price" : 80.0,
+    "validityDate" : [ 2026, 7, 15 ],
+    "quota" : 3,
+    "ticketType" : "day"
+  },
+  "Activity_MasterC_BOOBA" : {
+    "id" : "A_MASTERCLASS_BOOBA",
+    "price" : 180.0,
+    "validityDate" : [ 2026, 7, 15 ],
+    "quota" : 3,
+    "activityType" : "MASTERCLASS",
+    "artistName" : "Booba",
+    "duration" : 5400.000000000,
+    "startTime" : [ 2026, 7, 15, 14, 0 ]
+  }
+}

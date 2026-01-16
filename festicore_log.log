@@ -1258,3 +1258,45 @@ janv. 15, 2026 9:55:27 PM org.esiea.festicore.service.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=3)
 janv. 15, 2026 9:55:28 PM org.esiea.festicore.Main main
 INFO: Exiting application.
+janv. 16, 2026 8:43:05 AM org.esiea.festicore.service.LogManager setup
+INFO: Logging system initialized. Level: INFO
+janv. 16, 2026 8:43:05 AM org.esiea.festicore.Main main
+INFO: FestiCore application is starting...
+janv. 16, 2026 8:43:06 AM org.esiea.festicore.Tickets <init>
+INFO: Ticket created: T_Day type=day
+janv. 16, 2026 8:43:06 AM org.esiea.festicore.Tickets <init>
+INFO: Ticket created: T_3Day type=Three_day
+janv. 16, 2026 8:43:06 AM org.esiea.festicore.Pass <init>
+INFO: Pass created: P_Classic type=classic
+janv. 16, 2026 8:43:06 AM org.esiea.festicore.Pass <init>
+INFO: Pass created: P_VIP type=VIP
+janv. 16, 2026 8:43:23 AM org.esiea.festicore.Main main
+INFO: Alex just logged in
+janv. 16, 2026 8:43:23 AM org.esiea.festicore.User account
+INFO: User accessed account: Alex
+janv. 16, 2026 8:44:38 AM org.esiea.festicore.User account
+INFO: Alexlogged out
+janv. 16, 2026 8:44:38 AM org.esiea.festicore.service.JsonDataManager saveUsers
+INFO: Saved users to data/users.json (count=3)
+janv. 16, 2026 8:44:46 AM org.esiea.festicore.Main main
+INFO: Exiting application.
+janv. 16, 2026 8:45:11 AM org.esiea.festicore.service.LogManager setup
+INFO: Logging system initialized. Level: INFO
+janv. 16, 2026 8:45:11 AM org.esiea.festicore.Main main
+INFO: FestiCore application is starting...
+janv. 16, 2026 8:45:11 AM org.esiea.festicore.Tickets <init>
+INFO: Ticket created: T_Day type=day
+janv. 16, 2026 8:45:11 AM org.esiea.festicore.Tickets <init>
+INFO: Ticket created: T_3Day type=Three_day
+janv. 16, 2026 8:45:11 AM org.esiea.festicore.Pass <init>
+INFO: Pass created: P_Classic type=classic
+janv. 16, 2026 8:45:11 AM org.esiea.festicore.Pass <init>
+INFO: Pass created: P_VIP type=VIP
+janv. 16, 2026 8:45:14 AM org.esiea.festicore.Main main
+WARNING: Wrong menu choice entered by user.
+janv. 16, 2026 8:45:36 AM org.esiea.festicore.service.JsonDataManager saveUsers
+INFO: Saved users to data/users.json (count=4)
+janv. 16, 2026 8:45:36 AM org.esiea.festicore.Main main
+INFO: New user registered: h@hh.fr
+janv. 16, 2026 10:55:06 AM org.esiea.festicore.Main main
+INFO: Exiting application.

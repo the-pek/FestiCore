@@ -39,7 +39,7 @@ The system provides a robust backend service with proper exception handling, log
 
 1. Clone the repository:
 ```bash
-git clone https://gitlab.esiea.fr/pierre-edwinethan.kengnekengne/festicore.git
+git clone https://github.com/the-pek/FestiCore.git
 cd festicore
 ```
 
@@ -57,7 +57,7 @@ log.level=INFO
 
 4. Run the application:
 ```bash
-mvn exec:java -Dexec.mainClass="org.esiea.festicore.Main"
+mvn exec:java -Dexec.mainClass="org.festicore.festicore.Main"
 ```
 
 ## Usage
@@ -91,13 +91,12 @@ java -jar target/Festicore-1.0-SNAPSHOT.jar
 ```
 festicore/
 ├── src/
-│   ├── main/java/org/esiea/festicore/
+│   ├── main/java/org/festicore/festicore/
 │   │   ├── Activity.java
 │   │   ├── Concert.java
 │   │   ├── Festival.java
 │   │   ├── Main.java
 │   │   ├── Pass.java
-│   │   ├── PDFGenerator.java
 │   │   ├── Reservation.java
 │   │   ├── Stage.java
 │   │   ├── Tickets.java
@@ -114,6 +113,7 @@ festicore/
 │   │   └── service/
 │   │       ├── BookingService.java
 │   │       ├── JsonDataManager.java
+│   │       ├── PDFGenerator.java
 │   │       └── LogManager.java
 │   ├── test/java/org/esiea/festicore/
 │   │   ├── OrgaTest.java
@@ -184,10 +184,7 @@ Generated PDF tickets include:
 
 ## Authors
 
-- **Pierre Edwine Than Kengnekengne** - Initial development
-
-## License
-This project is part of an ESIEA school project.
+- **Pierre-Edwin KENGNE KENGNE** - Initial development
 
 ## Support
 
@@ -200,7 +197,6 @@ For issues or questions:
 
 - [ ] Email notification system for ticket delivery
 - [ ] Advanced analytics and reporting
-- [ ] Mobile application
 - [ ] Integration with external payment gateways
 - [ ] Real-time inventory management
 - [ ] QR code generation for tickets

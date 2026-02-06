@@ -1,1302 +1,1302 @@
-janv. 14, 2026 1:40:56 PM org.esiea.festicore.service.LogManager setup
+janv. 14, 2026 1:40:56 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 14, 2026 1:40:56 PM org.esiea.festicore.Main main
+janv. 14, 2026 1:40:56 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 14, 2026 1:40:56 PM org.esiea.festicore.Main main
+janv. 14, 2026 1:40:56 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 1:42:06 PM org.esiea.festicore.Main main
+janv. 14, 2026 1:42:06 PM org.festicore.festicore.Main main
 INFO: User logged in: blt@blt.fr
-janv. 14, 2026 1:42:06 PM org.esiea.festicore.User account
+janv. 14, 2026 1:42:06 PM org.festicore.festicore.User account
 INFO: User accessed account: blt
-janv. 14, 2026 1:42:16 PM org.esiea.festicore.User account
+janv. 14, 2026 1:42:16 PM org.festicore.festicore.User account
 INFO: No reservation history available for user: blt
-janv. 14, 2026 1:42:26 PM org.esiea.festicore.service.LogManager setup
+janv. 14, 2026 1:42:26 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 14, 2026 1:42:26 PM org.esiea.festicore.Main main
+janv. 14, 2026 1:42:26 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 14, 2026 1:42:26 PM org.esiea.festicore.Main main
+janv. 14, 2026 1:42:26 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
 janv. 14, 2026 1:42:41 PM org.esiea.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=5)
-janv. 14, 2026 1:42:41 PM org.esiea.festicore.Main main
+janv. 14, 2026 1:42:41 PM org.festicore.festicore.Main main
 INFO: New user registered: r@r.fr
-janv. 14, 2026 1:42:41 PM org.esiea.festicore.Main main
+janv. 14, 2026 1:42:41 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 1:42:56 PM org.esiea.festicore.Main main
+janv. 14, 2026 1:42:56 PM org.festicore.festicore.Main main
 INFO: User logged in: r@r.fr
-janv. 14, 2026 1:42:56 PM org.esiea.festicore.User account
+janv. 14, 2026 1:42:56 PM org.festicore.festicore.User account
 INFO: User accessed account: r
-janv. 14, 2026 1:43:02 PM org.esiea.festicore.User account
+janv. 14, 2026 1:43:02 PM org.festicore.festicore.User account
 INFO: User logging out: r
-janv. 14, 2026 1:43:02 PM org.esiea.festicore.Main main
+janv. 14, 2026 1:43:02 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 1:43:04 PM org.esiea.festicore.Main main
+janv. 14, 2026 1:43:04 PM org.festicore.festicore.Main main
 INFO: Application exiting by user request.
-janv. 14, 2026 1:59:24 PM org.esiea.festicore.service.LogManager setup
+janv. 14, 2026 1:59:24 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 14, 2026 1:59:24 PM org.esiea.festicore.Main main
+janv. 14, 2026 1:59:24 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 14, 2026 1:59:24 PM org.esiea.festicore.Main main
+janv. 14, 2026 1:59:24 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 1:59:42 PM org.esiea.festicore.Main main
+janv. 14, 2026 1:59:42 PM org.festicore.festicore.Main main
 INFO: User logged in: blt@blt.fr
-janv. 14, 2026 1:59:42 PM org.esiea.festicore.User account
+janv. 14, 2026 1:59:42 PM org.festicore.festicore.User account
 INFO: User accessed account: blt
-janv. 14, 2026 2:02:35 PM org.esiea.festicore.service.LogManager setup
+janv. 14, 2026 2:02:35 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 14, 2026 2:02:35 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:02:35 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 14, 2026 2:02:35 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:02:35 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 2:02:41 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:02:41 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 2:02:48 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:02:48 PM org.festicore.festicore.Main main
 INFO: Application exiting by user request.
-janv. 14, 2026 2:02:48 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:02:48 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 2:02:53 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:02:53 PM org.festicore.festicore.Main main
 INFO: Application exiting by user request.
-janv. 14, 2026 2:02:53 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:02:53 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 2:03:30 PM org.esiea.festicore.service.LogManager setup
+janv. 14, 2026 2:03:30 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 14, 2026 2:03:30 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:03:30 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 14, 2026 2:03:30 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:03:30 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 2:03:32 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:03:32 PM org.festicore.festicore.Main main
 WARNING: Wrong menu choice entered by user.
-janv. 14, 2026 2:03:32 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:03:32 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 2:03:35 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:03:35 PM org.festicore.festicore.Main main
 INFO: Application exiting by user request.
-janv. 14, 2026 2:03:35 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:03:35 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 2:04:14 PM org.esiea.festicore.service.LogManager setup
+janv. 14, 2026 2:04:14 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 14, 2026 2:04:14 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:04:14 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 14, 2026 2:04:15 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:04:15 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 2:04:17 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:04:17 PM org.festicore.festicore.Main main
 INFO: Application exiting by user request.
-janv. 14, 2026 2:05:02 PM org.esiea.festicore.service.LogManager setup
+janv. 14, 2026 2:05:02 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 14, 2026 2:05:02 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:05:02 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 14, 2026 2:05:03 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:05:03 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 2:05:26 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:05:26 PM org.festicore.festicore.Main main
 INFO: User logged in: blt@blt.fr
-janv. 14, 2026 2:05:26 PM org.esiea.festicore.User account
+janv. 14, 2026 2:05:26 PM org.festicore.festicore.User account
 INFO: User accessed account: blt
-janv. 14, 2026 2:05:46 PM org.esiea.festicore.User account
+janv. 14, 2026 2:05:46 PM org.festicore.festicore.User account
 INFO: User logging out: blt
-janv. 14, 2026 2:05:46 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:05:46 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 2:05:47 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:05:47 PM org.festicore.festicore.Main main
 INFO: Application exiting by user request.
-janv. 14, 2026 2:08:07 PM org.esiea.festicore.service.LogManager setup
+janv. 14, 2026 2:08:07 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 14, 2026 2:08:07 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:08:07 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 14, 2026 2:08:08 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:08:08 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 2:08:20 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:08:20 PM org.festicore.festicore.Main main
 WARNING: Invalid credentials attempt for email: bly@blt.fr
-janv. 14, 2026 2:08:20 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:08:20 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 2:08:31 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:08:31 PM org.festicore.festicore.Main main
 WARNING: Wrong menu choice entered by user.
-janv. 14, 2026 2:08:31 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:08:31 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 2:08:39 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:08:39 PM org.festicore.festicore.Main main
 INFO: User logged in: blt@blt.fr
-janv. 14, 2026 2:08:40 PM org.esiea.festicore.User account
+janv. 14, 2026 2:08:40 PM org.festicore.festicore.User account
 INFO: User accessed account: blt
-janv. 14, 2026 2:09:05 PM org.esiea.festicore.User account
+janv. 14, 2026 2:09:05 PM org.festicore.festicore.User account
 INFO: User logging out: blt
-janv. 14, 2026 2:09:05 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:09:05 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 2:09:06 PM org.esiea.festicore.Main main
+janv. 14, 2026 2:09:06 PM org.festicore.festicore.Main main
 INFO: Application exiting by user request.
-janv. 14, 2026 3:58:03 PM org.esiea.festicore.service.LogManager setup
+janv. 14, 2026 3:58:03 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 14, 2026 3:58:03 PM org.esiea.festicore.Main main
+janv. 14, 2026 3:58:03 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 14, 2026 3:58:37 PM org.esiea.festicore.service.LogManager setup
+janv. 14, 2026 3:58:37 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 14, 2026 3:58:37 PM org.esiea.festicore.Main main
+janv. 14, 2026 3:58:37 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 14, 2026 3:58:37 PM org.esiea.festicore.Tickets <init>
+janv. 14, 2026 3:58:37 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 14, 2026 3:58:37 PM org.esiea.festicore.Tickets <init>
+janv. 14, 2026 3:58:37 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 14, 2026 3:58:37 PM org.esiea.festicore.Pass <init>
+janv. 14, 2026 3:58:37 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 14, 2026 3:58:37 PM org.esiea.festicore.Pass <init>
+janv. 14, 2026 3:58:37 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 14, 2026 3:58:37 PM org.esiea.festicore.Main main
+janv. 14, 2026 3:58:37 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 3:58:47 PM org.esiea.festicore.Main main
+janv. 14, 2026 3:58:47 PM org.festicore.festicore.Main main
 WARNING: Wrong menu choice entered by user.
-janv. 14, 2026 3:58:47 PM org.esiea.festicore.Main main
+janv. 14, 2026 3:58:47 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 3:59:04 PM org.esiea.festicore.Main main
+janv. 14, 2026 3:59:04 PM org.festicore.festicore.Main main
 WARNING: Invalid credentials attempt for email: pek@email.com
-janv. 14, 2026 3:59:04 PM org.esiea.festicore.Main main
+janv. 14, 2026 3:59:04 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 3:59:39 PM org.esiea.festicore.Main main
+janv. 14, 2026 3:59:39 PM org.festicore.festicore.Main main
 WARNING: Invalid credentials attempt for email: pek@email.com
-janv. 14, 2026 3:59:39 PM org.esiea.festicore.Main main
+janv. 14, 2026 3:59:39 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 3:59:45 PM org.esiea.festicore.Main main
+janv. 14, 2026 3:59:45 PM org.festicore.festicore.Main main
 INFO: Application exiting by user request.
-janv. 14, 2026 3:59:54 PM org.esiea.festicore.service.LogManager setup
+janv. 14, 2026 3:59:54 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 14, 2026 3:59:54 PM org.esiea.festicore.Main main
+janv. 14, 2026 3:59:54 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 14, 2026 4:00:05 PM org.esiea.festicore.service.LogManager setup
+janv. 14, 2026 4:00:05 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 14, 2026 4:00:05 PM org.esiea.festicore.Main main
+janv. 14, 2026 4:00:05 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 14, 2026 4:00:14 PM org.esiea.festicore.service.LogManager setup
+janv. 14, 2026 4:00:14 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 14, 2026 4:00:14 PM org.esiea.festicore.Main main
+janv. 14, 2026 4:00:14 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 14, 2026 4:00:14 PM org.esiea.festicore.Tickets <init>
+janv. 14, 2026 4:00:14 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 14, 2026 4:00:14 PM org.esiea.festicore.Tickets <init>
+janv. 14, 2026 4:00:14 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 14, 2026 4:00:14 PM org.esiea.festicore.Pass <init>
+janv. 14, 2026 4:00:14 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 14, 2026 4:00:14 PM org.esiea.festicore.Pass <init>
+janv. 14, 2026 4:00:14 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 14, 2026 4:00:14 PM org.esiea.festicore.Main main
+janv. 14, 2026 4:00:14 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 4:00:44 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 14, 2026 4:00:44 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=5)
-janv. 14, 2026 4:00:44 PM org.esiea.festicore.Main main
+janv. 14, 2026 4:00:44 PM org.festicore.festicore.Main main
 INFO: New user registered: pierre@email.com
-janv. 14, 2026 4:00:44 PM org.esiea.festicore.Main main
+janv. 14, 2026 4:00:44 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 4:02:03 PM org.esiea.festicore.Main main
+janv. 14, 2026 4:02:03 PM org.festicore.festicore.Main main
 INFO: Application exiting by user request.
-janv. 14, 2026 4:02:13 PM org.esiea.festicore.service.LogManager setup
+janv. 14, 2026 4:02:13 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 14, 2026 4:02:13 PM org.esiea.festicore.Main main
+janv. 14, 2026 4:02:13 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 14, 2026 4:02:14 PM org.esiea.festicore.Tickets <init>
+janv. 14, 2026 4:02:14 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 14, 2026 4:02:14 PM org.esiea.festicore.Tickets <init>
+janv. 14, 2026 4:02:14 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 14, 2026 4:02:14 PM org.esiea.festicore.Pass <init>
+janv. 14, 2026 4:02:14 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 14, 2026 4:02:14 PM org.esiea.festicore.Pass <init>
+janv. 14, 2026 4:02:14 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 14, 2026 4:02:14 PM org.esiea.festicore.Main main
+janv. 14, 2026 4:02:14 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 4:02:34 PM org.esiea.festicore.Main main
+janv. 14, 2026 4:02:34 PM org.festicore.festicore.Main main
 WARNING: Invalid credentials attempt for email: pek@email.com
-janv. 14, 2026 4:02:34 PM org.esiea.festicore.Main main
+janv. 14, 2026 4:02:34 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 4:02:57 PM org.esiea.festicore.Main main
+janv. 14, 2026 4:02:57 PM org.festicore.festicore.Main main
 INFO: User logged in: pierre@email.com
-janv. 14, 2026 4:02:57 PM org.esiea.festicore.User account
+janv. 14, 2026 4:02:57 PM org.festicore.festicore.User account
 INFO: User accessed account: Pierre
-janv. 14, 2026 4:03:46 PM org.esiea.festicore.User account
+janv. 14, 2026 4:03:46 PM org.festicore.festicore.User account
 INFO: User logging out: Pierre
-janv. 14, 2026 4:03:46 PM org.esiea.festicore.Main main
+janv. 14, 2026 4:03:46 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 4:03:47 PM org.esiea.festicore.Main main
+janv. 14, 2026 4:03:47 PM org.festicore.festicore.Main main
 INFO: Application exiting by user request.
-janv. 14, 2026 4:03:54 PM org.esiea.festicore.service.LogManager setup
+janv. 14, 2026 4:03:54 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 14, 2026 4:03:54 PM org.esiea.festicore.Main main
+janv. 14, 2026 4:03:54 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 14, 2026 4:21:07 PM org.esiea.festicore.service.LogManager setup
+janv. 14, 2026 4:21:07 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 14, 2026 4:21:07 PM org.esiea.festicore.Main main
+janv. 14, 2026 4:21:07 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 14, 2026 4:21:07 PM org.esiea.festicore.Tickets <init>
+janv. 14, 2026 4:21:07 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 14, 2026 4:21:07 PM org.esiea.festicore.Tickets <init>
+janv. 14, 2026 4:21:07 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 14, 2026 4:21:07 PM org.esiea.festicore.Pass <init>
+janv. 14, 2026 4:21:07 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 14, 2026 4:21:07 PM org.esiea.festicore.Pass <init>
+janv. 14, 2026 4:21:07 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 14, 2026 4:21:07 PM org.esiea.festicore.Main main
+janv. 14, 2026 4:21:07 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 4:21:12 PM org.esiea.festicore.Main main
+janv. 14, 2026 4:21:12 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 4:21:31 PM org.esiea.festicore.Main main
+janv. 14, 2026 4:21:31 PM org.festicore.festicore.Main main
 INFO: User logged in: pierre@email.com
-janv. 14, 2026 4:21:31 PM org.esiea.festicore.User account
+janv. 14, 2026 4:21:31 PM org.festicore.festicore.User account
 INFO: User accessed account: Pierre
-janv. 14, 2026 4:21:37 PM org.esiea.festicore.User account
+janv. 14, 2026 4:21:37 PM org.festicore.festicore.User account
 INFO: Prompting user to enter reservation ID to book.
-janv. 14, 2026 4:21:41 PM org.esiea.festicore.User account
+janv. 14, 2026 4:21:41 PM org.festicore.festicore.User account
 WARNING: Attempted booking for non-existent reservation: 
-janv. 14, 2026 4:21:48 PM org.esiea.festicore.User account
+janv. 14, 2026 4:21:48 PM org.festicore.festicore.User account
 INFO: User logging out: Pierre
-janv. 14, 2026 4:21:48 PM org.esiea.festicore.Main main
+janv. 14, 2026 4:21:48 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 14, 2026 4:21:49 PM org.esiea.festicore.Main main
+janv. 14, 2026 4:21:49 PM org.festicore.festicore.Main main
 INFO: Application exiting by user request.
-janv. 14, 2026 4:21:54 PM org.esiea.festicore.service.LogManager setup
+janv. 14, 2026 4:21:54 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 14, 2026 4:21:54 PM org.esiea.festicore.Main main
+janv. 14, 2026 4:21:54 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 14, 2026 6:27:18 PM org.esiea.festicore.service.LogManager setup
+janv. 14, 2026 6:27:18 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 14, 2026 6:27:18 PM org.esiea.festicore.Main main
+janv. 14, 2026 6:27:18 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 9:25:53 AM org.esiea.festicore.service.LogManager setup
+janv. 15, 2026 9:25:53 AM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 15, 2026 9:25:53 AM org.esiea.festicore.Main main
+janv. 15, 2026 9:25:53 AM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 9:25:53 AM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 9:25:53 AM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 9:25:53 AM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 9:25:53 AM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 9:25:53 AM org.esiea.festicore.Pass <init>
+janv. 15, 2026 9:25:53 AM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 9:25:53 AM org.esiea.festicore.Pass <init>
+janv. 15, 2026 9:25:53 AM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 9:25:53 AM org.esiea.festicore.Main main
+janv. 15, 2026 9:25:53 AM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 9:26:22 AM org.esiea.festicore.Main main
+janv. 15, 2026 9:26:22 AM org.festicore.festicore.Main main
 INFO: User logged in: pierre@email.com
-janv. 15, 2026 9:26:22 AM org.esiea.festicore.User account
+janv. 15, 2026 9:26:22 AM org.festicore.festicore.User account
 INFO: User accessed account: Pierre
-janv. 15, 2026 9:27:24 AM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 9:27:24 AM service.org.festicore.festicore.BookingService book
 INFO: Attempting booking: user=pierre@email.com, reservation=A_MASTERCLASS_BOOBA
-janv. 15, 2026 9:27:24 AM org.esiea.festicore.Reservation decrementerQuota
+janv. 15, 2026 9:27:24 AM org.festicore.festicore.Reservation decrementerQuota
 INFO: Quota decremented for reservation A_MASTERCLASS_BOOBA. New quota: 2
-janv. 15, 2026 9:27:24 AM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 9:27:24 AM service.org.festicore.festicore.BookingService book
 INFO: Booking successful: user=pierre@email.com, reservation=A_MASTERCLASS_BOOBA
-janv. 15, 2026 9:27:24 AM org.esiea.festicore.User account
+janv. 15, 2026 9:27:24 AM org.festicore.festicore.User account
 INFO: Reservation booked: Activity_MasterC_BOOBA for user: pierre@email.com
-janv. 15, 2026 9:28:03 AM org.esiea.festicore.User account
+janv. 15, 2026 9:28:03 AM org.festicore.festicore.User account
 INFO: User logging out: Pierre
-janv. 15, 2026 9:28:03 AM org.esiea.festicore.Main main
+janv. 15, 2026 9:28:03 AM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 9:28:07 AM org.esiea.festicore.Main main
+janv. 15, 2026 9:28:07 AM org.festicore.festicore.Main main
 WARNING: Wrong menu choice entered by user.
-janv. 15, 2026 9:28:07 AM org.esiea.festicore.Main main
+janv. 15, 2026 9:28:07 AM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 9:28:09 AM org.esiea.festicore.Main main
+janv. 15, 2026 9:28:09 AM org.festicore.festicore.Main main
 INFO: Application exiting by user request.
-janv. 15, 2026 9:33:21 AM org.esiea.festicore.service.LogManager setup
+janv. 15, 2026 9:33:21 AM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 15, 2026 9:33:21 AM org.esiea.festicore.Main main
+janv. 15, 2026 9:33:21 AM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 9:33:21 AM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 9:33:21 AM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 9:33:21 AM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 9:33:21 AM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 9:33:21 AM org.esiea.festicore.Pass <init>
+janv. 15, 2026 9:33:21 AM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 9:33:21 AM org.esiea.festicore.Pass <init>
+janv. 15, 2026 9:33:21 AM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 9:33:21 AM org.esiea.festicore.Main main
+janv. 15, 2026 9:33:21 AM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 10:04:47 AM org.esiea.festicore.service.LogManager setup
+janv. 15, 2026 10:04:47 AM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 15, 2026 10:04:47 AM org.esiea.festicore.Main main
+janv. 15, 2026 10:04:47 AM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 10:04:47 AM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 10:04:47 AM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 10:04:47 AM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 10:04:47 AM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 10:04:48 AM org.esiea.festicore.Pass <init>
+janv. 15, 2026 10:04:48 AM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 10:04:48 AM org.esiea.festicore.Pass <init>
+janv. 15, 2026 10:04:48 AM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 10:04:48 AM org.esiea.festicore.Main main
+janv. 15, 2026 10:04:48 AM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 10:05:17 AM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 10:05:17 AM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=2)
-janv. 15, 2026 10:05:17 AM org.esiea.festicore.Main main
+janv. 15, 2026 10:05:17 AM org.festicore.festicore.Main main
 INFO: New user registered: alex@test.com
-janv. 15, 2026 10:05:17 AM org.esiea.festicore.Main main
+janv. 15, 2026 10:05:17 AM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 10:05:36 AM org.esiea.festicore.Main main
+janv. 15, 2026 10:05:36 AM org.festicore.festicore.Main main
 INFO: User logged in: alex@test.com
-janv. 15, 2026 10:05:36 AM org.esiea.festicore.User account
+janv. 15, 2026 10:05:36 AM org.festicore.festicore.User account
 INFO: User accessed account: alex
-janv. 15, 2026 10:07:39 AM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 10:07:39 AM service.org.festicore.festicore.BookingService book
 INFO: Attempting booking: user=alex@test.com, reservation=P_VIP
-janv. 15, 2026 10:07:39 AM org.esiea.festicore.Reservation decrementerQuota
+janv. 15, 2026 10:07:39 AM org.festicore.festicore.Reservation decrementerQuota
 INFO: Quota decremented for reservation P_VIP. New quota: 2
-janv. 15, 2026 10:07:39 AM org.esiea.festicore.Pass <init>
+janv. 15, 2026 10:07:39 AM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 10:07:39 AM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 10:07:39 AM service.org.festicore.festicore.BookingService book
 INFO: Booking successful: user=alex, reservation=P_VIP
-janv. 15, 2026 10:07:39 AM org.esiea.festicore.User account
+janv. 15, 2026 10:07:39 AM org.festicore.festicore.User account
 INFO: Reservation booked: Pass_VIP for user: alex
-janv. 15, 2026 10:09:10 AM org.esiea.festicore.User account
+janv. 15, 2026 10:09:10 AM org.festicore.festicore.User account
 INFO: User logging out: alex
-janv. 15, 2026 10:09:10 AM org.esiea.festicore.Main main
+janv. 15, 2026 10:09:10 AM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 10:09:11 AM org.esiea.festicore.Main main
+janv. 15, 2026 10:09:11 AM org.festicore.festicore.Main main
 INFO: Application exiting by user request.
-janv. 15, 2026 1:16:56 PM org.esiea.festicore.service.LogManager setup
+janv. 15, 2026 1:16:56 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 15, 2026 1:16:57 PM org.esiea.festicore.Main main
+janv. 15, 2026 1:16:57 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 1:16:57 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 1:16:57 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 1:16:57 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 1:16:57 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 1:16:57 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 1:16:57 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 1:16:57 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 1:16:57 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 1:16:57 PM org.esiea.festicore.Main main
+janv. 15, 2026 1:16:57 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 1:17:10 PM org.esiea.festicore.Main main
+janv. 15, 2026 1:17:10 PM org.festicore.festicore.Main main
 WARNING: Wrong menu choice entered by user.
-janv. 15, 2026 1:17:10 PM org.esiea.festicore.Main main
+janv. 15, 2026 1:17:10 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 1:17:26 PM org.esiea.festicore.Main main
+janv. 15, 2026 1:17:26 PM org.festicore.festicore.Main main
 WARNING: Invalid credentials attempt for email: alex@test.fr
-janv. 15, 2026 1:17:26 PM org.esiea.festicore.Main main
+janv. 15, 2026 1:17:26 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 1:17:41 PM org.esiea.festicore.Main main
+janv. 15, 2026 1:17:41 PM org.festicore.festicore.Main main
 INFO: User logged in: alex@test.com
-janv. 15, 2026 1:17:41 PM org.esiea.festicore.User account
+janv. 15, 2026 1:17:41 PM org.festicore.festicore.User account
 INFO: User accessed account: alex
-janv. 15, 2026 1:18:05 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 1:18:05 PM service.org.festicore.festicore.BookingService book
 INFO: Attempting booking: user=alex@test.com, reservation=P_VIP
-janv. 15, 2026 1:18:05 PM org.esiea.festicore.Reservation decrementerQuota
+janv. 15, 2026 1:18:05 PM org.festicore.festicore.Reservation decrementerQuota
 INFO: Quota decremented for reservation P_VIP. New quota: 2
-janv. 15, 2026 1:18:05 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 1:18:05 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 1:18:05 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 1:18:05 PM service.org.festicore.festicore.BookingService book
 INFO: Booking successful: user=alex, reservation=P_VIP
-janv. 15, 2026 1:18:05 PM org.esiea.festicore.User account
+janv. 15, 2026 1:18:05 PM org.festicore.festicore.User account
 INFO: Reservation booked: Pass_VIP for user: alex
-janv. 15, 2026 1:18:09 PM org.esiea.festicore.User account
+janv. 15, 2026 1:18:09 PM org.festicore.festicore.User account
 INFO: User logging out: alex
-janv. 15, 2026 1:18:09 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 1:18:09 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=2)
-janv. 15, 2026 1:18:09 PM org.esiea.festicore.Main main
+janv. 15, 2026 1:18:09 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 1:18:10 PM org.esiea.festicore.Main main
+janv. 15, 2026 1:18:10 PM org.festicore.festicore.Main main
 INFO: Application exiting by user request.
-janv. 15, 2026 1:55:14 PM org.esiea.festicore.service.LogManager setup
+janv. 15, 2026 1:55:14 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 15, 2026 1:55:14 PM org.esiea.festicore.Main main
+janv. 15, 2026 1:55:14 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 1:55:14 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 1:55:14 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 1:55:14 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 1:55:14 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 1:55:14 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 1:55:14 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 1:55:14 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 1:55:14 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 1:55:14 PM org.esiea.festicore.Main main
+janv. 15, 2026 1:55:14 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 1:55:30 PM org.esiea.festicore.Main main
+janv. 15, 2026 1:55:30 PM org.festicore.festicore.Main main
 INFO: User logged in: alex@test.com
-janv. 15, 2026 1:55:30 PM org.esiea.festicore.User account
+janv. 15, 2026 1:55:30 PM org.festicore.festicore.User account
 INFO: User accessed account: alex
-janv. 15, 2026 1:56:16 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 1:56:16 PM service.org.festicore.festicore.BookingService book
 INFO: Attempting booking: user=alex@test.com, reservation=T_Day
-janv. 15, 2026 1:56:16 PM org.esiea.festicore.Reservation decrementerQuota
+janv. 15, 2026 1:56:16 PM org.festicore.festicore.Reservation decrementerQuota
 INFO: Quota decremented for reservation T_Day. New quota: 2
-janv. 15, 2026 1:56:16 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 1:56:16 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 1:56:16 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 1:56:16 PM service.org.festicore.festicore.BookingService book
 INFO: Booking successful: user=alex, reservation=T_Day
-janv. 15, 2026 1:56:16 PM org.esiea.festicore.User account
+janv. 15, 2026 1:56:16 PM org.festicore.festicore.User account
 INFO: Reservation booked: Ticket_Day for user: alex
-janv. 15, 2026 1:56:20 PM org.esiea.festicore.User account
+janv. 15, 2026 1:56:20 PM org.festicore.festicore.User account
 INFO: User logging out: alex
-janv. 15, 2026 1:56:20 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 1:56:20 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=2)
-janv. 15, 2026 1:56:20 PM org.esiea.festicore.Main main
+janv. 15, 2026 1:56:20 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 1:56:46 PM org.esiea.festicore.Main main
+janv. 15, 2026 1:56:46 PM org.festicore.festicore.Main main
 INFO: User logged in: alex@test.com
-janv. 15, 2026 1:56:46 PM org.esiea.festicore.User account
+janv. 15, 2026 1:56:46 PM org.festicore.festicore.User account
 INFO: User accessed account: alex
-janv. 15, 2026 2:11:05 PM org.esiea.festicore.service.LogManager setup
+janv. 15, 2026 2:11:05 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 15, 2026 2:11:05 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:11:05 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 2:11:05 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 2:11:05 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 2:11:05 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 2:11:05 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 2:11:05 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 2:11:05 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 2:11:05 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 2:11:05 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 2:11:05 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:11:05 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:11:21 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:11:21 PM org.festicore.festicore.Main main
 INFO: User logged in: pierre@email.com
-janv. 15, 2026 2:11:21 PM org.esiea.festicore.User account
+janv. 15, 2026 2:11:21 PM org.festicore.festicore.User account
 INFO: User accessed account: Pierre
-janv. 15, 2026 2:12:19 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 2:12:19 PM service.org.festicore.festicore.BookingService book
 INFO: Attempting booking: user=pierre@email.com, reservation=A_MEET_DAMSO
-janv. 15, 2026 2:12:19 PM org.esiea.festicore.Reservation decrementerQuota
+janv. 15, 2026 2:12:19 PM org.festicore.festicore.Reservation decrementerQuota
 INFO: Quota decremented for reservation A_MEET_DAMSO. New quota: 2
-janv. 15, 2026 2:12:19 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 2:12:19 PM service.org.festicore.festicore.BookingService book
 INFO: Booking successful: user=Pierre, reservation=A_MEET_DAMSO
-janv. 15, 2026 2:12:19 PM org.esiea.festicore.User account
+janv. 15, 2026 2:12:19 PM org.festicore.festicore.User account
 INFO: Reservation booked: Activity_MEET_DAMSO for user: Pierre
-janv. 15, 2026 2:12:24 PM org.esiea.festicore.User account
+janv. 15, 2026 2:12:24 PM org.festicore.festicore.User account
 INFO: User logging out: Pierre
-janv. 15, 2026 2:12:24 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 2:12:24 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=2)
-janv. 15, 2026 2:12:24 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:12:24 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:13:42 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:13:42 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:14:02 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:14:02 PM org.festicore.festicore.Main main
 INFO: User logged in: pierre@email.com
-janv. 15, 2026 2:14:02 PM org.esiea.festicore.User account
+janv. 15, 2026 2:14:02 PM org.festicore.festicore.User account
 INFO: User accessed account: Pierre
-janv. 15, 2026 2:15:09 PM org.esiea.festicore.User account
+janv. 15, 2026 2:15:09 PM org.festicore.festicore.User account
 INFO: User logging out: Pierre
-janv. 15, 2026 2:15:09 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 2:15:09 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=2)
-janv. 15, 2026 2:15:09 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:15:09 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:15:13 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:15:13 PM org.festicore.festicore.Main main
 WARNING: Wrong menu choice entered by user.
-janv. 15, 2026 2:15:13 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:15:13 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:15:14 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:15:14 PM org.festicore.festicore.Main main
 WARNING: Wrong menu choice entered by user.
-janv. 15, 2026 2:15:14 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:15:14 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:15:55 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:15:55 PM org.festicore.festicore.Main main
 INFO: User logged in: alex@test.com
-janv. 15, 2026 2:15:55 PM org.esiea.festicore.User account
+janv. 15, 2026 2:15:55 PM org.festicore.festicore.User account
 INFO: User accessed account: alex
-janv. 15, 2026 2:16:17 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 2:16:17 PM service.org.festicore.festicore.BookingService book
 INFO: Attempting booking: user=alex@test.com, reservation=A_MEET_DAMSO
-janv. 15, 2026 2:16:17 PM org.esiea.festicore.Reservation decrementerQuota
+janv. 15, 2026 2:16:17 PM org.festicore.festicore.Reservation decrementerQuota
 INFO: Quota decremented for reservation A_MEET_DAMSO. New quota: 1
-janv. 15, 2026 2:16:17 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 2:16:17 PM service.org.festicore.festicore.BookingService book
 INFO: Booking successful: user=alex, reservation=A_MEET_DAMSO
-janv. 15, 2026 2:16:17 PM org.esiea.festicore.User account
+janv. 15, 2026 2:16:17 PM org.festicore.festicore.User account
 INFO: Reservation booked: Activity_MEET_DAMSO for user: alex
-janv. 15, 2026 2:16:42 PM org.esiea.festicore.User account
+janv. 15, 2026 2:16:42 PM org.festicore.festicore.User account
 INFO: User logging out: alex
-janv. 15, 2026 2:16:42 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 2:16:42 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=2)
-janv. 15, 2026 2:16:42 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:16:42 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:16:58 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:16:58 PM org.festicore.festicore.Main main
 WARNING: Wrong menu choice entered by user.
-janv. 15, 2026 2:16:58 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:16:58 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:17:24 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 2:17:24 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=3)
-janv. 15, 2026 2:17:24 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:17:24 PM org.festicore.festicore.Main main
 INFO: New user registered: test@test.com
-janv. 15, 2026 2:17:24 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:17:24 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:18:01 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:18:01 PM org.festicore.festicore.Main main
 WARNING: Invalid credentials attempt for email: test@test.com
-janv. 15, 2026 2:18:01 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:18:01 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:18:24 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:18:24 PM org.festicore.festicore.Main main
 WARNING: Invalid credentials attempt for email: test@test.com
-janv. 15, 2026 2:18:24 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:18:24 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:18:28 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:18:28 PM org.festicore.festicore.Main main
 WARNING: Wrong menu choice entered by user.
-janv. 15, 2026 2:18:28 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:18:28 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:18:30 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:18:30 PM org.festicore.festicore.Main main
 INFO: Application exiting by user request.
-janv. 15, 2026 2:18:39 PM org.esiea.festicore.service.LogManager setup
+janv. 15, 2026 2:18:39 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 15, 2026 2:18:39 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:18:39 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 2:18:39 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 2:18:39 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 2:18:39 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 2:18:39 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 2:18:39 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 2:18:39 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 2:18:39 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 2:18:39 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 2:18:39 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:18:39 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:19:20 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:19:20 PM org.festicore.festicore.Main main
 INFO: Application exiting by user request.
-janv. 15, 2026 2:19:46 PM org.esiea.festicore.service.LogManager setup
+janv. 15, 2026 2:19:46 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 15, 2026 2:19:46 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:19:46 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 2:19:46 PM org.esiea.festicore.service.JsonDataManager loadUsers
+janv. 15, 2026 2:19:46 PM service.org.festicore.festicore.JsonDataManager loadUsers
 INFO: Data file not found: data/users.json, returning empty user list.
-janv. 15, 2026 2:19:46 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 2:19:46 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 2:19:46 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 2:19:46 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 2:19:46 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 2:19:46 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 2:19:46 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 2:19:46 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 2:19:46 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:19:46 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:20:17 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 2:20:17 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=1)
-janv. 15, 2026 2:20:17 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:20:17 PM org.festicore.festicore.Main main
 INFO: New user registered: pierre@email.fr
-janv. 15, 2026 2:20:17 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:20:17 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:20:44 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:20:44 PM org.festicore.festicore.Main main
 INFO: User logged in: pierre@email.fr
-janv. 15, 2026 2:20:44 PM org.esiea.festicore.User account
+janv. 15, 2026 2:20:44 PM org.festicore.festicore.User account
 INFO: User accessed account: Pierre-Edwin
-janv. 15, 2026 2:21:18 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 2:21:18 PM service.org.festicore.festicore.BookingService book
 INFO: Attempting booking: user=pierre@email.fr, reservation=A_MEET_DAMSO
-janv. 15, 2026 2:21:18 PM org.esiea.festicore.Reservation decrementerQuota
+janv. 15, 2026 2:21:18 PM org.festicore.festicore.Reservation decrementerQuota
 INFO: Quota decremented for reservation A_MEET_DAMSO. New quota: 2
-janv. 15, 2026 2:21:18 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 2:21:18 PM service.org.festicore.festicore.BookingService book
 INFO: Booking successful: user=Pierre-Edwin, reservation=A_MEET_DAMSO
-janv. 15, 2026 2:21:18 PM org.esiea.festicore.User account
+janv. 15, 2026 2:21:18 PM org.festicore.festicore.User account
 INFO: Reservation booked: Activity_MEET_DAMSO for user: Pierre-Edwin
-janv. 15, 2026 2:21:39 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 2:21:39 PM service.org.festicore.festicore.BookingService book
 INFO: Attempting booking: user=pierre@email.fr, reservation=P_VIP
-janv. 15, 2026 2:21:39 PM org.esiea.festicore.Reservation decrementerQuota
+janv. 15, 2026 2:21:39 PM org.festicore.festicore.Reservation decrementerQuota
 INFO: Quota decremented for reservation P_VIP. New quota: 2
-janv. 15, 2026 2:21:39 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 2:21:39 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 2:21:39 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 2:21:39 PM service.org.festicore.festicore.BookingService book
 INFO: Booking successful: user=Pierre-Edwin, reservation=P_VIP
-janv. 15, 2026 2:21:39 PM org.esiea.festicore.User account
+janv. 15, 2026 2:21:39 PM org.festicore.festicore.User account
 INFO: Reservation booked: Pass_VIP for user: Pierre-Edwin
-janv. 15, 2026 2:21:52 PM org.esiea.festicore.User account
+janv. 15, 2026 2:21:52 PM org.festicore.festicore.User account
 INFO: User logging out: Pierre-Edwin
-janv. 15, 2026 2:21:52 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 2:21:52 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=1)
-janv. 15, 2026 2:21:52 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:21:52 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:22:18 PM org.esiea.festicore.service.LogManager setup
+janv. 15, 2026 2:22:18 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 15, 2026 2:22:18 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:22:18 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 2:22:18 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 2:22:18 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 2:22:18 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 2:22:18 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 2:22:18 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 2:22:18 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 2:22:18 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 2:22:18 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 2:22:18 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:22:18 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:22:36 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:22:36 PM org.festicore.festicore.Main main
 WARNING: Wrong menu choice entered by user.
-janv. 15, 2026 2:22:36 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:22:36 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:22:49 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:22:49 PM org.festicore.festicore.Main main
 SEVERE: Critical application failure: Email invalide.
-janv. 15, 2026 2:22:49 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:22:49 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:22:51 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:22:51 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:23:21 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 2:23:21 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=2)
-janv. 15, 2026 2:23:21 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:23:21 PM org.festicore.festicore.Main main
 INFO: New user registered: alex@test.fr
-janv. 15, 2026 2:23:21 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:23:21 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:23:43 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:23:43 PM org.festicore.festicore.Main main
 INFO: User logged in: alex@test.fr
-janv. 15, 2026 2:23:43 PM org.esiea.festicore.User account
+janv. 15, 2026 2:23:43 PM org.festicore.festicore.User account
 INFO: User accessed account: Alexandre
-janv. 15, 2026 2:24:10 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 2:24:10 PM service.org.festicore.festicore.BookingService book
 INFO: Attempting booking: user=alex@test.fr, reservation=T_Day
-janv. 15, 2026 2:24:10 PM org.esiea.festicore.Reservation decrementerQuota
+janv. 15, 2026 2:24:10 PM org.festicore.festicore.Reservation decrementerQuota
 INFO: Quota decremented for reservation T_Day. New quota: 2
-janv. 15, 2026 2:24:10 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 2:24:10 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 2:24:10 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 2:24:10 PM service.org.festicore.festicore.BookingService book
 INFO: Booking successful: user=Alexandre, reservation=T_Day
-janv. 15, 2026 2:24:10 PM org.esiea.festicore.User account
+janv. 15, 2026 2:24:10 PM org.festicore.festicore.User account
 INFO: Reservation booked: Ticket_Day for user: Alexandre
-janv. 15, 2026 2:25:43 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 2:25:43 PM service.org.festicore.festicore.BookingService book
 INFO: Attempting booking: user=alex@test.fr, reservation=A_MASTERCLASS_BOOBA
-janv. 15, 2026 2:25:43 PM org.esiea.festicore.Reservation decrementerQuota
+janv. 15, 2026 2:25:43 PM org.festicore.festicore.Reservation decrementerQuota
 INFO: Quota decremented for reservation A_MASTERCLASS_BOOBA. New quota: 2
-janv. 15, 2026 2:25:43 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 2:25:43 PM service.org.festicore.festicore.BookingService book
 INFO: Booking successful: user=Alexandre, reservation=A_MASTERCLASS_BOOBA
-janv. 15, 2026 2:25:43 PM org.esiea.festicore.User account
+janv. 15, 2026 2:25:43 PM org.festicore.festicore.User account
 INFO: Reservation booked: Activity_MasterC_BOOBA for user: Alexandre
-janv. 15, 2026 2:26:16 PM org.esiea.festicore.User account
+janv. 15, 2026 2:26:16 PM org.festicore.festicore.User account
 INFO: User logging out: Alexandre
-janv. 15, 2026 2:26:16 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 2:26:16 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=2)
-janv. 15, 2026 2:26:16 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:26:16 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:26:32 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:26:32 PM org.festicore.festicore.Main main
 WARNING: Wrong menu choice entered by user.
-janv. 15, 2026 2:26:32 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:26:32 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:26:33 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:26:33 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:26:59 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:26:59 PM org.festicore.festicore.Main main
 WARNING: Invalid credentials attempt for email: pierre@email.com
-janv. 15, 2026 2:26:59 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:26:59 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:27:15 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:27:15 PM org.festicore.festicore.Main main
 INFO: User logged in: pierre@email.fr
-janv. 15, 2026 2:27:15 PM org.esiea.festicore.User account
+janv. 15, 2026 2:27:15 PM org.festicore.festicore.User account
 INFO: User accessed account: Pierre-Edwin
-janv. 15, 2026 2:27:36 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 2:27:36 PM service.org.festicore.festicore.BookingService book
 INFO: Attempting booking: user=pierre@email.fr, reservation=A_MASTERCLASS_BOOBA
-janv. 15, 2026 2:27:36 PM org.esiea.festicore.Reservation decrementerQuota
+janv. 15, 2026 2:27:36 PM org.festicore.festicore.Reservation decrementerQuota
 INFO: Quota decremented for reservation A_MASTERCLASS_BOOBA. New quota: 1
-janv. 15, 2026 2:27:36 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 2:27:36 PM service.org.festicore.festicore.BookingService book
 INFO: Booking successful: user=Pierre-Edwin, reservation=A_MASTERCLASS_BOOBA
-janv. 15, 2026 2:27:36 PM org.esiea.festicore.User account
+janv. 15, 2026 2:27:36 PM org.festicore.festicore.User account
 INFO: Reservation booked: Activity_MasterC_BOOBA for user: Pierre-Edwin
-janv. 15, 2026 2:30:39 PM org.esiea.festicore.User account
+janv. 15, 2026 2:30:39 PM org.festicore.festicore.User account
 INFO: User logging out: Pierre-Edwin
-janv. 15, 2026 2:30:39 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 2:30:39 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=2)
-janv. 15, 2026 2:30:39 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:30:39 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:30:56 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 2:30:56 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=3)
-janv. 15, 2026 2:30:56 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:30:56 PM org.festicore.festicore.Main main
 INFO: New user registered: test@test.fr
-janv. 15, 2026 2:30:56 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:30:56 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:31:02 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:31:02 PM org.festicore.festicore.Main main
 WARNING: Wrong menu choice entered by user.
-janv. 15, 2026 2:31:02 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:31:02 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:31:02 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:31:02 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:31:46 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:31:46 PM org.festicore.festicore.Main main
 INFO: User logged in: test@test.fr
-janv. 15, 2026 2:31:46 PM org.esiea.festicore.User account
+janv. 15, 2026 2:31:46 PM org.festicore.festicore.User account
 INFO: User accessed account: test
-janv. 15, 2026 2:32:12 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 2:32:12 PM service.org.festicore.festicore.BookingService book
 INFO: Attempting booking: user=test@test.fr, reservation=A_MASTERCLASS_BOOBA
-janv. 15, 2026 2:32:12 PM org.esiea.festicore.Reservation decrementerQuota
+janv. 15, 2026 2:32:12 PM org.festicore.festicore.Reservation decrementerQuota
 INFO: Quota decremented for reservation A_MASTERCLASS_BOOBA. New quota: 0
-janv. 15, 2026 2:32:12 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 2:32:12 PM service.org.festicore.festicore.BookingService book
 INFO: Booking successful: user=test, reservation=A_MASTERCLASS_BOOBA
-janv. 15, 2026 2:32:12 PM org.esiea.festicore.User account
+janv. 15, 2026 2:32:12 PM org.festicore.festicore.User account
 INFO: Reservation booked: Activity_MasterC_BOOBA for user: test
-janv. 15, 2026 2:32:29 PM org.esiea.festicore.User account
+janv. 15, 2026 2:32:29 PM org.festicore.festicore.User account
 INFO: User logging out: test
-janv. 15, 2026 2:32:29 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 2:32:29 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=3)
-janv. 15, 2026 2:32:29 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:32:29 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:33:03 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 2:33:03 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=4)
-janv. 15, 2026 2:33:03 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:33:03 PM org.festicore.festicore.Main main
 INFO: New user registered: test@email.com
-janv. 15, 2026 2:33:03 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:33:03 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:33:34 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:33:34 PM org.festicore.festicore.Main main
 INFO: User logged in: test@email.com
-janv. 15, 2026 2:33:34 PM org.esiea.festicore.User account
+janv. 15, 2026 2:33:34 PM org.festicore.festicore.User account
 INFO: User accessed account: newUser
-janv. 15, 2026 2:33:52 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 2:33:52 PM service.org.festicore.festicore.BookingService book
 INFO: Attempting booking: user=test@email.com, reservation=A_MASTERCLASS_BOOBA
-janv. 15, 2026 2:33:52 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 2:33:52 PM service.org.festicore.festicore.BookingService book
 WARNING: Booking failed: reservation not available: A_MASTERCLASS_BOOBA
-janv. 15, 2026 2:33:52 PM org.esiea.festicore.User account
+janv. 15, 2026 2:33:52 PM org.festicore.festicore.User account
 SEVERE: Booking failed for user test@email.com: Reservation not available
-janv. 15, 2026 2:34:04 PM org.esiea.festicore.User account
+janv. 15, 2026 2:34:04 PM org.festicore.festicore.User account
 INFO: No reservation history available for user: newUser
-janv. 15, 2026 2:34:07 PM org.esiea.festicore.User account
+janv. 15, 2026 2:34:07 PM org.festicore.festicore.User account
 INFO: User logging out: newUser
-janv. 15, 2026 2:34:07 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 2:34:07 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=4)
-janv. 15, 2026 2:34:07 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:34:07 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:34:42 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:34:42 PM org.festicore.festicore.Main main
 WARNING: Wrong menu choice entered by user.
-janv. 15, 2026 2:34:42 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:34:42 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:34:43 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:34:43 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 2:34:51 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:34:51 PM org.festicore.festicore.Main main
 INFO: User logged in: test@test.fr
-janv. 15, 2026 2:34:52 PM org.esiea.festicore.User account
+janv. 15, 2026 2:34:52 PM org.festicore.festicore.User account
 INFO: User accessed account: test
-janv. 15, 2026 2:35:25 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 2:35:25 PM service.org.festicore.festicore.BookingService book
 INFO: Attempting booking: user=test@test.fr, reservation=P_Classic
-janv. 15, 2026 2:35:25 PM org.esiea.festicore.Reservation decrementerQuota
+janv. 15, 2026 2:35:25 PM org.festicore.festicore.Reservation decrementerQuota
 INFO: Quota decremented for reservation P_Classic. New quota: 2
-janv. 15, 2026 2:35:25 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 2:35:25 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 2:35:25 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 2:35:25 PM service.org.festicore.festicore.BookingService book
 INFO: Booking successful: user=test, reservation=P_Classic
-janv. 15, 2026 2:35:25 PM org.esiea.festicore.User account
+janv. 15, 2026 2:35:25 PM org.festicore.festicore.User account
 INFO: Reservation booked: Pass_Classic for user: test
-janv. 15, 2026 2:35:37 PM org.esiea.festicore.User account
+janv. 15, 2026 2:35:37 PM org.festicore.festicore.User account
 INFO: User logging out: test
-janv. 15, 2026 2:35:37 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 2:35:37 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=4)
-janv. 15, 2026 2:35:37 PM org.esiea.festicore.Main main
+janv. 15, 2026 2:35:37 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 3:07:21 PM org.esiea.festicore.service.LogManager setup
+janv. 15, 2026 3:07:21 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 15, 2026 3:07:21 PM org.esiea.festicore.Main main
+janv. 15, 2026 3:07:21 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 3:07:21 PM org.esiea.festicore.Main main
+janv. 15, 2026 3:07:21 PM org.festicore.festicore.Main main
 WARNING: Users loaded: 0 (file not found or unreadable)
-janv. 15, 2026 3:07:21 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 3:07:21 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 3:07:21 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 3:07:21 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 3:07:21 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 3:07:21 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 3:07:21 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 3:07:21 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 3:46:54 PM org.esiea.festicore.service.LogManager setup
+janv. 15, 2026 3:46:54 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 15, 2026 3:46:54 PM org.esiea.festicore.Main main
+janv. 15, 2026 3:46:54 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 3:46:54 PM org.esiea.festicore.Main main
+janv. 15, 2026 3:46:54 PM org.festicore.festicore.Main main
 WARNING: Users loaded: 0 (file not found or unreadable)
-janv. 15, 2026 3:46:54 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 3:46:54 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 3:46:54 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 3:46:54 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 3:46:54 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 3:46:54 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 3:46:54 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 3:46:54 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 3:47:38 PM org.esiea.festicore.service.LogManager setup
+janv. 15, 2026 3:47:38 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 15, 2026 3:47:38 PM org.esiea.festicore.Main main
+janv. 15, 2026 3:47:38 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 3:47:38 PM org.esiea.festicore.Main main
+janv. 15, 2026 3:47:38 PM org.festicore.festicore.Main main
 WARNING: Users loaded: 0 (file not found or unreadable)
-janv. 15, 2026 3:47:38 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 3:47:38 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 3:47:38 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 3:47:38 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 3:47:38 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 3:47:38 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 3:47:38 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 3:47:38 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 3:47:49 PM org.esiea.festicore.Main main
+janv. 15, 2026 3:47:49 PM org.festicore.festicore.Main main
 WARNING: Invalid credentials attempt for email: alex@test.fr
-janv. 15, 2026 3:48:59 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 3:48:59 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=1)
-janv. 15, 2026 3:48:59 PM org.esiea.festicore.Main main
+janv. 15, 2026 3:48:59 PM org.festicore.festicore.Main main
 INFO: New user registered: Pierre-Edwin
-janv. 15, 2026 3:49:13 PM org.esiea.festicore.Main main
+janv. 15, 2026 3:49:13 PM org.festicore.festicore.Main main
 INFO: User logged in: pierre@email.com
-janv. 15, 2026 3:49:13 PM org.esiea.festicore.User account
+janv. 15, 2026 3:49:13 PM org.festicore.festicore.User account
 INFO: User accessed the account of: Pierre-Edwin
-janv. 15, 2026 3:49:57 PM org.esiea.festicore.User account
+janv. 15, 2026 3:49:57 PM org.festicore.festicore.User account
 INFO: Pierre-Edwin save a card
-janv. 15, 2026 3:50:01 PM org.esiea.festicore.User account
+janv. 15, 2026 3:50:01 PM org.festicore.festicore.User account
 INFO: Pierre-Edwin confirmed the payment
-janv. 15, 2026 3:50:01 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 3:50:01 PM service.org.festicore.festicore.BookingService book
 INFO: Attempting booking: user=pierre@email.com, reservation=P_VIP
-janv. 15, 2026 3:50:01 PM org.esiea.festicore.Reservation decrementerQuota
+janv. 15, 2026 3:50:01 PM org.festicore.festicore.Reservation decrementerQuota
 INFO: Quota decremented for reservation P_VIP. New quota: 2
-janv. 15, 2026 3:50:01 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 3:50:01 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 3:50:01 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 3:50:01 PM service.org.festicore.festicore.BookingService book
 INFO: Booking successful: user=Pierre-Edwin, reservation=P_VIP
-janv. 15, 2026 3:50:01 PM org.esiea.festicore.User account
+janv. 15, 2026 3:50:01 PM org.festicore.festicore.User account
 INFO: Reservation booked: Pass_VIP for user: Pierre-Edwin
-janv. 15, 2026 3:50:23 PM org.esiea.festicore.User account
+janv. 15, 2026 3:50:23 PM org.festicore.festicore.User account
 INFO: Pierre-Edwin logged out.
-janv. 15, 2026 3:50:23 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 3:50:23 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=1)
-janv. 15, 2026 3:51:06 PM org.esiea.festicore.service.LogManager setup
+janv. 15, 2026 3:51:06 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 15, 2026 3:51:06 PM org.esiea.festicore.Main main
+janv. 15, 2026 3:51:06 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 3:51:06 PM org.esiea.festicore.Main main
+janv. 15, 2026 3:51:06 PM org.festicore.festicore.Main main
 WARNING: Users loaded: 0 (file not found or unreadable)
-janv. 15, 2026 3:51:06 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 3:51:06 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 3:51:06 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 3:51:06 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 3:51:06 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 3:51:06 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 3:51:06 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 3:51:06 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 3:51:20 PM org.esiea.festicore.service.LogManager setup
+janv. 15, 2026 3:51:20 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 15, 2026 3:51:20 PM org.esiea.festicore.Main main
+janv. 15, 2026 3:51:20 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 3:51:20 PM org.esiea.festicore.Main main
+janv. 15, 2026 3:51:20 PM org.festicore.festicore.Main main
 WARNING: Users loaded: 0 (file not found or unreadable)
-janv. 15, 2026 3:51:20 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 3:51:20 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 3:51:20 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 3:51:20 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 3:51:20 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 3:51:20 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 3:51:20 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 3:51:20 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 3:51:39 PM org.esiea.festicore.Main main
+janv. 15, 2026 3:51:39 PM org.festicore.festicore.Main main
 WARNING: Invalid credentials attempt for email: peirre@email.com
-janv. 15, 2026 3:52:06 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 3:52:06 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=1)
-janv. 15, 2026 3:52:06 PM org.esiea.festicore.Main main
+janv. 15, 2026 3:52:06 PM org.festicore.festicore.Main main
 INFO: New user registered: Pierre-Edwin
-janv. 15, 2026 3:52:15 PM org.esiea.festicore.Main main
+janv. 15, 2026 3:52:15 PM org.festicore.festicore.Main main
 WARNING: Invalid credentials attempt for email: 
-janv. 15, 2026 3:52:25 PM org.esiea.festicore.Main main
+janv. 15, 2026 3:52:25 PM org.festicore.festicore.Main main
 INFO: User logged in: pierre@test.fr
-janv. 15, 2026 3:52:25 PM org.esiea.festicore.User account
+janv. 15, 2026 3:52:25 PM org.festicore.festicore.User account
 INFO: User accessed the account of: Pierre-Edwin
-janv. 15, 2026 3:52:42 PM org.esiea.festicore.User account
+janv. 15, 2026 3:52:42 PM org.festicore.festicore.User account
 INFO: Pierre-Edwin save a card
-janv. 15, 2026 3:52:46 PM org.esiea.festicore.User account
+janv. 15, 2026 3:52:46 PM org.festicore.festicore.User account
 INFO: Pierre-Edwin confirmed the payment
-janv. 15, 2026 3:52:46 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 3:52:46 PM service.org.festicore.festicore.BookingService book
 INFO: Attempting booking: user=pierre@test.fr, reservation=P_VIP
-janv. 15, 2026 3:52:46 PM org.esiea.festicore.Reservation decrementerQuota
+janv. 15, 2026 3:52:46 PM org.festicore.festicore.Reservation decrementerQuota
 INFO: Quota decremented for reservation P_VIP. New quota: 2
-janv. 15, 2026 3:52:46 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 3:52:46 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 3:52:46 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 3:52:46 PM service.org.festicore.festicore.BookingService book
 INFO: Booking successful: user=Pierre-Edwin, reservation=P_VIP
-janv. 15, 2026 3:52:46 PM org.esiea.festicore.User account
+janv. 15, 2026 3:52:46 PM org.festicore.festicore.User account
 INFO: Reservation booked: Pass_VIP for user: Pierre-Edwin
-janv. 15, 2026 3:52:52 PM org.esiea.festicore.User account
+janv. 15, 2026 3:52:52 PM org.festicore.festicore.User account
 INFO: Pierre-Edwinlooked for his history.
-janv. 15, 2026 3:53:00 PM org.esiea.festicore.User account
+janv. 15, 2026 3:53:00 PM org.festicore.festicore.User account
 INFO: Pierre-Edwinlook for Pass_VIP reservation.
-janv. 15, 2026 3:53:10 PM org.esiea.festicore.User account
+janv. 15, 2026 3:53:10 PM org.festicore.festicore.User account
 INFO: Pierre-Edwin logged out.
-janv. 15, 2026 3:53:10 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 3:53:10 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=1)
-janv. 15, 2026 3:54:14 PM org.esiea.festicore.Main main
+janv. 15, 2026 3:54:14 PM org.festicore.festicore.Main main
 INFO: Exiting the application
-janv. 15, 2026 3:54:25 PM org.esiea.festicore.service.LogManager setup
+janv. 15, 2026 3:54:25 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 15, 2026 3:54:25 PM org.esiea.festicore.Main main
+janv. 15, 2026 3:54:25 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 3:54:25 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 3:54:25 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 3:54:25 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 3:54:25 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 3:54:25 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 3:54:25 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 3:54:25 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 3:54:25 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 3:54:43 PM org.esiea.festicore.Main main
+janv. 15, 2026 3:54:43 PM org.festicore.festicore.Main main
 WARNING: Invalid credentials attempt for email: pierre@test.com
-janv. 15, 2026 3:54:59 PM org.esiea.festicore.Main main
+janv. 15, 2026 3:54:59 PM org.festicore.festicore.Main main
 WARNING: Invalid credentials attempt for email: pierre@test?fr
-janv. 15, 2026 3:55:10 PM org.esiea.festicore.Main main
+janv. 15, 2026 3:55:10 PM org.festicore.festicore.Main main
 INFO: User logged in: pierre@test.fr
-janv. 15, 2026 3:55:10 PM org.esiea.festicore.User account
+janv. 15, 2026 3:55:10 PM org.festicore.festicore.User account
 INFO: User accessed the account of: Pierre-Edwin
-janv. 15, 2026 3:55:23 PM org.esiea.festicore.User account
+janv. 15, 2026 3:55:23 PM org.festicore.festicore.User account
 INFO: Pierre-Edwin confirmed the payment
-janv. 15, 2026 3:55:23 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 3:55:23 PM service.org.festicore.festicore.BookingService book
 INFO: Attempting booking: user=pierre@test.fr, reservation=P_VIP
-janv. 15, 2026 3:55:23 PM org.esiea.festicore.Reservation decrementerQuota
+janv. 15, 2026 3:55:23 PM org.festicore.festicore.Reservation decrementerQuota
 INFO: Quota decremented for reservation P_VIP. New quota: 2
-janv. 15, 2026 3:55:23 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 3:55:23 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 3:55:23 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 3:55:23 PM service.org.festicore.festicore.BookingService book
 INFO: Booking successful: user=Pierre-Edwin, reservation=P_VIP
-janv. 15, 2026 3:55:23 PM org.esiea.festicore.User account
+janv. 15, 2026 3:55:23 PM org.festicore.festicore.User account
 INFO: Reservation booked: Pass_VIP for user: Pierre-Edwin
-janv. 15, 2026 3:55:26 PM org.esiea.festicore.User account
+janv. 15, 2026 3:55:26 PM org.festicore.festicore.User account
 INFO: Pierre-Edwin logged out.
-janv. 15, 2026 3:55:26 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 3:55:26 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=1)
-janv. 15, 2026 4:00:14 PM org.esiea.festicore.service.LogManager setup
+janv. 15, 2026 4:00:14 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 15, 2026 4:00:14 PM org.esiea.festicore.Main main
+janv. 15, 2026 4:00:14 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 4:00:14 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 4:00:14 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 4:00:14 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 4:00:14 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 4:00:14 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 4:00:14 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 4:00:14 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 4:00:14 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 4:00:14 PM org.esiea.festicore.Main main
+janv. 15, 2026 4:00:14 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 4:01:07 PM org.esiea.festicore.service.LogManager setup
+janv. 15, 2026 4:01:07 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 15, 2026 4:01:07 PM org.esiea.festicore.Main main
+janv. 15, 2026 4:01:07 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 4:01:08 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 4:01:08 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 4:01:08 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 4:01:08 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 4:01:08 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 4:01:08 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 4:01:08 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 4:01:08 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 4:01:08 PM org.esiea.festicore.Main main
+janv. 15, 2026 4:01:08 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 4:01:12 PM org.esiea.festicore.Main main
+janv. 15, 2026 4:01:12 PM org.festicore.festicore.Main main
 WARNING: Wrong menu choice entered by user.
-janv. 15, 2026 4:01:12 PM org.esiea.festicore.Main main
+janv. 15, 2026 4:01:12 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 4:03:32 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 4:03:32 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=2)
-janv. 15, 2026 4:03:32 PM org.esiea.festicore.Main main
+janv. 15, 2026 4:03:32 PM org.festicore.festicore.Main main
 INFO: New user registered: alex@test.fr
-janv. 15, 2026 4:03:32 PM org.esiea.festicore.Main main
+janv. 15, 2026 4:03:32 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 4:04:08 PM org.esiea.festicore.Main main
+janv. 15, 2026 4:04:08 PM org.festicore.festicore.Main main
 INFO: User logged in: alex@test.fr
-janv. 15, 2026 4:04:08 PM org.esiea.festicore.User account
+janv. 15, 2026 4:04:08 PM org.festicore.festicore.User account
 INFO: User accessed account: Alex
-janv. 15, 2026 4:04:26 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 4:04:26 PM service.org.festicore.festicore.BookingService book
 INFO: Attempting booking: user=alex@test.fr, reservation=T_Day
-janv. 15, 2026 4:04:26 PM org.esiea.festicore.Reservation decrementerQuota
+janv. 15, 2026 4:04:26 PM org.festicore.festicore.Reservation decrementerQuota
 INFO: Quota decremented for reservation T_Day. New quota: 2
-janv. 15, 2026 4:04:26 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 4:04:26 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 4:04:26 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 4:04:26 PM service.org.festicore.festicore.BookingService book
 INFO: Booking successful: user=Alex, reservation=T_Day
-janv. 15, 2026 4:04:26 PM org.esiea.festicore.User account
+janv. 15, 2026 4:04:26 PM org.festicore.festicore.User account
 INFO: Reservation booked: Ticket_Day for user: Alex
-janv. 15, 2026 4:04:31 PM org.esiea.festicore.User account
+janv. 15, 2026 4:04:31 PM org.festicore.festicore.User account
 INFO: User logging out: Alex
-janv. 15, 2026 4:04:31 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 4:04:31 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=2)
-janv. 15, 2026 4:04:31 PM org.esiea.festicore.Main main
+janv. 15, 2026 4:04:31 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 4:10:58 PM org.esiea.festicore.service.LogManager setup
+janv. 15, 2026 4:10:58 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 15, 2026 4:10:58 PM org.esiea.festicore.Main main
+janv. 15, 2026 4:10:58 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 4:10:58 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 4:10:58 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 4:10:58 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 4:10:58 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 4:10:58 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 4:10:58 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 4:10:58 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 4:10:58 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 4:10:58 PM org.esiea.festicore.Main main
+janv. 15, 2026 4:10:58 PM org.festicore.festicore.Main main
 INFO: Waiting for user commands...
-janv. 15, 2026 4:11:41 PM org.esiea.festicore.service.LogManager setup
+janv. 15, 2026 4:11:41 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 15, 2026 4:11:41 PM org.esiea.festicore.Main main
+janv. 15, 2026 4:11:41 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 4:11:41 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 4:11:41 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 4:11:41 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 4:11:41 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 4:11:41 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 4:11:41 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 4:11:41 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 4:11:41 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 4:12:39 PM org.esiea.festicore.Main main
+janv. 15, 2026 4:12:39 PM org.festicore.festicore.Main main
 INFO: Pierre-Edwin just logged in
-janv. 15, 2026 4:12:39 PM org.esiea.festicore.User account
+janv. 15, 2026 4:12:39 PM org.festicore.festicore.User account
 INFO: User accessed account: Pierre-Edwin
-janv. 15, 2026 4:15:01 PM org.esiea.festicore.User account
+janv. 15, 2026 4:15:01 PM org.festicore.festicore.User account
 INFO: No reservation history available for user: Pierre-Edwin
-janv. 15, 2026 4:15:25 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 4:15:25 PM service.org.festicore.festicore.BookingService book
 INFO: Attempting booking: user=pierre@test.fr, reservation=A_MASTERCLASS_BOOBA
-janv. 15, 2026 4:15:25 PM org.esiea.festicore.Reservation decrementerQuota
+janv. 15, 2026 4:15:25 PM org.festicore.festicore.Reservation decrementerQuota
 INFO: Quota decremented for reservation A_MASTERCLASS_BOOBA. New quota: 2
-janv. 15, 2026 4:15:25 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 4:15:25 PM service.org.festicore.festicore.BookingService book
 INFO: Booking successful: user=Pierre-Edwin, reservation=A_MASTERCLASS_BOOBA
-janv. 15, 2026 4:15:25 PM org.esiea.festicore.User account
+janv. 15, 2026 4:15:25 PM org.festicore.festicore.User account
 INFO: Reservation booked: Activity_MasterC_BOOBA for user: Pierre-Edwin
-janv. 15, 2026 4:15:29 PM org.esiea.festicore.User account
+janv. 15, 2026 4:15:29 PM org.festicore.festicore.User account
 INFO: User logging out: Pierre-Edwin
-janv. 15, 2026 4:15:29 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 4:15:29 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=2)
-janv. 15, 2026 4:19:46 PM org.esiea.festicore.Main main
+janv. 15, 2026 4:19:46 PM org.festicore.festicore.Main main
 WARNING: Wrong menu choice entered by user.
-janv. 15, 2026 4:19:48 PM org.esiea.festicore.Main main
+janv. 15, 2026 4:19:48 PM org.festicore.festicore.Main main
 WARNING: Wrong menu choice entered by user.
-janv. 15, 2026 4:20:04 PM org.esiea.festicore.Main main
+janv. 15, 2026 4:20:04 PM org.festicore.festicore.Main main
 WARNING: Wrong menu choice entered by user.
-janv. 15, 2026 4:20:04 PM org.esiea.festicore.Main main
+janv. 15, 2026 4:20:04 PM org.festicore.festicore.Main main
 WARNING: Wrong menu choice entered by user.
-janv. 15, 2026 4:20:11 PM org.esiea.festicore.Main main
+janv. 15, 2026 4:20:11 PM org.festicore.festicore.Main main
 INFO: Exiting application.
-janv. 15, 2026 5:18:11 PM org.esiea.festicore.service.LogManager setup
+janv. 15, 2026 5:18:11 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 15, 2026 5:18:11 PM org.esiea.festicore.Main main
+janv. 15, 2026 5:18:11 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 5:18:11 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 5:18:11 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 5:18:11 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 5:18:11 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 5:18:11 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 5:18:11 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 5:18:11 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 5:18:11 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 5:18:20 PM org.esiea.festicore.Main main
+janv. 15, 2026 5:18:20 PM org.festicore.festicore.Main main
 WARNING: Wrong menu choice entered by user.
-janv. 15, 2026 5:18:39 PM org.esiea.festicore.Main main
+janv. 15, 2026 5:18:39 PM org.festicore.festicore.Main main
 INFO: Alex just logged in
-janv. 15, 2026 5:18:39 PM org.esiea.festicore.User account
+janv. 15, 2026 5:18:39 PM org.festicore.festicore.User account
 INFO: User accessed account: Alex
-janv. 15, 2026 5:18:52 PM org.esiea.festicore.User account
+janv. 15, 2026 5:18:52 PM org.festicore.festicore.User account
 INFO: Alex looked for the festival's program.
-janv. 15, 2026 5:19:00 PM org.esiea.festicore.User account
+janv. 15, 2026 5:19:00 PM org.festicore.festicore.User account
 INFO: Alexlogged out
-janv. 15, 2026 5:19:00 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 5:19:00 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=2)
-janv. 15, 2026 5:19:02 PM org.esiea.festicore.Main main
+janv. 15, 2026 5:19:02 PM org.festicore.festicore.Main main
 WARNING: Wrong menu choice entered by user.
-janv. 15, 2026 5:19:05 PM org.esiea.festicore.Main main
+janv. 15, 2026 5:19:05 PM org.festicore.festicore.Main main
 INFO: Exiting application.
-janv. 15, 2026 8:16:30 PM org.esiea.festicore.service.LogManager setup
+janv. 15, 2026 8:16:30 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 15, 2026 8:16:30 PM org.esiea.festicore.Main main
+janv. 15, 2026 8:16:30 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 8:16:31 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 8:16:31 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 8:16:31 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 8:16:31 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 8:16:31 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 8:16:31 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 8:16:31 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 8:16:31 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 8:16:53 PM org.esiea.festicore.Main main
+janv. 15, 2026 8:16:53 PM org.festicore.festicore.Main main
 WARNING: Invalid credentials attempt for : alex@test.fr
-janv. 15, 2026 8:17:05 PM org.esiea.festicore.Main main
+janv. 15, 2026 8:17:05 PM org.festicore.festicore.Main main
 WARNING: Invalid credentials attempt for : alex@test.com
-janv. 15, 2026 8:17:12 PM org.esiea.festicore.Main main
+janv. 15, 2026 8:17:12 PM org.festicore.festicore.Main main
 WARNING: Invalid credentials attempt for : alex@test.fr
-janv. 15, 2026 8:17:20 PM org.esiea.festicore.Main main
+janv. 15, 2026 8:17:20 PM org.festicore.festicore.Main main
 WARNING: Invalid credentials attempt for : alex@test.com
-janv. 15, 2026 8:17:52 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 8:17:52 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=3)
-janv. 15, 2026 8:17:52 PM org.esiea.festicore.Main main
+janv. 15, 2026 8:17:52 PM org.festicore.festicore.Main main
 INFO: New user registered: test@test.fr
-janv. 15, 2026 8:18:03 PM org.esiea.festicore.Main main
+janv. 15, 2026 8:18:03 PM org.festicore.festicore.Main main
 INFO: test just logged in
-janv. 15, 2026 8:18:03 PM org.esiea.festicore.User account
+janv. 15, 2026 8:18:03 PM org.festicore.festicore.User account
 INFO: User accessed account: test
-janv. 15, 2026 8:18:35 PM org.esiea.festicore.User account
+janv. 15, 2026 8:18:35 PM org.festicore.festicore.User account
 INFO: test saved a card.
-janv. 15, 2026 8:18:37 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 8:18:37 PM service.org.festicore.festicore.BookingService book
 INFO: Attempting booking: user=test@test.fr, reservation=T_3Day
-janv. 15, 2026 8:18:37 PM org.esiea.festicore.Reservation decrementerQuota
+janv. 15, 2026 8:18:37 PM org.festicore.festicore.Reservation decrementerQuota
 INFO: Quota decremented for reservation T_3Day. New quota: 2
-janv. 15, 2026 8:18:37 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 8:18:37 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 8:18:37 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 8:18:37 PM service.org.festicore.festicore.BookingService book
 INFO: Booking successful: user=test, reservation=T_3Day
-janv. 15, 2026 8:18:37 PM org.esiea.festicore.User account
+janv. 15, 2026 8:18:37 PM org.festicore.festicore.User account
 INFO: Reservation booked: Ticket_3Day for : test
-janv. 15, 2026 8:18:37 PM org.esiea.festicore.service.LogManager log
+janv. 15, 2026 8:18:37 PM service.org.festicore.festicore.LogManager log
 INFO: Starting PDF generation for user: test, reservation ID: T_3Day
-janv. 15, 2026 8:18:37 PM org.esiea.festicore.service.LogManager log
+janv. 15, 2026 8:18:37 PM service.org.festicore.festicore.LogManager log
 INFO: PDF Ticket generated successfully: Ticket_T_3Day.pdf
-janv. 15, 2026 8:19:01 PM org.esiea.festicore.User account
+janv. 15, 2026 8:19:01 PM org.festicore.festicore.User account
 INFO: testlogged out
-janv. 15, 2026 8:19:01 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 8:19:01 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=3)
-janv. 15, 2026 8:19:06 PM org.esiea.festicore.Main main
+janv. 15, 2026 8:19:06 PM org.festicore.festicore.Main main
 INFO: Exiting application.
-janv. 15, 2026 8:22:12 PM org.esiea.festicore.service.LogManager setup
+janv. 15, 2026 8:22:12 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 15, 2026 8:22:12 PM org.esiea.festicore.Main main
+janv. 15, 2026 8:22:12 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 8:22:13 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 8:22:13 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 8:22:13 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 8:22:13 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 8:22:13 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 8:22:13 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 8:22:13 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 8:22:13 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 8:22:26 PM org.esiea.festicore.Main main
+janv. 15, 2026 8:22:26 PM org.festicore.festicore.Main main
 INFO: test just logged in
-janv. 15, 2026 8:22:26 PM org.esiea.festicore.User account
+janv. 15, 2026 8:22:26 PM org.festicore.festicore.User account
 INFO: User accessed account: test
-janv. 15, 2026 8:23:09 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 8:23:09 PM service.org.festicore.festicore.BookingService book
 INFO: Attempting booking: user=test@test.fr, reservation=P_VIP
-janv. 15, 2026 8:23:09 PM org.esiea.festicore.Reservation decrementerQuota
+janv. 15, 2026 8:23:09 PM org.festicore.festicore.Reservation decrementerQuota
 INFO: Quota decremented for reservation P_VIP. New quota: 2
-janv. 15, 2026 8:23:09 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 8:23:09 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 8:23:09 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 8:23:09 PM service.org.festicore.festicore.BookingService book
 INFO: Booking successful: user=test, reservation=P_VIP
-janv. 15, 2026 8:23:09 PM org.esiea.festicore.User account
+janv. 15, 2026 8:23:09 PM org.festicore.festicore.User account
 INFO: Reservation booked: Pass_VIP for : test
-janv. 15, 2026 8:23:09 PM org.esiea.festicore.service.LogManager log
+janv. 15, 2026 8:23:09 PM service.org.festicore.festicore.LogManager log
 INFO: Starting PDF generation for user: test, reservation ID: P_VIP
-janv. 15, 2026 8:23:09 PM org.esiea.festicore.service.LogManager log
+janv. 15, 2026 8:23:09 PM service.org.festicore.festicore.LogManager log
 INFO: PDF Ticket generated successfully: Ticket_P_VIP.pdf
-janv. 15, 2026 8:23:58 PM org.esiea.festicore.User account
+janv. 15, 2026 8:23:58 PM org.festicore.festicore.User account
 INFO: testlogged out
-janv. 15, 2026 8:23:58 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 8:23:58 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=3)
-janv. 15, 2026 8:24:00 PM org.esiea.festicore.Main main
+janv. 15, 2026 8:24:00 PM org.festicore.festicore.Main main
 INFO: Exiting application.
-janv. 15, 2026 9:22:59 PM org.esiea.festicore.service.LogManager setup
+janv. 15, 2026 9:22:59 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 15, 2026 9:22:59 PM org.esiea.festicore.Main main
+janv. 15, 2026 9:22:59 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 9:22:59 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 9:22:59 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 9:22:59 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 9:22:59 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 9:22:59 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 9:22:59 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 9:22:59 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 9:22:59 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 9:23:32 PM org.esiea.festicore.Main main
+janv. 15, 2026 9:23:32 PM org.festicore.festicore.Main main
 INFO: Alex just logged in
-janv. 15, 2026 9:23:32 PM org.esiea.festicore.User account
+janv. 15, 2026 9:23:32 PM org.festicore.festicore.User account
 INFO: User accessed account: Alex
-janv. 15, 2026 9:24:14 PM org.esiea.festicore.User account
+janv. 15, 2026 9:24:14 PM org.festicore.festicore.User account
 INFO: Alex saved a card.
-janv. 15, 2026 9:24:20 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 9:24:20 PM service.org.festicore.festicore.BookingService book
 INFO: Attempting booking: user=alex@test.fr, reservation=P_Classic
-janv. 15, 2026 9:24:20 PM org.esiea.festicore.Reservation decrementerQuota
+janv. 15, 2026 9:24:20 PM org.festicore.festicore.Reservation decrementerQuota
 INFO: Quota decremented for reservation P_Classic. New quota: 2
-janv. 15, 2026 9:24:20 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 9:24:20 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 9:24:20 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 9:24:20 PM service.org.festicore.festicore.BookingService book
 INFO: Booking successful: user=Alex, reservation=P_Classic
-janv. 15, 2026 9:24:20 PM org.esiea.festicore.User account
+janv. 15, 2026 9:24:20 PM org.festicore.festicore.User account
 INFO: Reservation booked: Pass_Classic for : Alex
-janv. 15, 2026 9:24:20 PM org.esiea.festicore.service.LogManager log
+janv. 15, 2026 9:24:20 PM service.org.festicore.festicore.LogManager log
 INFO: Starting PDF generation for user: Alex, reservation ID: P_Classic
-janv. 15, 2026 9:24:20 PM org.esiea.festicore.service.LogManager log
+janv. 15, 2026 9:24:20 PM service.org.festicore.festicore.LogManager log
 INFO: PDF Ticket generated successfully: Ticket_P_Classic.pdf
-janv. 15, 2026 9:48:38 PM org.esiea.festicore.service.LogManager setup
+janv. 15, 2026 9:48:38 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 15, 2026 9:48:38 PM org.esiea.festicore.Main main
+janv. 15, 2026 9:48:38 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 9:48:38 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 9:48:38 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 9:48:38 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 9:48:38 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 9:48:38 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 9:48:38 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 9:48:38 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 9:48:38 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 9:48:51 PM org.esiea.festicore.Main main
+janv. 15, 2026 9:48:51 PM org.festicore.festicore.Main main
 INFO: Alex just logged in
-janv. 15, 2026 9:48:51 PM org.esiea.festicore.User account
+janv. 15, 2026 9:48:51 PM org.festicore.festicore.User account
 INFO: User accessed account: Alex
-janv. 15, 2026 9:49:16 PM org.esiea.festicore.User account
+janv. 15, 2026 9:49:16 PM org.festicore.festicore.User account
 INFO: Alex saved a card.
-janv. 15, 2026 9:49:19 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 9:49:19 PM service.org.festicore.festicore.BookingService book
 INFO: Attempting booking: user=alex@test.fr, reservation=P_Classic
-janv. 15, 2026 9:49:19 PM org.esiea.festicore.Reservation decrementerQuota
+janv. 15, 2026 9:49:19 PM org.festicore.festicore.Reservation decrementerQuota
 INFO: Quota decremented for reservation P_Classic. New quota: 2
-janv. 15, 2026 9:49:19 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 9:49:19 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 9:49:19 PM org.esiea.festicore.service.BookingService book
+janv. 15, 2026 9:49:19 PM service.org.festicore.festicore.BookingService book
 INFO: Booking successful: user=Alex, reservation=P_Classic
-janv. 15, 2026 9:49:19 PM org.esiea.festicore.User account
+janv. 15, 2026 9:49:19 PM org.festicore.festicore.User account
 INFO: Reservation booked: Pass_Classic for : Alex
-janv. 15, 2026 9:49:19 PM org.esiea.festicore.service.LogManager log
+janv. 15, 2026 9:49:19 PM service.org.festicore.festicore.LogManager log
 INFO: Starting PDF generation for user: Alex, reservation ID: P_Classic
-janv. 15, 2026 9:49:19 PM org.esiea.festicore.service.LogManager log
+janv. 15, 2026 9:49:19 PM service.org.festicore.festicore.LogManager log
 INFO: PDF Ticket generated successfully: data/reservations/Ticket_P_Classic.pdf
-janv. 15, 2026 9:49:28 PM org.esiea.festicore.User account
+janv. 15, 2026 9:49:28 PM org.festicore.festicore.User account
 INFO: Alexlogged out
-janv. 15, 2026 9:49:28 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 9:49:28 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=3)
-janv. 15, 2026 9:49:48 PM org.esiea.festicore.Main main
+janv. 15, 2026 9:49:48 PM org.festicore.festicore.Main main
 WARNING: Wrong menu choice entered by user.
-janv. 15, 2026 9:50:07 PM org.esiea.festicore.Main main
+janv. 15, 2026 9:50:07 PM org.festicore.festicore.Main main
 INFO: Alex just logged in
-janv. 15, 2026 9:50:07 PM org.esiea.festicore.User account
+janv. 15, 2026 9:50:07 PM org.festicore.festicore.User account
 INFO: User accessed account: Alex
-janv. 15, 2026 9:50:35 PM org.esiea.festicore.User account
+janv. 15, 2026 9:50:35 PM org.festicore.festicore.User account
 INFO: Alex looked for the festival's program.
-janv. 15, 2026 9:50:45 PM org.esiea.festicore.User account
+janv. 15, 2026 9:50:45 PM org.festicore.festicore.User account
 INFO: Alexlogged out
-janv. 15, 2026 9:50:45 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 9:50:45 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=3)
-janv. 15, 2026 9:50:48 PM org.esiea.festicore.Main main
+janv. 15, 2026 9:50:48 PM org.festicore.festicore.Main main
 WARNING: Wrong menu choice entered by user.
-janv. 15, 2026 9:50:55 PM org.esiea.festicore.Main main
+janv. 15, 2026 9:50:55 PM org.festicore.festicore.Main main
 WARNING: Wrong menu choice entered by user.
-janv. 15, 2026 9:50:55 PM org.esiea.festicore.Main main
+janv. 15, 2026 9:50:55 PM org.festicore.festicore.Main main
 INFO: Exiting application.
-janv. 15, 2026 9:51:15 PM org.esiea.festicore.service.LogManager setup
+janv. 15, 2026 9:51:15 PM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 15, 2026 9:51:15 PM org.esiea.festicore.Main main
+janv. 15, 2026 9:51:15 PM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 15, 2026 9:51:15 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 9:51:15 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 15, 2026 9:51:15 PM org.esiea.festicore.Tickets <init>
+janv. 15, 2026 9:51:15 PM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 15, 2026 9:51:15 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 9:51:15 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 15, 2026 9:51:15 PM org.esiea.festicore.Pass <init>
+janv. 15, 2026 9:51:15 PM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 15, 2026 9:54:52 PM org.esiea.festicore.Main main
+janv. 15, 2026 9:54:52 PM org.festicore.festicore.Main main
 WARNING: Invalid credentials attempt for : alex
-janv. 15, 2026 9:55:05 PM org.esiea.festicore.Main main
+janv. 15, 2026 9:55:05 PM org.festicore.festicore.Main main
 INFO: Alex just logged in
-janv. 15, 2026 9:55:05 PM org.esiea.festicore.User account
+janv. 15, 2026 9:55:05 PM org.festicore.festicore.User account
 INFO: User accessed account: Alex
-janv. 15, 2026 9:55:23 PM org.esiea.festicore.User account
+janv. 15, 2026 9:55:23 PM org.festicore.festicore.User account
 INFO: Alex cancelled the payment.
-janv. 15, 2026 9:55:27 PM org.esiea.festicore.User account
+janv. 15, 2026 9:55:27 PM org.festicore.festicore.User account
 INFO: Alexlogged out
-janv. 15, 2026 9:55:27 PM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 15, 2026 9:55:27 PM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=3)
-janv. 15, 2026 9:55:28 PM org.esiea.festicore.Main main
+janv. 15, 2026 9:55:28 PM org.festicore.festicore.Main main
 INFO: Exiting application.
-janv. 16, 2026 8:43:05 AM org.esiea.festicore.service.LogManager setup
+janv. 16, 2026 8:43:05 AM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 16, 2026 8:43:05 AM org.esiea.festicore.Main main
+janv. 16, 2026 8:43:05 AM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 16, 2026 8:43:06 AM org.esiea.festicore.Tickets <init>
+janv. 16, 2026 8:43:06 AM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 16, 2026 8:43:06 AM org.esiea.festicore.Tickets <init>
+janv. 16, 2026 8:43:06 AM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 16, 2026 8:43:06 AM org.esiea.festicore.Pass <init>
+janv. 16, 2026 8:43:06 AM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 16, 2026 8:43:06 AM org.esiea.festicore.Pass <init>
+janv. 16, 2026 8:43:06 AM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 16, 2026 8:43:23 AM org.esiea.festicore.Main main
+janv. 16, 2026 8:43:23 AM org.festicore.festicore.Main main
 INFO: Alex just logged in
-janv. 16, 2026 8:43:23 AM org.esiea.festicore.User account
+janv. 16, 2026 8:43:23 AM org.festicore.festicore.User account
 INFO: User accessed account: Alex
-janv. 16, 2026 8:44:38 AM org.esiea.festicore.User account
+janv. 16, 2026 8:44:38 AM org.festicore.festicore.User account
 INFO: Alexlogged out
-janv. 16, 2026 8:44:38 AM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 16, 2026 8:44:38 AM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=3)
-janv. 16, 2026 8:44:46 AM org.esiea.festicore.Main main
+janv. 16, 2026 8:44:46 AM org.festicore.festicore.Main main
 INFO: Exiting application.
-janv. 16, 2026 8:45:11 AM org.esiea.festicore.service.LogManager setup
+janv. 16, 2026 8:45:11 AM service.org.festicore.festicore.LogManager setup
 INFO: Logging system initialized. Level: INFO
-janv. 16, 2026 8:45:11 AM org.esiea.festicore.Main main
+janv. 16, 2026 8:45:11 AM org.festicore.festicore.Main main
 INFO: FestiCore application is starting...
-janv. 16, 2026 8:45:11 AM org.esiea.festicore.Tickets <init>
+janv. 16, 2026 8:45:11 AM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_Day type=day
-janv. 16, 2026 8:45:11 AM org.esiea.festicore.Tickets <init>
+janv. 16, 2026 8:45:11 AM org.festicore.festicore.Tickets <init>
 INFO: Ticket created: T_3Day type=Three_day
-janv. 16, 2026 8:45:11 AM org.esiea.festicore.Pass <init>
+janv. 16, 2026 8:45:11 AM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_Classic type=classic
-janv. 16, 2026 8:45:11 AM org.esiea.festicore.Pass <init>
+janv. 16, 2026 8:45:11 AM org.festicore.festicore.Pass <init>
 INFO: Pass created: P_VIP type=VIP
-janv. 16, 2026 8:45:14 AM org.esiea.festicore.Main main
+janv. 16, 2026 8:45:14 AM org.festicore.festicore.Main main
 WARNING: Wrong menu choice entered by user.
-janv. 16, 2026 8:45:36 AM org.esiea.festicore.service.JsonDataManager saveUsers
+janv. 16, 2026 8:45:36 AM service.org.festicore.festicore.JsonDataManager saveUsers
 INFO: Saved users to data/users.json (count=4)
-janv. 16, 2026 8:45:36 AM org.esiea.festicore.Main main
+janv. 16, 2026 8:45:36 AM org.festicore.festicore.Main main
 INFO: New user registered: h@hh.fr
-janv. 16, 2026 10:55:06 AM org.esiea.festicore.Main main
+janv. 16, 2026 10:55:06 AM org.festicore.festicore.Main main
 INFO: Exiting application.

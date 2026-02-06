@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Festicoreee" />
         <module name="festicore" />
+        <module name="Festicore" />
       </profile>
     </annotationProcessing>
   </component>

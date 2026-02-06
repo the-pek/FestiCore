@@ -63,4 +63,13 @@
     "quota" : 1,
     "passType" : "VIP"
   } ]
+}, {
+  "id" : "USER-9cac2042-77de-4c34-b4e1-d1ef28271d7b",
+  "name" : "h",
+  "email" : "h@hh.fr",
+  "phone" : "0123456789",
+  "card" : null,
+  "password" : "9276",
+  "registrationDate" : [ 2026, 1, 16 ],
+  "history" : [ ]
 } ]

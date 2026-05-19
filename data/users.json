@@ -1,0 +1,75 @@
+[ {
+  "id" : "USER-5c1a9091-fba3-47ef-810f-22091f1174db",
+  "name" : "Pierre-Edwin",
+  "email" : "pierre@test.fr",
+  "phone" : "0768107148",
+  "card" : "0000 1111 2222 3333",
+  "password" : "-1617025971",
+  "registrationDate" : null,
+  "history" : [ {
+    "kind" : "ACTIVITY",
+    "id" : "A_MASTERCLASS_BOOBA",
+    "price" : 180.0,
+    "validityDate" : [ 2026, 7, 15 ],
+    "quota" : 1,
+    "activityType" : "MASTERCLASS",
+    "artistName" : "Booba",
+    "duration" : 5400.000000000,
+    "startTime" : [ 2026, 7, 15, 14, 0 ]
+  } ]
+}, {
+  "id" : "USER-5b9831d0-2fd5-4b70-936c-2e0879867ef0",
+  "name" : "Alex",
+  "email" : "alex@test.fr",
+  "phone" : "0987654321",
+  "card" : "1111 2222 3333 4444",
+  "password" : "-237113721",
+  "registrationDate" : [ 2026, 1, 15 ],
+  "history" : [ {
+    "kind" : "TICKET",
+    "id" : "T_Day",
+    "price" : 80.0,
+    "validityDate" : [ 2026, 7, 15 ],
+    "quota" : 1,
+    "ticketType" : "day"
+  }, {
+    "kind" : "PASS",
+    "id" : "P_Classic",
+    "price" : 100.0,
+    "validityDate" : [ 2026, 7, 15 ],
+    "quota" : 1,
+    "passType" : "classic"
+  } ]
+}, {
+  "id" : "USER-2f21ca6f-fa1e-4a9b-be12-816144526eb4",
+  "name" : "test",
+  "email" : "test@test.fr",
+  "phone" : "0771812590",
+  "card" : "1111 1111 1111 1111",
+  "password" : "316528342",
+  "registrationDate" : [ 2026, 1, 15 ],
+  "history" : [ {
+    "kind" : "TICKET",
+    "id" : "T_3Day",
+    "price" : 240.0,
+    "validityDate" : [ 2026, 7, 15 ],
+    "quota" : 1,
+    "ticketType" : "Three_day"
+  }, {
+    "kind" : "PASS",
+    "id" : "P_VIP",
+    "price" : 250.0,
+    "validityDate" : [ 2026, 7, 15 ],
+    "quota" : 1,
+    "passType" : "VIP"
+  } ]
+}, {
+  "id" : "USER-9cac2042-77de-4c34-b4e1-d1ef28271d7b",
+  "name" : "h",
+  "email" : "h@hh.fr",
+  "phone" : "0123456789",
+  "card" : null,
+  "password" : "9276",
+  "registrationDate" : [ 2026, 1, 16 ],
+  "history" : [ ]
+} ]
